@@ -215,12 +215,12 @@
 				<div class="swiper-slide slide" style="background-image:url(images/main-slider/1.jpg)">
 					<div class="auto-container">
 						<div class="content clearfix">
-							<div class="title">Welcome our Medical Care Center</div>
-							<h2>Take Care of Your Health</h2>
-							<div class="text">We're always available for our Patients with emergent problems. You can easily reach us 24/7 via the phone number below:</div>
+							<div class="title"></div>
+							<h2>اعتني بصحتك</h2>
+							<div class="text"></div>
 							<div class="btn-box clearfix">
-								<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Our Services</span></a>
-								<a href="contact.html" class="theme-btn phone-btn"><span class="icon flaticon-call"></span>555–123–2323</a>
+								<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">خدمتي</span></a>
+								<a href="contact.html" class="theme-btn phone-btn"><span class="icon flaticon-call"></span>133</a>
 							</div>
 						</div>
 					</div>
@@ -229,12 +229,12 @@
 				<div class="swiper-slide slide" style="background-image:url(images/main-slider/1.jpg)">
 					<div class="auto-container">
 						<div class="content">
-							<div class="title">Welcome our Medical Care Center</div>
-							<h2>Take Care of Your Health</h2>
-							<div class="text">We're always available for our Patients with emergent problems. You can easily reach us 24/7 via the phone number below:</div>
+							<div class="title"> </div>
+							<h2>اعتني بصحتك</h2>
+							<div class="text"></div>
 							<div class="btn-box">
-								<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Our Services</span></a>
-								<a href="contact.html" class="theme-btn phone-btn"><span class="icon flaticon-call"></span>555–123–2323</a>
+								<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">خدمتي</span></a>
+								<a href="contact.html" class="theme-btn phone-btn"><span class="icon flaticon-call"></span>133</a>
 							</div>
 						</div>
 					</div>
@@ -243,12 +243,12 @@
 				<div class="swiper-slide slide" style="background-image:url(images/main-slider/1.jpg)">
 					<div class="auto-container">
 						<div class="content">
-							<div class="title">Welcome our Medical Care Center</div>
-							<h2>Take Care of Your Health</h2>
-							<div class="text">We're always available for our Patients with emergent problems. You can easily reach us 24/7 via the phone number below:</div>
+							<div class="title"></div>
+							<h2>اعتني بصحتك</h2>
+							<div class="text"></div>
 							<div class="btn-box">
-								<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Our Services</span></a>
-								<a href="contact.html" class="theme-btn phone-btn"><span class="icon flaticon-call"></span>555–123–2323</a>
+								<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">خدمتي</span></a>
+								<a href="contact.html" class="theme-btn phone-btn"><span class="icon flaticon-call"></span>133</a>
 							</div>
 						</div>
 					</div>
@@ -270,7 +270,7 @@
 
 			<!-- Sec Title -->
 			<div class="sec-title centered">
-				<h2>Health Department</h2>
+				<h2>أقسام الرعاية الصحية المتوفرة في الموقع</h2>
 				<div class="separator"></div>
 			</div>
 
@@ -281,7 +281,7 @@
 					<div class="inner-box">
 						<div class="upper-box">
 							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">Urology</a></h3>
+							<h3><a href="#">القلبية</a></h3>
 						</div>
 						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
 						<div class="read-outer">
@@ -295,7 +295,7 @@
 					<div class="inner-box">
 						<div class="upper-box">
 							<div class="icon flaticon-brain"></div>
-							<h3><a href="#">Neurology</a></h3>
+							<h3><a href="#">الأذنية</a></h3>
 						</div>
 						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
 						<div class="read-outer">
@@ -309,7 +309,7 @@
 					<div class="inner-box">
 						<div class="upper-box">
 							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">Gastrology</a></h3>
+							<h3><a href="#">الرئة</a></h3>
 						</div>
 						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
 						<div class="read-outer">
@@ -323,7 +323,7 @@
 					<div class="inner-box">
 						<div class="upper-box">
 							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">Urology</a></h3>
+							<h3><a href="#">الجلدية</a></h3>
 						</div>
 						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
 						<div class="read-outer">
@@ -337,7 +337,7 @@
 					<div class="inner-box">
 						<div class="upper-box">
 							<div class="icon flaticon-brain"></div>
-							<h3><a href="#">Neurology</a></h3>
+							<h3><a href="#">الظهر</a></h3>
 						</div>
 						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
 						<div class="read-outer">
@@ -351,7 +351,7 @@
 					<div class="inner-box">
 						<div class="upper-box">
 							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">Gastrology</a></h3>
+							<h3><a href="#">الدماغ</a></h3>
 						</div>
 						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
 						<div class="read-outer">
@@ -365,7 +365,7 @@
 					<div class="inner-box">
 						<div class="upper-box">
 							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">Urology</a></h3>
+							<h3><a href="#">الكلية</a></h3>
 						</div>
 						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
 						<div class="read-outer">
@@ -379,7 +379,7 @@
 					<div class="inner-box">
 						<div class="upper-box">
 							<div class="icon flaticon-brain"></div>
-							<h3><a href="#">Neurology</a></h3>
+							<h3><a href="#">العينية</a></h3>
 						</div>
 						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
 						<div class="read-outer">
@@ -393,7 +393,7 @@
 					<div class="inner-box">
 						<div class="upper-box">
 							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">Gastrology</a></h3>
+							<h3><a href="#">الأمعاء</a></h3>
 						</div>
 						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
 						<div class="read-outer">
