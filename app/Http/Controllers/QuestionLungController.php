@@ -26,29 +26,30 @@ class QuestionLungController extends Controller
             foreach ($questionsLung as $question) {
                 $answer = $answers['answer_' . $question->id] ?? 'لم يتم الإجابة';
 
-                if($question->id == 1 && $answer == 'No' ){   $description1=  " انت لا تعاني من السعال " . "<br><br>"; }
-                else  if($question->id == 1 && $answer == 'Yes' ){$description1=  " انت تعاني من السعلة". "<br><br>";}
+                if($question->id == 1 && $answer == 'No' ){   $description1=  " انت لا تعاني من السعال " . ""; }
+                else  if($question->id == 1 && $answer == 'Yes' ){$description1=  " انت تعاني من السعلة". "";}
 
-                if($question->id == 2 && $answer == 'No' ){  $description2= " انت لا تدخن "  . "<br><br>"; }
-                else if($question->id == 2 && $answer == 'Yes' ) {$description2=  " وانت تدخن " . "يجب أن تخفف من التدخين". "<br><br>";}
+                if($question->id == 2 && $answer == 'No' ){  $description2= " انت لا تدخن "  . " "; }
+                else if($question->id == 2 && $answer == 'Yes' ) {$description2=  " وانت تدخن " . "يجب أن تخفف من التدخين". "";}
 
-                if($question->id == 3 && $answer == 'No' ){  $description3= " لايوجد الم بالحلق "  . "<br><br>"; }
-                else  if($question->id == 3 && $answer == 'Yes' ){$description3=  " ويوجد الم في الحلق". "<br><br>";}
+                if($question->id == 3 && $answer == 'No' ){  $description3= " لايوجد الم بالحلق "  . " "; }
+                else  if($question->id == 3 && $answer == 'Yes' ){$description3=  " ويوجد الم في الحلق". " ";}
 
-                if($question->id == 4 && $answer == 'No' ){   $description4= " ولايوجد ألم في الصدر"  . "<br><br>"; }
-                else  if($question->id == 4 && $answer == 'Yes' ){$description4=  " ويوجد الم في الصدر". "<br><br>";}
+                if($question->id == 4 && $answer == 'No' ){   $description4= " ولايوجد ألم في الصدر"  . " "; }
+                else  if($question->id == 4 && $answer == 'Yes' ){$description4=  " ويوجد الم في الصدر". " ";}
 
-                if($question->id == 5 && $answer == 'No' ){  $description5= " والسعال ليس جاف"  . "<br><br>"; }
-                else  if($question->id == 5 && $answer == 'Yes' ){$description5=  "والسعال جاف  ". "<br><br>";}
+                if($question->id == 5 && $answer == 'No' ){  $description5= " والسعال ليس جاف"  . " "; }
+                else  if($question->id == 5 && $answer == 'Yes' ){$description5=  "والسعال جاف  ". " ";}
 
-                if($question->id == 6 && $answer == 'No' ){    $description6= " لايوجد افرازات مثل بلغم "  . "<br><br>"; }
-                else  if($question->id == 6 && $answer == 'Yes' ){$description6=  "والسعال مصحوب بافرازات  ". "<br><br>";}
+                if($question->id == 6 && $answer == 'No' ){    $description6= " لايوجد افرازات مثل بلغم "  . " "; }
+                else  if($question->id == 6 && $answer == 'Yes' ){$description6=  "والسعال مصحوب بافرازات  ". " ";}
 
             }
 
 
             $description = $description1.$description2.$description3.$description4.$description5.$description6;
-            echo $description;
+            
+            return view('outdescription', compact('description'));
     }
 
 

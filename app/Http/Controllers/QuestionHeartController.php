@@ -49,6 +49,7 @@ class QuestionHeartController extends Controller
 
             $description = $description1.$description2.$description3.$description4.$description5.$description6;
             echo $description;
+            return view('outdescription', compact('description'));
     }
     /**
      * Show the form for creating a new resource.

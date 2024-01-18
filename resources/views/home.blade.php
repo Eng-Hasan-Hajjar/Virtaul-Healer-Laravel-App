@@ -84,11 +84,11 @@
 
                             <!-- Button Box -->
                             <div class="btn-box">
-                                <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">سجل دخول</span></a>
+                                <a href="login" class="theme-btn btn-style-one"><span class="txt">سجل دخول</span></a>
                             </div>
                             <!-- Button Box -->
                             <div class="btn-box">
-                                <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">أنشئ حساب </span></a>
+                                <a href="register" class="theme-btn btn-style-one"><span class="txt">أنشئ حساب </span></a>
                             </div>
                         </div>
                     </div>
@@ -792,7 +792,7 @@
 	</section>
 	<!-- End News Section -->
 
-	
+
 
 	<!--Main Footer-->
     <footer class="main-footer" style="background-image: url(images/background/2.jpg)">
