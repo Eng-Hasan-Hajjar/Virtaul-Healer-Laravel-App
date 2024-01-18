@@ -54,100 +54,26 @@
 
                             <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="#">Home</a>
-                                        <ul>
-                                            <li><a href="index.html">Home page 01</a></li>
-                                            <li><a href="index-2.html">Home page 02</a></li>
-                                            <li><a href="index-3.html">Home page 03</a></li>
-											<li><a href="index-4.html">Home page 04</a></li>
-                                            <li class="dropdown"><a href="#">Header Styles</a>
-                                                <ul>
-                                                    <li><a href="index.html">Header Style One</a></li>
-                                                    <li><a href="index-2.html">Header Style Two</a></li>
-                                                    <li><a href="index-3.html">Header Style Three</a></li>
-													<li><a href="index-4.html">Header Style Four</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                    <li class="current dropdown"><a href="#">الرئيسية</a>
+
                                     </li>
-									<li class="dropdown"><a href="#">About us</a>
-                                        <ul>
-                                            <li><a href="about.html">About Us</a></li>
-											<li><a href="team.html">Our Team</a></li>
-											<li><a href="faq.html">Faq</a></li>
-											<li><a href="services.html">Services</a></li>
-											<li><a href="gallery.html">Gallery</a></li>
-											<li><a href="comming-soon.html">Comming Soon</a></li>
-                                        </ul>
+									<li class="dropdown"><a href="#">حول التطبيق</a>
+
                                     </li>
-									<li class="dropdown has-mega-menu"><a href="#">Pages</a>
-										<div class="mega-menu">
-											<div class="mega-menu-bar row clearfix">
-												<div class="column col-md-3 col-xs-12">
-													<h3>About Us</h3>
-													<ul>
-														<li><a href="about.html">About Us</a></li>
-														<li><a href="team.html">Our Team</a></li>
-														<li><a href="faq.html">Faq</a></li>
-														<li><a href="services.html">Services</a></li>
-													</ul>
-												</div>
-												<div class="column col-md-3 col-xs-12">
-													<h3>Doctors</h3>
-													<ul>
-														<li><a href="doctors.html">Doctors</a></li>
-														<li><a href="doctors-detail.html">Doctors Detail</a></li>
-													</ul>
-												</div>
-												<div class="column col-md-3 col-xs-12">
-													<h3>Blog</h3>
-													<ul>
-														<li><a href="blog.html">Our Blog</a></li>
-														<li><a href="blog-classic.html">Blog Classic</a></li>
-														<li><a href="blog-detail.html">Blog Detail</a></li>
-													</ul>
-												</div>
-												<div class="column col-md-3 col-xs-12">
-													<h3>Shops</h3>
-													<ul>
-														<li><a href="shop.html">Shop</a></li>
-														<li><a href="shop-single.html">Shop Details</a></li>
-														<li><a href="shoping-cart.html">Cart Page</a></li>
-														<li><a href="checkout.html">Checkout Page</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="dropdown"><a href="#">Doctors</a>
+
+									<li class="dropdown"><a href="#">الأطباء</a>
                                         <ul>
                                             <li><a href="doctors.html">Doctors</a></li>
                                             <li><a href="doctors-detail.html">Doctors Detail</a></li>
                                         </ul>
                                     </li>
-									<li class="dropdown"><a href="#">Department</a>
+									<li class="dropdown"><a href="#">الأقسام</a>
                                         <ul>
                                             <li><a href="department.html">Department</a></li>
                                             <li><a href="department-detail.html">Department Detail</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Our Blog</a></li>
-											<li><a href="blog-classic.html">Blog Classic</a></li>
-                                            <li><a href="blog-detail.html">Blog Detail</a></li>
-                                        </ul>
-                                    </li>
-									<li class="dropdown"><a href="#">Shop</a>
-                                        <ul>
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="shop-single.html">Shop Details</a></li>
-                                            <li><a href="shoping-cart.html">Cart Page</a></li>
-                                            <li><a href="checkout.html">Checkout Page</a></li>
-                                        </ul>
-                                    </li>
 
-                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -155,11 +81,14 @@
 
                         <!-- Main Menu End-->
                         <div class="outer-box clearfix">
-							<!-- Search Btn -->
-							<div class="search-box-btn"><span class="icon flaticon-search"></span></div>
+
                             <!-- Button Box -->
                             <div class="btn-box">
-                                <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Appointment</span></a>
+                                <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">سجل دخول</span></a>
+                            </div>
+                            <!-- Button Box -->
+                            <div class="btn-box">
+                                <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">أنشئ حساب </span></a>
                             </div>
                         </div>
                     </div>
@@ -276,16 +205,17 @@
 
 			<div class="services-carousel owl-carousel owl-theme">
 
-				<!-- Department Block -->
+                				<!-- Department Block -->
 				<div class="department-block">
 					<div class="inner-box">
+                    <img src="{{ asset('images/القلب.png') }}" >
+
 						<div class="upper-box">
-							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">القلبية</a></h3>
+							<h3 style="text-align:left"><a href="questionsHeart">القلب</a></h3>
 						</div>
-						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
+						<div class="text">الأمراض القلبية تشير إلى مجموعة واسعة من الحالات التي تؤثر على القلب والأوعية الدموية.</div>
 						<div class="read-outer">
-							<a href="#" class="read-more">Read More <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsHeart" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -293,13 +223,14 @@
 				<!-- Department Block -->
 				<div class="department-block">
 					<div class="inner-box">
+                    <img src="{{ asset('images/الرئة.png') }}">
 						<div class="upper-box">
-							<div class="icon flaticon-brain"></div>
-							<h3><a href="#">الأذنية</a></h3>
+
+							<h3><a style="text-align:left" href="questionsLung">الرئة</a></h3>
 						</div>
-						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
+						<div class="text">أمراض الرئة هي مجموعة من الحالات التي تؤثر على الرئتين وقد تؤدي إلى صعوبة في التنفس وتقليل قدرة الرئتين على نقل الأكسجين إلى الجسم. </div>
 						<div class="read-outer">
-							<a href="#" class="read-more">Read More <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsLung" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -307,13 +238,16 @@
 				<!-- Department Block -->
 				<div class="department-block">
 					<div class="inner-box">
+                    <img src="{{ asset('images/المعدة.png') }}">
+
 						<div class="upper-box">
-							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">الرئة</a></h3>
+
+							<h3><a href="questionsStomach">المعدة</a></h3>
 						</div>
-						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
+						<div class="text">
+الشعور بنخر أو مغص حاد أو ألم (عسر الهضم) أعلى البطن والذي ربما يتفاقم أو يتحسن بتناول الطعام الغثيان قيء شعور بامتلاء أعلى البطن بعد تناول الطعام </div>
 						<div class="read-outer">
-							<a href="#" class="read-more">Read More <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsStomach" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -321,13 +255,15 @@
 				<!-- Department Block -->
 				<div class="department-block">
 					<div class="inner-box">
+                    <img src="{{ asset('images/الأمعاء.png') }}">
+
 						<div class="upper-box">
-							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">الجلدية</a></h3>
+
+							<h3><a href="questionsIntestines">الأمعاء الدقيقة والغليظة</a></h3>
 						</div>
-						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
+						<div class="text">وجود دم في البراز أو براز يحتوي على صديد. إذا استمر الإسهال لمدة تزيد عن 2 إلى 3 أيام لدى شخص بالغ أو 24 ساعة عند الطفل. ارتفاع درجة الحرارة أعلى من 38 درجة مئوية. آلام في البطن شديدة أو مفاجئة </div>
 						<div class="read-outer">
-							<a href="#" class="read-more">Read More <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsIntestines" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -335,13 +271,16 @@
 				<!-- Department Block -->
 				<div class="department-block">
 					<div class="inner-box">
+                    <img src="{{ asset('images/الكلية.png') }}">
+
 						<div class="upper-box">
-							<div class="icon flaticon-brain"></div>
-							<h3><a href="#">الظهر</a></h3>
+
+							<h3><a href="questionsKidney">الكلية</a></h3>
 						</div>
-						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
+						<div class="text">
+يوجد عدة اختبارات لتشخيص الفشل الكلوي منها: تحليل البول: للبحث عن وجود بروتينات أو سكر في البول مما يدل على ضعف أو عجز الكلى. قياس كمية البول: إذا كان هناك نقص في كمية البول، فإنه قد يدل على وجود انسداد في المجرى البولي. عينة دم: تساعد اختبارات الدم على ملاحظة كفاءة وظائف الكُلى عن طريق نسبة اليوريا والكرياتينين</div>
 						<div class="read-outer">
-							<a href="#" class="read-more">Read More <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsKidney" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -349,13 +288,16 @@
 				<!-- Department Block -->
 				<div class="department-block">
 					<div class="inner-box">
+                    <img src="{{ asset('images/الدماغ.png') }}">
+
 						<div class="upper-box">
-							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">الدماغ</a></h3>
+
+							<h3><a href="questionsBrain">الدماغ</a></h3>
 						</div>
-						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
+						<div class="text">
+تعد أورام الدماغ من الأمراض الخطيرة التي تسبب ضررًا كبيرًا وخاصة في حال التشخيص في المراحل المتقدمة، ويمكن لأورام الدماغ أن تكون حميدة أو خبيثة وتتعدد أنواعها بحسب مكان نمو الأورام وطبيعة الخلايا السرطانية. تشمل أبرز أعراض أورام الدماغ على الآتي: الصداع الشديد والذي غالبًا ما يشتد صباحًا. التشنجات العصبية </div>
 						<div class="read-outer">
-							<a href="#" class="read-more">Read More <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsBrain" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -363,13 +305,15 @@
 				<!-- Department Block -->
 				<div class="department-block">
 					<div class="inner-box">
+                    <img src="{{ asset('images/العين.png') }}">
+
 						<div class="upper-box">
-							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">الكلية</a></h3>
+
+							<h3><a href="questionsEye">العين</a></h3>
 						</div>
-						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
+						<div class="text">قصر النظر وهو ضعف الرؤية للأشياء البعيدة، على سبيل المثال يصعب على المريض رؤية لافتات الإعلانات البعيدة على الطريق. الاستجماتيزم وهو تشوه الرؤية في جميع المسافات “البعيدة والقريبة” وينشأ بسبب عدم انتظام شكل قرنية العين </div>
 						<div class="read-outer">
-							<a href="#" class="read-more">Read More <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsEye" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -377,13 +321,16 @@
 				<!-- Department Block -->
 				<div class="department-block">
 					<div class="inner-box">
+                    <img src="{{ asset('images/البلعوم.png') }}">
+
 						<div class="upper-box">
-							<div class="icon flaticon-brain"></div>
-							<h3><a href="#">العينية</a></h3>
+
+							<h3><a href="questionsPharynx">البلعوم</a></h3>
 						</div>
-						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
+						<div class="text">
+احمرار في الحلق واللوزتين، وانتفاخهما، وظهور بقع بيضاء فيهما في حالات التهاب الحلق البكتيري. خشونة وبحة في الصوت. انتفاخ الغدد الليمفاوية في حالات الاحتقان البكتيري </div>
 						<div class="read-outer">
-							<a href="#" class="read-more">Read More <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsPharynx" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -391,16 +338,43 @@
 				<!-- Department Block -->
 				<div class="department-block">
 					<div class="inner-box">
+                    <img src="{{ asset('images/الظهر.png') }}">
+
 						<div class="upper-box">
-							<div class="icon flaticon-kidneys"></div>
-							<h3><a href="#">الأمعاء</a></h3>
+
+							<h3><a href="questionsBack">الظهر</a></h3>
 						</div>
-						<div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
+						<div class="text">تتعدد أسباب آلام الظهر، ومن أهمها التمزق والإجهاد العضلي، الذي ينتج عن تمزق صغير في عضلات أو أربطة الظهر، وخاصةً عضلات العمود الفقري القطني الموجودة في أسفل </div>
 						<div class="read-outer">
-							<a href="#" class="read-more">Read More <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsBack" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
+
+
+
+                <!-- Department Block -->
+				<div class="department-block">
+					<div class="inner-box">
+                    <img src="{{ asset('images/Ear.png') }}" >
+
+						<div class="upper-box">
+							<h3 style="text-align:left;  "><a href="questionsEar">أذنية</a></h3>
+						</div>
+						<div class="text">
+                            من علامات وأعراض الإصابة بالعدوى الفطرية للأذن الخارجية ما يلي:
+الحكة الشديدة بالأذن.
+تقشير الأذن من الداخل.
+الإنزعاج.
+كثرة صديد الأذن.
+                            </div>
+						<div class="read-outer">
+							<a href="questionsEar" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+						</div>
+					</div>
+				</div>
+
+
 
 			</div>
 
@@ -424,24 +398,26 @@
             <div class="content-column">
             	<div class="content-box">
 					<div class="sec-title">
-						<h2>Pioneering in Health.</h2>
+						<h2>رائدة في مجال الصحة.</h2>
 						<div class="separator style-two"></div>
 					</div>
 					<div class="text">
-						<p>Our main long-term goal is always achieving complex results for your dental health.  But in the process, we also keep the focus on giving you the best customer service. We're always making our dental office as safe place as possible!</p>
-						<p>Nulla auctor neque non tortor tincidunt fringilla. Nam in condimentum orci. Integer ac pellentesque sem. Nulla fringilla dui id metus viverra interdum.</p>
+						<p>
+                            هدفنا الرئيسي على المدى الطويل هو دائمًا تحقيق نتائج معقدة لصحة أسنانك. ولكن في هذه العملية، نواصل أيضًا التركيز على تقديم أفضل خدمة عملاء لك. نحن دائمًا نجعل عيادة طب الأسنان لدينا مكانًا آمنًا قدر الإمكان!
+                        </p>
+
 					</div>
 					<div class="row clearfix">
 						<div class="column col-lg-6 col-md-6 col-sm-12">
 							<ul class="list-style-one">
-								<li><span class="icon flaticon-medical-stethoscope-variant"></span>Medical Treatment</li>
-								<li><span class="icon flaticon-doctor"></span>Qualified Doctors</li>
+								<li><span class="icon flaticon-medical-stethoscope-variant"></span>العلاج الطبي</li>
+								<li><span class="icon flaticon-doctor"></span>الأطباء المؤهلين</li>
 							</ul>
 						</div>
 						<div class="column col-lg-6 col-md-6 col-sm-12">
 							<ul class="list-style-one">
-								<li><span class="icon flaticon-ambulance-side-view"></span>Emergency Help</li>
-								<li><span class="icon flaticon-medical-kit"></span>Medical Professionals</li>
+								<li><span class="icon flaticon-ambulance-side-view"></span>مساعدة الطوارئ</li>
+								<li><span class="icon flaticon-medical-kit"></span>محترفين طبيا</li>
 							</ul>
 						</div>
 					</div>
@@ -456,7 +432,7 @@
 
 			<!-- Sec Title -->
 			<div class="sec-title centered">
-				<h2>Best Health Services</h2>
+				<h2>أفضل الخدمات الصحية</h2>
 				<div class="separator"></div>
 			</div>
 
@@ -472,8 +448,8 @@
 								<div class="icon-box">
 									<span class="icon flaticon-doctor-stethoscope"></span>
 								</div>
-								<h3><a href="doctors-detail.html">Outdoor Checkup</a></h3>
-								<div class="text">We provide best service for our cline. <br> Now place take it.</div>
+								<h3><a href="doctors-detail.html">فحص خارجي  </a></h3>
+								<div class="text">نحن نقدم أفضل الخدمات ل cline  لدينا. </div>
 							</div>
 						</div>
 
@@ -483,8 +459,8 @@
 								<div class="icon-box">
 									<span class="icon flaticon-operating-room"></span>
 								</div>
-								<h3><a href="doctors-detail.html">Operation Theater</a></h3>
-								<div class="text">We provide best service for our cline. Now place take it.</div>
+								<h3><a href="doctors-detail.html">غرفة عمليات</a></h3>
+								<div class="text">نحن نقدم أفضل الخدمات لcline لدينا.</div>
 							</div>
 						</div>
 
@@ -494,8 +470,8 @@
 								<div class="icon-box">
 									<span class="icon flaticon-van"></span>
 								</div>
-								<h3><a href="doctors-detail.html">Emergency Care</a></h3>
-								<div class="text">We provide best service for our cline. <br> Now place take it.</div>
+								<h3><a href="doctors-detail.html">الرعاية في حالات الطوارئ</a></h3>
+								<div class="text">نحن نقدم أفضل الخدمات لcline لدينا.</div>
 							</div>
 						</div>
 
@@ -525,8 +501,8 @@
 								<div class="icon-box">
 									<span class="icon flaticon-water"></span>
 								</div>
-								<h3><a href="doctors-detail.html">Blood Test</a></h3>
-								<div class="text">We provide best service for our cline. <br> Now place take it.</div>
+								<h3><a href="doctors-detail.html">فحص الدم</a></h3>
+								<div class="text">نحن نقدم أفضل الخدمات لcline لدينا.</div>
 							</div>
 						</div>
 
@@ -536,8 +512,8 @@
 								<div class="icon-box">
 									<span class="icon flaticon-pharmacy"></span>
 								</div>
-								<h3><a href="doctors-detail.html">Pharmacy Support</a></h3>
-								<div class="text">We provide best service for our cline. Now place take it.</div>
+								<h3><a href="doctors-detail.html">دعم الصيدلة</a></h3>
+								<div class="text">نحن نقدم أفضل الخدمات لcline لدينا.</div>
 							</div>
 						</div>
 
@@ -547,8 +523,8 @@
 								<div class="icon-box">
 									<span class="icon flaticon-nurse"></span>
 								</div>
-								<h3><a href="doctors-detail.html">24/7 Service</a></h3>
-								<div class="text">We provide best service for our cline. <br> Now place take it.</div>
+								<h3><a href="doctors-detail.html">خدمة 24/7</a></h3>
+								<div class="text">نحن نقدم أفضل الخدمات لcline لدينا.</div>
 							</div>
 						</div>
 
@@ -575,7 +551,7 @@
 								<div class="count-outer count-box">
 									<span class="count-text" data-speed="2500" data-stop="2350">0</span>
 								</div>
-								<h4 class="counter-title">Satisfied Patients</h4>
+								<h4 class="counter-title">المرضى الراضين</h4>
 							</div>
 						</div>
 					</div>
@@ -587,7 +563,7 @@
 								<div class="count-outer count-box alternate">
 									+<span class="count-text" data-speed="3000" data-stop="350">0</span>
 								</div>
-								<h4 class="counter-title">Doctor’s Team</h4>
+								<h4 class="counter-title">فريق الأطباء</h4>
 							</div>
 						</div>
 					</div>
@@ -599,7 +575,7 @@
 								<div class="count-outer count-box">
 									<span class="count-text" data-speed="3000" data-stop="2150">0</span>
 								</div>
-								<h4 class="counter-title">Success Mission</h4>
+								<h4 class="counter-title">مهمة النجاح</h4>
 							</div>
 						</div>
 					</div>
@@ -611,7 +587,7 @@
 								<div class="count-outer count-box">
 									+<span class="count-text" data-speed="2500" data-stop="225">0</span>
 								</div>
-								<h4 class="counter-title">Successfull Surgeries</h4>
+								<h4 class="counter-title">العمليات الجراحية الناجحة</h4>
 							</div>
 						</div>
 					</div>
@@ -623,157 +599,6 @@
 	</section>
 	<!-- End Counter Section -->
 
-	<!-- Team Section -->
-	<section class="team-section">
-		<div class="auto-container">
-
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<h2>The Medical Specialists</h2>
-				<div class="separator"></div>
-			</div>
-
-			<div class="row clearfix">
-
-				<!-- Team Block -->
-				<div class="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="images/resource/team-1.jpg" alt="" />
-							<div class="overlay-box">
-								<ul class="social-icons">
-									<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-									<li><a href="#"><span class="fab fa-google"></span></a></li>
-									<li><a href="#"><span class="fab fa-twitter"></span></a></li>
-									<li><a href="#"><span class="fab fa-skype"></span></a></li>
-									<li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-								</ul>
-								<a href="#" class="appointment">Make Appointment</a>
-							</div>
-						</div>
-						<div class="lower-content">
-							<h3><a href="#">Dr. Andria Jonea</a></h3>
-							<div class="designation">Cancer Specialist</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Team Block -->
-				<div class="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="250ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="images/resource/team-2.jpg" alt="" />
-							<div class="overlay-box">
-								<ul class="social-icons">
-									<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-									<li><a href="#"><span class="fab fa-google"></span></a></li>
-									<li><a href="#"><span class="fab fa-twitter"></span></a></li>
-									<li><a href="#"><span class="fab fa-skype"></span></a></li>
-									<li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-								</ul>
-								<a href="#" class="appointment">Make Appointment</a>
-							</div>
-						</div>
-						<div class="lower-content">
-							<h3><a href="#">Dr. Robet Samith</a></h3>
-							<div class="designation">Heart Surgen</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Team Block -->
-				<div class="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="images/resource/team-3.jpg" alt="" />
-							<div class="overlay-box">
-								<ul class="social-icons">
-									<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-									<li><a href="#"><span class="fab fa-google"></span></a></li>
-									<li><a href="#"><span class="fab fa-twitter"></span></a></li>
-									<li><a href="#"><span class="fab fa-skype"></span></a></li>
-									<li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-								</ul>
-								<a href="#" class="appointment">Make Appointment</a>
-							</div>
-						</div>
-						<div class="lower-content">
-							<h3><a href="#">Dr. Sharon Laura</a></h3>
-							<div class="designation">Family Physician</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Team Block -->
-				<div class="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="images/resource/team-4.jpg" alt="" />
-							<div class="overlay-box">
-								<ul class="social-icons">
-									<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-									<li><a href="#"><span class="fab fa-google"></span></a></li>
-									<li><a href="#"><span class="fab fa-twitter"></span></a></li>
-									<li><a href="#"><span class="fab fa-skype"></span></a></li>
-									<li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-								</ul>
-								<a href="#" class="appointment">Make Appointment</a>
-							</div>
-						</div>
-						<div class="lower-content">
-							<h3><a href="#">Dr. Alex Furgosen</a></h3>
-							<div class="designation">Ortho Specialist</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-	</section>
-	<!-- End Team Section -->
-
-	<!-- FullWidth Section -->
-	<section class="fullwidth-section">
-		<div class="outer-container">
-			<div class="clearfix">
-
-				<!-- Left Column -->
-				<div class="left-column" style="background-image: url(images/background/1.jpg)">
-					<div class="inner-column clearfix">
-						<div class="content">
-							<div class="icon-box">
-								<span class="icon flaticon-contract-1"></span>
-							</div>
-							<div class="title">Need a Doctor for Check-up?</div>
-							<h2>JUST MAKE AN APPOINTMENT</h2>
-							<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Get an Appointment</span></a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Right Column -->
-				<div class="right-column">
-					<div class="inner-column">
-
-						<!-- Upper Box -->
-						<div class="upper-box">
-							<div class="icon flaticon-alarm-clock"></div>
-							<h3>Opening Hours</h3>
-						</div>
-						<ul class="time-list">
-							<li class="clearfix"><span class="left-span pull-left">Monday - Friday</span><span class="right-span pull-right">08:00am - 10:00pm</span></li>
-							<li class="clearfix"><span class="left-span pull-left">Saturday - Sunday</span><span class="right-span pull-right">09:00am - 06:00pm</span></li>
-							<li class="clearfix"><span class="left-span pull-left">Emergency Services</span><span class="right-span pull-right">24 hours Open</span></li>
-						</ul>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-	<!-- End FullWidth Section -->
 
 	<!-- Testimonial Section -->
     <section class="testimonial-section">
@@ -967,35 +792,7 @@
 	</section>
 	<!-- End News Section -->
 
-	<!-- Newsletter Section -->
-	<section class="newsletter-section">
-		<div class="auto-container">
-			<div class="row clearfix">
-				<!-- Title Column -->
-				<div class="title-column col-lg-6 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<h2>Subscribe Our Newsletter</h2>
-						<div class="text">To receive email releases, simply provide us with your email address below.</div>
-					</div>
-				</div>
-				<!-- Form Column -->
-				<div class="form-column col-lg-6 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<!-- Subscribe Form -->
-						<div class="subscribe-form">
-							<form method="post" action="contact.html">
-								<div class="form-group">
-									<input type="email" name="email" value="" placeholder="Your Email Address" required>
-									<button type="submit" class="theme-btn btn-style-two"><span class="txt">subscribe</span></button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Newsletter Section -->
+	
 
 	<!--Main Footer-->
     <footer class="main-footer" style="background-image: url(images/background/2.jpg)">
@@ -1014,7 +811,10 @@
 									<div class="logo">
                                     	<a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
                                     </div>
-                                    <div class="text">Meditech is a library of health and medical templates with predefined web elements which helps you to build your medical templates best site Provide Comprehensive Quality Care About Medical Care Health Suspendisse metus turpis.</div>
+                                    <div class="text">
+                                        My Doctor عبارة عن مكتبة للقوالب الصحية والطبية تحتوي على عناصر ويب محددة مسبقًا والتي تساعدك على إنشاء أفضل موقع للقوالب الطبية الخاصة بك وتوفير رعاية شاملة عالية الجودة حول الرعاية الطبية
+
+                                    </div>
 									<ul class="social-icons">
 										<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
 										<li><a href="#"><span class="fab fa-google"></span></a></li>
@@ -1110,7 +910,7 @@
 		<!-- Footer Bottom -->
 		<div class="footer-bottom">
 			<div class="auto-container">
-				<div class="copyright">MediTech Helth Care &copy; All Rights Reserved By Expertthemes</div>
+				<div class="copyright">MyDoctor Helth Care &copy; All Rights Reserved By Lama</div>
 			</div>
 		</div>
 
