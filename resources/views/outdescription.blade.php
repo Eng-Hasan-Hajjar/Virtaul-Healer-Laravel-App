@@ -84,6 +84,7 @@
                         <section >
                             <p>{{$description}}</p>
                             <p>أتمنى لك صحة جيدة </p>
+                            {{$diagnosis}}
 
                         </div>
                         </section>

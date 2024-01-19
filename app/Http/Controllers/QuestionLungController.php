@@ -17,8 +17,34 @@ class QuestionLungController extends Controller
     public function submitLung(Request $request)
     {
           $description = "";
-          // قم بتلقي البيانات من النموذج
+
             $answers = $request->all();
+            $yesAnswersCount = 0;
+            $noAnswersCount = 0;
+               // تحديد عدد الإجابات "نعم"
+            foreach ($answers as $answer) {
+                if ($answer == 'نعم') {
+                    $yesAnswersCount++;
+                }
+                else {
+                    $noAnswersCount++;
+                }
+    }
+
+    // قاعدة بسيطة: إذا كانت هناك 3 إجابات "نعم" أو أكثر، فقد تكون هناك حالة معينة
+    if ($yesAnswersCount >= 2) {
+        if ($yesAnswersCount >= 3) {
+            if ($yesAnswersCount >= 4) {
+                $diagnosis = "ربما تعاني من حالة معينة شديدة. من الضروري الاتصال بالطبيب فوراً.";
+            } else {
+                $diagnosis = "قد تكون لديك مشكلة في الجهاز التنفسي. يُفضل استشارة الطبيب.";
+            }
+        }else{
+        $diagnosis = "قد تكون لديك حالة معينة. نوصي بالتحقق من طبيبك.";
+    }
+    } else {
+        $diagnosis = "لا يبدو أن هناك حالة خطيرة. يمكنك متابعة وضعك، ولكن إذا كانت هناك أية مشاكل، يجب عليك استشارة الطبيب.";
+    }
             // استرجاع الأسئلة من قاعدة البيانات
             $questionsLung = QuestionsLung::all();
 
@@ -48,8 +74,8 @@ class QuestionLungController extends Controller
 
 
             $description = $description1.$description2.$description3.$description4.$description5.$description6;
-            
-            return view('outdescription', compact('description'));
+
+            return view('outdescription', compact('description','diagnosis'));
     }
 
 
