@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Departement;
 use Illuminate\Http\Request;
 
 class DepartementController extends Controller
@@ -11,7 +11,7 @@ class DepartementController extends Controller
      */
     public function index()
     {
-        $products = Departement::latest()->paginate(5);
+        $departements = Departement::latest()->paginate(5);
 
         return view('doctor.departements.index',compact('departements'))
                     ->with('i', (request()->input('page', 1) - 1) * 5);
@@ -22,7 +22,7 @@ class DepartementController extends Controller
      */
     public function create()
     {
-        return view('products.create');
+        return view('doctor.departements.create');
     }
 
     /**
@@ -35,52 +35,52 @@ class DepartementController extends Controller
             'detail' => 'required',
         ]);
 
-        Product::create($request->all());
+        Departement::create($request->all());
 
-        return redirect()->route('products.index')
-                        ->with('success','Product created successfully.');
+        return redirect()->route('doctor.departements.index')
+                        ->with('success','Departement created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Product $product)
+    public function show(Departement $departement)
     {
-        return view('products.show',compact('product'));
+        return view('doctor.departements.show',compact('departement'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Product $product)
+    public function edit(Departement $departement)
     {
-        return view('products.edit',compact('product'));
+        return view('doctor.departements.edit',compact('departement'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Departement $departement)
     {
         $request->validate([
             'name' => 'required',
             'detail' => 'required',
         ]);
 
-        $product->update($request->all());
+        $departement->update($request->all());
 
-        return redirect()->route('products.index')
-                        ->with('success','Product updated successfully');
+        return redirect()->route('doctor.departements.index')
+                        ->with('success','Departement updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Departement $departement)
     {
-        $product->delete();
+        $departement->delete();
 
-        return redirect()->route('products.index')
-                        ->with('success','Product deleted successfully');
+        return redirect()->route('doctor.departements.index')
+                        ->with('success','Departement deleted successfully');
     }
 }
