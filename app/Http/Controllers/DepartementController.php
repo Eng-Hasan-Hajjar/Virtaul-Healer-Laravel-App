@@ -32,12 +32,12 @@ class DepartementController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'detail' => 'required',
+
         ]);
 
         Departement::create($request->all());
 
-        return redirect()->route('doctor.departements.index')
+        return redirect()->route('departements.index')
                         ->with('success','Departement created successfully.');
     }
 
@@ -64,12 +64,12 @@ class DepartementController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'detail' => 'required',
+
         ]);
 
         $departement->update($request->all());
 
-        return redirect()->route('doctor.departements.index')
+        return redirect()->route('departements.index')
                         ->with('success','Departement updated successfully');
     }
 
@@ -80,7 +80,7 @@ class DepartementController extends Controller
     {
         $departement->delete();
 
-        return redirect()->route('doctor.departements.index')
+        return redirect()->route('departements.index')
                         ->with('success','Departement deleted successfully');
     }
 }
