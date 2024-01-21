@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->timestamps();
-
+            $table->integer('number')->unique()->nullable();
+            $table->string('address')->default('Aleppo')->nullable();
+            
             // تعيين ترتيب الحقول
         $table->index('user_id');
         $table->foreign('user_id')->references('id')->on('users');

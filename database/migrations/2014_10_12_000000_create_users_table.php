@@ -19,8 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->string('role')->default('patient'); // تعيين القيمة الافتراضية إلى 'patient'
-            $table->integer('number')->unique()->nullable();
-            $table->string('address')->default('Aleppo')->nullable();
+         
             $table->timestamps();
         });
     }
