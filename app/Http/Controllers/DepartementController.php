@@ -11,7 +11,10 @@ class DepartementController extends Controller
      */
     public function index()
     {
-        //
+        $products = Departement::latest()->paginate(5);
+
+        return view('doctor.departements.index',compact('departements'))
+                    ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
@@ -19,7 +22,7 @@ class DepartementController extends Controller
      */
     public function create()
     {
-        //
+        return view('products.create');
     }
 
     /**
@@ -27,23 +30,31 @@ class DepartementController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'detail' => 'required',
+        ]);
+
+        Product::create($request->all());
+
+        return redirect()->route('products.index')
+                        ->with('success','Product created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Product $product)
     {
-        //
+        return view('products.show',compact('product'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Product $product)
     {
-        //
+        return view('products.edit',compact('product'));
     }
 
     /**
@@ -51,7 +62,15 @@ class DepartementController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'detail' => 'required',
+        ]);
+
+        $product->update($request->all());
+
+        return redirect()->route('products.index')
+                        ->with('success','Product updated successfully');
     }
 
     /**
@@ -59,6 +78,9 @@ class DepartementController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $product->delete();
+
+        return redirect()->route('products.index')
+                        ->with('success','Product deleted successfully');
     }
 }
