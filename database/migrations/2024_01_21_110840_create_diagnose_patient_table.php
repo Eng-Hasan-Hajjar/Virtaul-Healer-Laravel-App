@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('diagnose_patient', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBiginteger('diagnose_id');
+         $table->unsignedBiginteger('patient_id');
+
+
+      $table->foreign('diagnose_id')->references('id')
+                 ->on('diagnoses')->onDelete('cascade');
+       $table->foreign('patient_id')->references('id')
+                ->on('patients')->onDelete('cascade');
+
             $table->timestamps();
         });
     }
