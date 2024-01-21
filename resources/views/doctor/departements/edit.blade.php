@@ -26,6 +26,8 @@
             </h2>
 
         </x-slot>
+        <div class="row font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"style="font-size :18px ;color:aqua;text-align:center">
+
 
         <div class="row">
             <div class="col-lg-12 margin-tb">
@@ -60,7 +62,7 @@
                         <input type="text" name="name" value="{{ $departement->name }}" class="form-control" placeholder="Name">
                     </div>
                 </div>
-               
+
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
@@ -69,7 +71,7 @@
         </form>
 
 
-
+        </div>
 
 
     </x-app-layout>
