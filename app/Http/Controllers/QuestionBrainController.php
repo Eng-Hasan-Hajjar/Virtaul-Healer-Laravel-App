@@ -61,11 +61,21 @@ class QuestionBrainController extends Controller
 
 
     /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        $questionsBrains = QuestionsBrain::latest()->paginate(5);
+
+        return view('doctor.crudquestions.brain.index',compact('questionsBrains'))
+                    ->with('i', (request()->input('page', 1) - 1) * 2);
+    }
+    /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        //
+        return view('doctor.crudquestions.brain.create');
     }
 
     /**
@@ -73,38 +83,57 @@ class QuestionBrainController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'question' => 'required',
+
+        ]);
+
+        QuestionsBrain::create($request->all());
+
+        return redirect()->route('questionsBrain.index')
+                        ->with('success','questionsBrains created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(QuestionsBrain $questionsBrain)
     {
-        //
+        return view('doctor.crudquestions.brain.show',compact('questionsBrain'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(QuestionsBrain $questionsBrain)
     {
-        //
+        return view('doctor.crudquestions.brain.edit',compact('questionsBrain'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, QuestionsBrain $questionsBrain)
     {
-        //
+        $request->validate([
+            'question' => 'required',
+
+        ]);
+
+        $questionsBrain->update($request->all());
+
+        return redirect()->route('questionsBrain.index')
+                        ->with('success','questionsBrain updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(QuestionsBrain $questionsBrain)
     {
-        //
+        $questionsBrain->delete();
+
+        return redirect()->route('questionsBrain.index')
+                        ->with('success','questionsBrain deleted successfully');
     }
 }

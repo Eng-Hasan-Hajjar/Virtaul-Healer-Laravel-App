@@ -10,8 +10,8 @@
 <body>
     <div class="center-container">
         <div class="links-container">
-            <a href="questionsBack">رابط 1</a>
-            <a href="#">رابط 2</a>
+            <a href="questionsBack"> أسئلة الظهر</a>
+            <a href="questionsBrain"> أسئلة الدماغ</a>
             <a href="#">رابط 3</a>
 
         </div>

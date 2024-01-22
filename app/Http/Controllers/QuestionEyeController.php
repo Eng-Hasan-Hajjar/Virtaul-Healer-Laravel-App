@@ -52,11 +52,21 @@ class QuestionEyeController extends Controller
             echo $description;
     }
     /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        $questionsBacks = QuestionsBack::latest()->paginate(5);
+
+        return view('doctor.crudquestions.back.index',compact('questionsBacks'))
+                    ->with('i', (request()->input('page', 1) - 1) * 2);
+    }
+    /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        //
+        return view('doctor.crudquestions.back.create');
     }
 
     /**
@@ -64,38 +74,57 @@ class QuestionEyeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'question' => 'required',
+
+        ]);
+
+        QuestionsBack::create($request->all());
+
+        return redirect()->route('questionsBack.index')
+                        ->with('success','questionsBack created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(QuestionsBack $questionsBack)
     {
-        //
+        return view('doctor.crudquestions.back.show',compact('questionsBack'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(QuestionsBack $questionsBack)
     {
-        //
+        return view('doctor.crudquestions.back.edit',compact('questionsBack'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, QuestionsBack $questionsBack)
     {
-        //
+        $request->validate([
+            'question' => 'required',
+
+        ]);
+
+        $questionsBack->update($request->all());
+
+        return redirect()->route('questionsBack.index')
+                        ->with('success','questionsBack updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(QuestionsBack $questionsBack)
     {
-        //
+        $questionsBack->delete();
+
+        return redirect()->route('questionsBack.index')
+                        ->with('success','questionsBack deleted successfully');
     }
 }
