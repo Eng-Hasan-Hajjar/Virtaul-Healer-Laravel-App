@@ -36,7 +36,7 @@
                     <h2>إضافة جديد </h2>
                 </div>
                 <div class="pull-right">
-                    <a class="custom-btn btn-6" href="{{ route('questionsBack.index') }}"> رجوع</a>
+                    <a class="custom-btn btn-6" href="{{ route('questionsStomach.index') }}"> رجوع</a>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
             </div>
         @endif
 
-        <form action="{{ route('questionsBack.store') }}" method="POST" style="margin:50px">
+        <form action="{{ route('questionsStomach.store') }}" method="POST" style="margin:50px">
             @csrf
 
              <div class="row">
