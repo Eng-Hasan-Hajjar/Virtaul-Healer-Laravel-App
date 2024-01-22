@@ -58,7 +58,7 @@ class QuestionBackController extends Controller
         $questionsBacks = QuestionsBack::latest()->paginate(5);
 
         return view('doctor.crudquestions.back.index',compact('questionsBacks'))
-                    ->with('i', (request()->input('page', 1) - 1) * 5);
+                    ->with('i', (request()->input('page', 1) - 1) * 2);
     }
     /**
      * Show the form for creating a new resource.
@@ -74,14 +74,14 @@ class QuestionBackController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required',
+            'question' => 'required',
 
         ]);
 
         QuestionsBack::create($request->all());
 
-        return redirect()->route('departements.index')
-                        ->with('success','Departement created successfully.');
+        return redirect()->route('questionsBack.index')
+                        ->with('success','questionsBack created successfully.');
     }
 
     /**
@@ -103,27 +103,27 @@ class QuestionBackController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, QuestionsBack $departement)
+    public function update(Request $request, QuestionsBack $questionsBack)
     {
         $request->validate([
-            'name' => 'required',
+            'question' => 'required',
 
         ]);
 
-        $departement->update($request->all());
+        $questionsBack->update($request->all());
 
-        return redirect()->route('departements.index')
-                        ->with('success','Departement updated successfully');
+        return redirect()->route('questionsBack.index')
+                        ->with('success','questionsBack updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(QuestionsBack $departement)
+    public function destroy(QuestionsBack $questionsBack)
     {
-        $departement->delete();
+        $questionsBack->delete();
 
-        return redirect()->route('departements.index')
-                        ->with('success','Departement deleted successfully');
+        return redirect()->route('questionsBack.index')
+                        ->with('success','questionsBack deleted successfully');
     }
 }

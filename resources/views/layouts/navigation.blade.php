@@ -32,7 +32,7 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('departements.index')" :active="request()->routeIs('departements.index')">
+                    <x-nav-link :href="route('allquestions')" :active="request()->routeIs('allquestions')">
                         {{ __('التحكم بالأسئلة الطبية') }}
                     </x-nav-link>
                 </div>

@@ -60,6 +60,9 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
+    Route::get('/allquestions', [QuestionBackController::class,function(){
+        return view('doctor.crudquestions.allquestions');
+    }])->name('allquestions');
     Route::get('/departments', [DepartmentController::class, 'departmentswiper'])->name('departments.departmentswiper');
 
     Route::get('/questionsBack', [QuestionBackController::class, 'index2'])->name('questionsBack.index2');
