@@ -15,8 +15,14 @@
             <a href="questionsEar"> أسئلةالأذن</a>
             <a href="questionsEye"> أسئلةالعين</a>
             <a href="questionsHeart"> أسئلةالقلب</a>
+            <a href="questionsIntestine"> أسئلةالأمعاء</a>
             <a href="questionsEar"> أسئلةالأذن</a>
-            <a href="questionsEar"> أسئلةالأذن</a>
+            <a href="questionsIntestine"> أسئلةالأمعاء</a>
+            <a href="questionsIntestine"> أسئلةالأمعاء</a>
+            <a href="questionsIntestine"> أسئلةالأمعاء</a>
+            <a href="questionsIntestine"> أسئلةالأمعاء</a>
+            <a href="questionsIntestine"> أسئلةالأمعاء</a>
+            <a href="questionsIntestine"> أسئلةالأمعاء</a>
 
         </div>
     </div>

@@ -109,7 +109,7 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('questionsEye', QuestionEyeController::class);
 
-    Route::resource('questionsIntestines', QuestionIntestinesController::class);
+    Route::resource('questionsIntestine', QuestionIntestinesController::class);
 
     Route::resource('questionsKidney', QuestionKidneyController::class);
 

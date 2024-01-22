@@ -56,9 +56,9 @@ class QuestionIntestinesController extends Controller
      */
     public function index()
     {
-        $questionsBacks = QuestionsBack::latest()->paginate(5);
+        $questionsIntestines = QuestionsIntestines::latest()->paginate(5);
 
-        return view('doctor.crudquestions.back.index',compact('questionsBacks'))
+        return view('doctor.crudquestions.intestines.index',compact('questionsIntestines'))
                     ->with('i', (request()->input('page', 1) - 1) * 2);
     }
     /**
@@ -66,7 +66,7 @@ class QuestionIntestinesController extends Controller
      */
     public function create()
     {
-        return view('doctor.crudquestions.back.create');
+        return view('doctor.crudquestions.intestines.create');
     }
 
     /**
@@ -79,52 +79,52 @@ class QuestionIntestinesController extends Controller
 
         ]);
 
-        QuestionsBack::create($request->all());
+        QuestionsIntestines::create($request->all());
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack created successfully.');
+        return redirect()->route('questionsIntestine.index')
+                        ->with('success','questionsIntestine created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(QuestionsBack $questionsBack)
+    public function show(QuestionsIntestines $questionsIntestine)
     {
-        return view('doctor.crudquestions.back.show',compact('questionsBack'));
+        return view('doctor.crudquestions.intestines.show',compact('questionsIntestine'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(QuestionsBack $questionsBack)
+    public function edit(QuestionsIntestines $questionsIntestine)
     {
-        return view('doctor.crudquestions.back.edit',compact('questionsBack'));
+        return view('doctor.crudquestions.intestines.edit',compact('questionsIntestine'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, QuestionsBack $questionsBack)
+    public function update(Request $request, QuestionsIntestines $questionsIntestine)
     {
         $request->validate([
             'question' => 'required',
 
         ]);
 
-        $questionsBack->update($request->all());
+        $questionsIntestine->update($request->all());
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack updated successfully');
+        return redirect()->route('questionsIntestine.index')
+                        ->with('success','questionsIntestine updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(QuestionsBack $questionsBack)
+    public function destroy(QuestionsIntestines $questionsIntestine)
     {
-        $questionsBack->delete();
+        $questionsIntestine->delete();
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack deleted successfully');
+        return redirect()->route('questionsIntestine.index')
+                        ->with('success','questionsIntestine deleted successfully');
     }
 }
