@@ -38,7 +38,7 @@
                     <h2> التفاصيل </h2>
                 </div>
                 <div class="pull-right">
-                    <a class="custom-btn btn-6" href="{{ route('questionsBack.index') }}"> رجوع</a>
+                    <a class="custom-btn btn-6" href="{{ route('questionsKidney.index') }}"> رجوع</a>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>السؤال : </strong>
-                    {{ $questionsBack->question }}
+                    {{ $questionsKidney->question }}
                 </div>
             </div>
 
