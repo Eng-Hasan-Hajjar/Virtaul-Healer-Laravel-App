@@ -84,9 +84,9 @@ class QuestionLungController extends Controller
      */
     public function index()
     {
-        $questionsBacks = QuestionsBack::latest()->paginate(5);
+        $questionsLungs = QuestionsLung::latest()->paginate(5);
 
-        return view('doctor.crudquestions.back.index',compact('questionsBacks'))
+        return view('doctor.crudquestions.lung.index',compact('questionsLungs'))
                     ->with('i', (request()->input('page', 1) - 1) * 2);
     }
     /**
@@ -94,7 +94,7 @@ class QuestionLungController extends Controller
      */
     public function create()
     {
-        return view('doctor.crudquestions.back.create');
+        return view('doctor.crudquestions.lung.create');
     }
 
     /**
@@ -107,52 +107,52 @@ class QuestionLungController extends Controller
 
         ]);
 
-        QuestionsBack::create($request->all());
+        QuestionsLung::create($request->all());
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack created successfully.');
+        return redirect()->route('questionsLung.index')
+                        ->with('success','questionsLung created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(QuestionsBack $questionsBack)
+    public function show(QuestionsLung $questionsLung)
     {
-        return view('doctor.crudquestions.back.show',compact('questionsBack'));
+        return view('doctor.crudquestions.lung.show',compact('questionsLung'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(QuestionsBack $questionsBack)
+    public function edit(QuestionsLung $questionsLung)
     {
-        return view('doctor.crudquestions.back.edit',compact('questionsBack'));
+        return view('doctor.crudquestions.lung.edit',compact('questionsLung'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, QuestionsBack $questionsBack)
+    public function update(Request $request, QuestionsLung $questionsLung)
     {
         $request->validate([
             'question' => 'required',
 
         ]);
 
-        $questionsBack->update($request->all());
+        $questionsLung->update($request->all());
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack updated successfully');
+        return redirect()->route('questionsLung.index')
+                        ->with('success','questionsLung updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(QuestionsBack $questionsBack)
+    public function destroy(QuestionsLung $questionsLung)
     {
-        $questionsBack->delete();
+        $questionsLung->delete();
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack deleted successfully');
+        return redirect()->route('questionsLung.index')
+                        ->with('success','questionsLung deleted successfully');
     }
 }

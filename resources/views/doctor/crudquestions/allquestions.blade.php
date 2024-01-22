@@ -17,7 +17,7 @@
             <a href="questionsHeart"> أسئلةالقلب</a>
             <a href="questionsIntestine"> أسئلةالأمعاء</a>
             <a href="questionsKidney"> أسئلةالكلية</a>
-            <a href="questionsIntestine"> أسئلةالأمعاء</a>
+            <a href="questionsLung"> أسئلةالرئة</a>
             <a href="questionsIntestine"> أسئلةالأمعاء</a>
             <a href="questionsIntestine"> أسئلةالأمعاء</a>
             <a href="questionsIntestine"> أسئلةالأمعاء</a>
