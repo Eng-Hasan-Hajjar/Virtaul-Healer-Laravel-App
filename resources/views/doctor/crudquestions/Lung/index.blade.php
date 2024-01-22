@@ -33,7 +33,7 @@
           height: 70px;
         }
 
-        tr:hover {background-color: rgb(179, 79, 43);}
+        tr:hover {background-color: rgb(1, 72, 92);}
         </style>
 
     <x-app-layout>

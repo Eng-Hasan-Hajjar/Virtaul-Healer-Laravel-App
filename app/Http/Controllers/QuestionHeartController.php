@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Questionsheart;
+use App\Models\QuestionsHeart;
 use Illuminate\Http\Request;
 
 class QuestionHeartController extends Controller
@@ -12,7 +12,7 @@ class QuestionHeartController extends Controller
      */
     public function index2()
     {
-        $questionsHeart = Questionsheart::all();
+        $questionsHeart = QuestionsHeart::all();
         return view('questions.heart.index', compact('questionsHeart'));
     }
     public function submitHeart(Request $request)
@@ -56,9 +56,9 @@ class QuestionHeartController extends Controller
      */
     public function index()
     {
-        $questionsBacks = QuestionsBack::latest()->paginate(5);
+        $questionsHearts = QuestionsHeart::latest()->paginate(5);
 
-        return view('doctor.crudquestions.back.index',compact('questionsBacks'))
+        return view('doctor.crudquestions.heart.index',compact('questionsHearts'))
                     ->with('i', (request()->input('page', 1) - 1) * 2);
     }
     /**
@@ -66,7 +66,7 @@ class QuestionHeartController extends Controller
      */
     public function create()
     {
-        return view('doctor.crudquestions.back.create');
+        return view('doctor.crudquestions.heart.create');
     }
 
     /**
@@ -79,52 +79,52 @@ class QuestionHeartController extends Controller
 
         ]);
 
-        QuestionsBack::create($request->all());
+        QuestionsHeart::create($request->all());
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack created successfully.');
+        return redirect()->route('questionsHeart.index')
+                        ->with('success','questionsHeart created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(QuestionsBack $questionsBack)
+    public function show(QuestionsHeart $questionsHeart)
     {
-        return view('doctor.crudquestions.back.show',compact('questionsBack'));
+        return view('doctor.crudquestions.heart.show',compact('questionsHeart'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(QuestionsBack $questionsBack)
+    public function edit(QuestionsHeart $questionsHeart)
     {
-        return view('doctor.crudquestions.back.edit',compact('questionsBack'));
+        return view('doctor.crudquestions.heart.edit',compact('questionsHeart'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, QuestionsBack $questionsBack)
+    public function update(Request $request, QuestionsHeart $questionsHeart)
     {
         $request->validate([
             'question' => 'required',
 
         ]);
 
-        $questionsBack->update($request->all());
+        $questionsHeart->update($request->all());
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack updated successfully');
+        return redirect()->route('questionsHeart.index')
+                        ->with('success','questionsHeart updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(QuestionsBack $questionsBack)
+    public function destroy(QuestionsHeart $questionsHeart)
     {
-        $questionsBack->delete();
+        $questionsHeart->delete();
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack deleted successfully');
+        return redirect()->route('questionsHeart.index')
+                        ->with('success','questionsHeart deleted successfully');
     }
 }
