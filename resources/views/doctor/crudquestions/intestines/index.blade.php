@@ -22,19 +22,18 @@
           border: 0px solid;
 
           padding: 15px;
-  text-align: left;
-
-  color: aqua;
+          text-align: left;
+          color: aqua;
         }
         table {
            position: relative;
-             width: 75%;
+           width: 75%;
         }
-th {
-  height: 70px;
-}
+        th {
+          height: 70px;
+        }
 
-tr:hover {background-color: rgb(179, 79, 43);}
+        tr:hover {background-color: rgb(179, 79, 43);}
         </style>
 
     <x-app-layout>
@@ -53,8 +52,8 @@ tr:hover {background-color: rgb(179, 79, 43);}
                 <div class="pull-left">
                     <h2> </h2>
                 </div>
-                <div class="pull-right">
-                    <a class="custom-btn btn-3" href="{{ route('departements.create') }}"> إنشاء قسم </a>
+                <div class="pull-right" style="margin:15px">
+                    <a class="custom-btn btn-3" href="{{ route('questionsBack.create') }}"> إضافة سؤال طبي </a>
                 </div>
             </div>
         </div>
@@ -67,34 +66,34 @@ tr:hover {background-color: rgb(179, 79, 43);}
 
         <table class="table table-bordered">
             <tr>
-                <th>No</th>
-                <th>Name</th>
+                <th>الرقم</th>
+                <th>السؤال  </th>
 
-                <th width="280px">Action</th>
+                <th width="280px"> </th>
             </tr>
-            @foreach ($departements as $departement)
+            @foreach ($questionsBacks as $questionsBack)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $departement->name }}</td>
+                <td>{{ $questionsBack->question }}</td>
 
                 <td>
-                    <form action="{{ route('departements.destroy',$departement->id) }}" method="POST">
+                    <form action="{{ route('questionsBack.destroy',$questionsBack->id) }}" method="POST">
 
-                        <a class="custom-btn btn-10"  href="{{ route('departements.show',$departement->id) }}">Show</a>
+                        <a class="custom-btn btn-10"style="margin-left:16px"  href="{{ route('questionsBack.show',$questionsBack->id) }}">التفاصيل</a>
 
-                        <a class="custom-btn btn-14" href="{{ route('departements.edit',$departement->id) }}">Edit</a>
+                        <a class="custom-btn btn-14" style="margin-left:16px;margin-top:5px" href="{{ route('questionsBack.edit',$questionsBack->id) }}">التعديل</a>
 
                         @csrf
                         @method('DELETE')
 
-                        <button type="submit" class="custom-btn btn-5">Delete</button>
+                        <button type="submit" class="custom-btn btn-5">حذف</button>
                     </form>
                 </td>
             </tr>
             @endforeach
         </table>
 
-        {!! $departements->links() !!}
+        {!! $questionsBacks->links() !!}
     </div>
 
     </div>
