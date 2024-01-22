@@ -28,32 +28,31 @@
 
         </x-slot>
 
-<div class="row font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"style="font-size :18px ;color:aqua;text-align:center">
+        <div class="row font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"style="font-size :18px ;color:aqua;text-align:center">
 
 
 
-        <div class="row ">
-            <div class="col-lg-12 margin-tb">
-                <div class="pull-left" style="margin:50px" >
-                    <h2> التفاصيل </h2>
-                </div>
-                <div class="pull-right">
-                    <a class="custom-btn btn-6" href="{{ route('questionsBack.index') }}"> رجوع</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row " style="margin:50px">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>السؤال : </strong>
-                    {{ $questionsBack->question }}
+            <div class="row ">
+                <div class="col-lg-12 margin-tb">
+                    <div class="pull-left" style="margin:50px" >
+                        <h2> التفاصيل </h2>
+                    </div>
+                    <div class="pull-right">
+                        <a class="custom-btn btn-6" href="{{ route('questionsEye.index') }}"> رجوع</a>
+                    </div>
                 </div>
             </div>
 
-        </div>
+            <div class="row " style="margin:50px">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>السؤال : </strong>
+                        {{ $questionsEye->question }}
+                    </div>
+                </div>
+            </div>
 
-</div>
+        </div>
 
 
     </x-app-layout>

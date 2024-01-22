@@ -13,6 +13,10 @@
             <a href="questionsBack"> أسئلة الظهر</a>
             <a href="questionsBrain"> أسئلة الدماغ</a>
             <a href="questionsEar"> أسئلةالأذن</a>
+            <a href="questionsEye"> أسئلةالعين</a>
+            <a href="questionsEar"> أسئلةالأذن</a>
+            <a href="questionsEar"> أسئلةالأذن</a>
+            <a href="questionsEar"> أسئلةالأذن</a>
 
         </div>
     </div>

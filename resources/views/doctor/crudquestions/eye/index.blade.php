@@ -53,7 +53,7 @@
                     <h2> </h2>
                 </div>
                 <div class="pull-right" style="margin:15px">
-                    <a class="custom-btn btn-3" href="{{ route('questionsBack.create') }}"> إضافة سؤال طبي </a>
+                    <a class="custom-btn btn-3" href="{{ route('questionsEye.create') }}"> إضافة سؤال طبي </a>
                 </div>
             </div>
         </div>
@@ -71,17 +71,17 @@
 
                 <th width="280px"> </th>
             </tr>
-            @foreach ($questionsBacks as $questionsBack)
+            @foreach ($questionsEyes as $questionsEye)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $questionsBack->question }}</td>
+                <td>{{ $questionsEye->question }}</td>
 
                 <td>
-                    <form action="{{ route('questionsBack.destroy',$questionsBack->id) }}" method="POST">
+                    <form action="{{ route('questionsEye.destroy',$questionsEye->id) }}" method="POST">
 
-                        <a class="custom-btn btn-10"style="margin-left:16px"  href="{{ route('questionsBack.show',$questionsBack->id) }}">التفاصيل</a>
+                        <a class="custom-btn btn-10"style="margin-left:16px"  href="{{ route('questionsEye.show',$questionsEye->id) }}">التفاصيل</a>
 
-                        <a class="custom-btn btn-14" style="margin-left:16px;margin-top:5px" href="{{ route('questionsBack.edit',$questionsBack->id) }}">التعديل</a>
+                        <a class="custom-btn btn-14" style="margin-left:16px;margin-top:5px" href="{{ route('questionsEye.edit',$questionsEye->id) }}">التعديل</a>
 
                         @csrf
                         @method('DELETE')
@@ -93,7 +93,7 @@
             @endforeach
         </table>
 
-        {!! $questionsBacks->links() !!}
+        {!! $questionsEyes->links() !!}
     </div>
 
     </div>
