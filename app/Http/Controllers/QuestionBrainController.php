@@ -9,7 +9,7 @@ class QuestionBrainController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index2()
     {
         $questionsBrain = QuestionsBrain::all();
         return view('questions.brain.index', compact('questionsBrain'));

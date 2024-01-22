@@ -10,7 +10,7 @@ class QuestionStomachController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index2()
     {
         $questionsStomach = QuestionsStomach::all();
         return view('questions.stomach.index', compact('questionsStomach'));

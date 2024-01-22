@@ -10,7 +10,7 @@ class QuestionEyeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index2()
     {
         $questionsEye = QuestionsEye::all();
         return view('questions.eye.index', compact('questionsEye'));

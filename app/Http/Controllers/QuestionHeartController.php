@@ -10,7 +10,7 @@ class QuestionHeartController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index2()
     {
         $questionsHeart = Questionsheart::all();
         return view('questions.heart.index', compact('questionsHeart'));

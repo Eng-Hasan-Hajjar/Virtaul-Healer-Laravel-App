@@ -9,7 +9,7 @@ class QuestionPharynxController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index2()
     {
         $questionsPharynx = QuestionsPharynx::all();
         return view('questions.pharynx.index', compact('questionsPharynx'));

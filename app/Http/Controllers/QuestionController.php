@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class QuestionController extends Controller
 {
-    public function index()
+    public function index2()
     {
         $questions = Question::all();
         return view('questions.index', compact('questions'));
@@ -22,6 +22,6 @@ class QuestionController extends Controller
 
     public function submit(Request $request)
     {
-      
+
     }
 }

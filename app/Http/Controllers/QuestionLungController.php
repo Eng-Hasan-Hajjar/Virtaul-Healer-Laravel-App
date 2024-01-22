@@ -9,7 +9,7 @@ class QuestionLungController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index2()
     {
         $questionsLung = QuestionsLung::all();
         return view('questions.Lung.index', compact('questionsLung'));

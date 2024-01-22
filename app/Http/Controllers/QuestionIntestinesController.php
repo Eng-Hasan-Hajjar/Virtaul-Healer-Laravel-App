@@ -10,7 +10,7 @@ class QuestionIntestinesController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index2()
     {
         $questionsIntestines = QuestionsIntestines::all();
         return view('questions.intestines.index', compact('questionsIntestines'));

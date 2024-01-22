@@ -9,7 +9,7 @@ class QuestionKidneyController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index2()
     {
         $questionsKidney = QuestionsKidney::all();
         return view('questions.kidney.index', compact('questionsKidney'));

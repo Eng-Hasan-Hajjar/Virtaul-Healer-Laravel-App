@@ -26,6 +26,16 @@
                         {{ __('النصائح الطبية ') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('departements.index')" :active="request()->routeIs('departements.index')">
+                        {{ __('التحكم بالأقسام') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('departements.index')" :active="request()->routeIs('departements.index')">
+                        {{ __('التحكم بالأسئلة الطبية') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->

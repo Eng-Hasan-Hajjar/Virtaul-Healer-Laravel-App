@@ -10,7 +10,7 @@ class QuestionEarController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index2()
     {
         $questionsEar = QuestionsEar::all();
         return view('questions.ear.index', compact('questionsEar'));
