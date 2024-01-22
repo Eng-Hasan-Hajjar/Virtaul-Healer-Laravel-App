@@ -12,7 +12,7 @@
         <div class="links-container">
             <a href="questionsBack"> أسئلة الظهر</a>
             <a href="questionsBrain"> أسئلة الدماغ</a>
-            <a href="#">رابط 3</a>
+            <a href="questionsEar"> أسئلةالأذن</a>
 
         </div>
     </div>

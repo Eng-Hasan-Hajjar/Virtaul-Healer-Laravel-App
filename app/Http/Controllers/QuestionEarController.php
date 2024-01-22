@@ -56,9 +56,9 @@ class QuestionEarController extends Controller
      */
     public function index()
     {
-        $questionsBacks = QuestionsBack::latest()->paginate(5);
+        $questionsEars = QuestionsEar::latest()->paginate(5);
 
-        return view('doctor.crudquestions.back.index',compact('questionsBacks'))
+        return view('doctor.crudquestions.ear.index',compact('questionsEars'))
                     ->with('i', (request()->input('page', 1) - 1) * 2);
     }
     /**
@@ -66,7 +66,7 @@ class QuestionEarController extends Controller
      */
     public function create()
     {
-        return view('doctor.crudquestions.back.create');
+        return view('doctor.crudquestions.ear.create');
     }
 
     /**
@@ -79,52 +79,52 @@ class QuestionEarController extends Controller
 
         ]);
 
-        QuestionsBack::create($request->all());
+        QuestionsEar::create($request->all());
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack created successfully.');
+        return redirect()->route('questionsEar.index')
+                        ->with('success','questionsEars created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(QuestionsBack $questionsBack)
+    public function show(QuestionsEar $questionsEar)
     {
-        return view('doctor.crudquestions.back.show',compact('questionsBack'));
+        return view('doctor.crudquestions.ear.show',compact('questionsEar'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(QuestionsBack $questionsBack)
+    public function edit(QuestionsEar $questionsEar)
     {
-        return view('doctor.crudquestions.back.edit',compact('questionsBack'));
+        return view('doctor.crudquestions.ear.edit',compact('questionsEar'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, QuestionsBack $questionsBack)
+    public function update(Request $request, QuestionsEar $questionsEar)
     {
         $request->validate([
             'question' => 'required',
 
         ]);
 
-        $questionsBack->update($request->all());
+        $questionsEar->update($request->all());
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack updated successfully');
+        return redirect()->route('questionsEar.index')
+                        ->with('success','questionsEar updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(QuestionsBack $questionsBack)
+    public function destroy(QuestionsEar $questionsEar)
     {
-        $questionsBack->delete();
+        $questionsEar->delete();
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack deleted successfully');
+        return redirect()->route('questionsEar.index')
+                        ->with('success','questionsEar deleted successfully');
     }
 }
