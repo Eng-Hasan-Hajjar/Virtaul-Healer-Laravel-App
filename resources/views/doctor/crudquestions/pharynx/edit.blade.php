@@ -35,7 +35,7 @@
                     <h2>التعديل </h2>
                 </div>
                 <div class="pull-right">
-                    <a class="custom-btn btn-6" href="{{ route('questionsBack.index') }}"> رجوع</a>
+                    <a class="custom-btn btn-6" href="{{ route('questionsPharynx.index') }}"> رجوع</a>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
             </div>
         @endif
 
-        <form action="{{ route('questionsBack.update', $questionsBack->id) }}" method="POST"style="color:#000;">
+        <form action="{{ route('questionsPharynx.update', $questionsPharynx->id) }}" method="POST"style="color:#000;">
             @csrf
             @method('PUT')
 
@@ -59,7 +59,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group" style="margin:50px">
 
-                        <input type="text" name="question" value="{{ $questionsBack->question }}" class="form-control" placeholder="السؤال">
+                        <input type="text" name="question" value="{{ $questionsPharynx->question }}" class="form-control" placeholder="السؤال">
                     </div>
                 </div>
 

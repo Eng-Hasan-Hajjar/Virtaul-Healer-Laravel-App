@@ -56,9 +56,9 @@ class QuestionPharynxController extends Controller
      */
     public function index()
     {
-        $questionsBacks = QuestionsBack::latest()->paginate(5);
+        $questionsPharynxs = QuestionsPharynx::latest()->paginate(5);
 
-        return view('doctor.crudquestions.back.index',compact('questionsBacks'))
+        return view('doctor.crudquestions.pharynx.index',compact('questionsPharynxs'))
                     ->with('i', (request()->input('page', 1) - 1) * 2);
     }
     /**
@@ -66,7 +66,7 @@ class QuestionPharynxController extends Controller
      */
     public function create()
     {
-        return view('doctor.crudquestions.back.create');
+        return view('doctor.crudquestions.pharynx.create');
     }
 
     /**
@@ -79,52 +79,52 @@ class QuestionPharynxController extends Controller
 
         ]);
 
-        QuestionsBack::create($request->all());
+        QuestionsPharynx::create($request->all());
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack created successfully.');
+        return redirect()->route('questionsPharynx.index')
+                        ->with('success','questionsPharynx created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(QuestionsBack $questionsBack)
+    public function show(QuestionsPharynx $questionsPharynx)
     {
-        return view('doctor.crudquestions.back.show',compact('questionsBack'));
+        return view('doctor.crudquestions.pharynx.show',compact('questionsPharynx'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(QuestionsBack $questionsBack)
+    public function edit(QuestionsPharynx $questionsPharynx)
     {
-        return view('doctor.crudquestions.back.edit',compact('questionsBack'));
+        return view('doctor.crudquestions.pharynx.edit',compact('questionsPharynx'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, QuestionsBack $questionsBack)
+    public function update(Request $request, QuestionsPharynx $questionsPharynx)
     {
         $request->validate([
             'question' => 'required',
 
         ]);
 
-        $questionsBack->update($request->all());
+        $questionsPharynx->update($request->all());
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack updated successfully');
+        return redirect()->route('questionsPharynx.index')
+                        ->with('success','questionsPharynx updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(QuestionsBack $questionsBack)
+    public function destroy(QuestionsPharynx $questionsPharynx)
     {
-        $questionsBack->delete();
+        $questionsPharynx->delete();
 
-        return redirect()->route('questionsBack.index')
-                        ->with('success','questionsBack deleted successfully');
+        return redirect()->route('questionsPharynx.index')
+                        ->with('success','questionsPharynx deleted successfully');
     }
 }
