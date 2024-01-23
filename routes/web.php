@@ -19,6 +19,8 @@ use App\Http\Controllers\DepartmentController;
 
 
 use App\Http\Controllers\DepartementController;
+use App\Http\Controllers\DiagnosisController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -57,6 +59,7 @@ require __DIR__.'/auth.php';
 
 Route::middleware('auth')->group(function () {
     Route::resource('departements', DepartementController::class);
+    Route::resource('diagnosis', DiagnosisController::class);
 });
 
 Route::middleware('auth')->group(function () {
@@ -118,7 +121,5 @@ Route::middleware('auth')->group(function () {
     Route::resource('questionsStomach', QuestionStomachController::class);
 
     Route::resource('questionsEar', QuestionEarController::class);
-
-
 
 });

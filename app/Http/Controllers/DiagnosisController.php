@@ -3,39 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Diagnosis;
 
 class DiagnosisController extends Controller
 {
-    public function index()
-    {
-        // عرض نموذج تشخيص
-        return view('diagnosis.index');
-    }
 
-    public function processDiagnosis(Request $request)
-    {
-        // قم بتنفيذ خوارزمية التشخيص هنا باستخدام البيانات المدخلة
-        // ...
-
-        // عند الانتهاء، يمكنك توجيه المستخدم إلى صفحة النتائج
-        return redirect()->route('results');
-    }
      /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $questionsLungs = QuestionsLung::latest()->paginate(5);
-
-        return view('doctor.crudquestions.lung.index',compact('questionsLungs'))
-                    ->with('i', (request()->input('page', 1) - 1) * 2);
+        $diagnosises = Diagnosis::latest()->paginate(5);
+        return view('diagnosis.index',compact('diagnosises'))
+                    ->with('i', (request()->input('page', 1) - 1) * 5);
     }
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        return view('doctor.crudquestions.lung.create');
+        return view('diagnosis.create');
     }
 
     /**
@@ -44,56 +31,51 @@ class DiagnosisController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'question' => 'required',
-
+            'description' => 'required',
         ]);
-
-        QuestionsLung::create($request->all());
-
-        return redirect()->route('questionsLung.index')
-                        ->with('success','questionsLung created successfully.');
+        Diagnosis::create($request->all());
+        return redirect()->route('diagnosis.index')
+                        ->with('success','diagnosis created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(QuestionsLung $questionsLung)
+    public function show(Diagnosis $diagnosis)
     {
-        return view('doctor.crudquestions.lung.show',compact('questionsLung'));
+        return view('diagnosis.show',compact('diagnosis'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(QuestionsLung $questionsLung)
+    public function edit(Diagnosis $diagnosis)
     {
-        return view('doctor.crudquestions.lung.edit',compact('questionsLung'));
+
+        return view('diagnosis.edit',compact('diagnosis'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, QuestionsLung $questionsLung)
+    public function update(Request $request, Diagnosis $diagnosis)
     {
+        dd($diagnosis);
         $request->validate([
-            'question' => 'required',
-
+            'description' => 'required',
         ]);
-
-        $questionsLung->update($request->all());
-
-        return redirect()->route('questionsLung.index')
-                        ->with('success','questionsLung updated successfully');
+        $diagnosis->update($request->all());
+        return redirect()->route('diagnosis.index')
+                        ->with('success','diagnosis updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(QuestionsLung $questionsLung)
+    public function destroy(Diagnosis $diagnosis)
     {
-        $questionsLung->delete();
-
-        return redirect()->route('questionsLung.index')
-                        ->with('success','questionsLung deleted successfully');
+        $diagnosis->delete();
+        return redirect()->route('diagnosis.index')
+                        ->with('success','diagnosis deleted successfully');
     }
 }
