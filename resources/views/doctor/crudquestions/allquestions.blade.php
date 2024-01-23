@@ -1,6 +1,7 @@
 
 <x-app-layout>
     <x-slot name="header">
+        <img src="{asset('/gifs/1.gif')}">
         <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :32px ;color:aqua;text-align:right">
             {{ __('طبيبك الافتراضي') }}
         </h1>
@@ -20,8 +21,6 @@
             <a href="questionsLung"> أسئلةالرئة</a>
             <a href="questionsPharynx"> أسئلة البلعوم</a>
             <a href="questionsStomach"> أسئلة المعدة</a>
-
-
         </div>
     </div>
 </body>

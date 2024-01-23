@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Diagnosis extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'name',
         'description',
@@ -21,4 +23,12 @@ class Diagnosis extends Model
     {
         return $this->belongsToMany(Doctor::class);
     }
+       /**
+     * Get the departement that owns the comment.
+     */
+    public function departement(): BelongsTo
+    {
+        return $this->belongsTo(Departement::class);
+    }
+
 }
