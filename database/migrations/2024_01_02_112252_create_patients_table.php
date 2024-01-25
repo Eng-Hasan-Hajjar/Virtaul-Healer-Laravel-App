@@ -13,14 +13,22 @@ return new class extends Migration
     {
         Schema::create('patients', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->timestamps();
+
+            $table->integer('age')->default('18')->nullable();
+            $table->string('gender')->default('male')->nullable();
+            $table->string('blood_type')->default('o+')->nullable();
+            $table->string('genetic_disease')->default('')->nullable();
+            $table->string('chronic_diseases')->default('')->nullable();
+            $table->string('previous_surgery')->default('')->nullable();
             $table->integer('number')->unique()->nullable();
             $table->string('address')->default('Aleppo')->nullable();
-            
+
+            $table->unsignedBigInteger('user_id');
+            $table->timestamps();
+
             // تعيين ترتيب الحقول
-        $table->index('user_id');
-        $table->foreign('user_id')->references('id')->on('users');
+            $table->index('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
 
         });
     }

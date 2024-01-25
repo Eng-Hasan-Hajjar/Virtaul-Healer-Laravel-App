@@ -10,12 +10,25 @@ class Patient extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name',
-        'email',
+        'age',
+        'gender',
+        /*
+            زمرة الدم .
+            الامراض الوراثية
+            الامراض المزمنة
+            عملية جراحية سابقة
+        */
+        'blood_type',
+        'genetic_disease',
+        'chronic_diseases',
+        'previous_surgery',
+        'number',
+        'address',
         'diagnosis_id',
         'user_id',
-        // أي متغيرات أخرى
     ];
+
+
 
 
     public function diagnosis()

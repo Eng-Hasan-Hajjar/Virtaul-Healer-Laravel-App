@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
         $this->call(QLungSeeder::class);
         $this->call(QPharynxesSeeder::class);
         $this->call(QStomachesSeeder::class);
+        $this->call(DiagnosisSeeder::class);
 
          \App\Models\Question::create([
            'question' => 'هل تعاني من أي حالات صحية سابقة؟',
