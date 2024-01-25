@@ -20,6 +20,7 @@ use App\Http\Controllers\DepartmentController;
 
 use App\Http\Controllers\DepartementController;
 use App\Http\Controllers\DiagnosisController;
+use App\Http\Controllers\PatientController;
 
 
 /*
@@ -123,3 +124,14 @@ Route::middleware('auth')->group(function () {
     Route::resource('questionsEar', QuestionEarController::class);
 
 });
+
+
+
+/////////////////////////////////////---patients
+
+Route::middleware('auth')->group(function () {
+    Route::resource('patients', PatientController::class);
+    // رابط الواجهة الخاصة بإدخال بيانات المريض
+    Route::get('/patient/input', [PatientController::class, 'input'])->name('patient.input');
+});
+

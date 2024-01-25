@@ -13,13 +13,15 @@ return new class extends Migration
     {
         Schema::create('patients', function (Blueprint $table) {
             $table->id();
-
+            // معلومات الشخصية
             $table->integer('age')->default('18')->nullable();
             $table->string('gender')->default('male')->nullable();
             $table->string('blood_type')->default('o+')->nullable();
+            // التاريخ الطبي
             $table->string('genetic_disease')->default('')->nullable();
             $table->string('chronic_diseases')->default('')->nullable();
             $table->string('previous_surgery')->default('')->nullable();
+             // معلومات الاتصال
             $table->integer('number')->unique()->nullable();
             $table->string('address')->default('Aleppo')->nullable();
 

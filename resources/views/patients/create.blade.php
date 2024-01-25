@@ -1,5 +1,4 @@
 
-
     <!-- Stylesheets -->
 
     <link href="css/style.css" rel="stylesheet">
@@ -18,45 +17,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <style>
+        table, th, td {
+            border: 0px solid;
 
+            padding: 15px;
+            text-align: left;
+
+            color: aqua;
+            }
+        table {
+               position: relative;
+                width: 75%;
+            }
+        th {
+              height: 70px;
+        }
+
+        tr:hover {background-color: rgb(179, 79, 43);}
+    </style>
 
     <x-app-layout>
         <x-slot name="header">
-            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:aqua;text-align:right">
+            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:rgb(45, 197, 197);text-align:right">
                 {{ __('طبيبك الافتراضي') }}   ||  حدد قسم الألم الرئيسي
             </h2>
 
         </x-slot>
-
-<div class="row font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"style="font-size :18px ;color:aqua;text-align:center">
-
+        <div class="row font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ; color:rgb(73, 228, 228); text-align:center">
 
 
-        <div class="row ">
+
+        <div class="row">
             <div class="col-lg-12 margin-tb">
-                <div class="pull-left" >
-                    <h2> Show departement</h2>
+                <div class="pull-left">
+                    <h2>إضافة جديد</h2>
                 </div>
-                <div class="pull-right">
-                    <a class="btn btn-primary" href="{{ route('departements.index') }}"> Back</a>
+
+                <div class="pull-right"style="margin:20px">
+                    <a class="custom-btn btn-6" href="{{ route('patients.index') }}"> رجوع</a>
                 </div>
             </div>
         </div>
 
-        <div class="row ">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Name:</strong>
-                    {{ $departement->name }}
-                </div>
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
             </div>
+        @endif
+
+        <form action="{{ route('patients.store') }}" method="POST">
+            @csrf
+
+
+            <table>
+              <tbody>
+                    <div class="row">
+                                        <!-- معلومات الشخصية -->
+                        <tr>
+                            <div class="form-group">
+
+                                <td>  <label for="age">العمر:</label></td>
+                                    <td>   <input type="number" class="form-control" id="age" name="age" placeholder="العمر" >
+                                    </td>
+                                 </div>
+                       </tr>
+                       <tr>
+                        <div class="form-group">
+                            <td> <label for="gender">الجنس:</label></td>
+                            <td>
+                            <select class="form-control" id="gender" name="gender" >
+                                <option value="male">ذكر</option>
+                                <option value="female">أنثى</option>
+                            </select>
+                        </td>
+                        </div>
+                    </tr>
+                        <tr>
+                        <div class="form-group">
+                            <td> <label for="blood_type">زمرة الدم:</label></td>
+                            <td>
+                            <select class="form-control" id="blood_type" name="blood_type" >
+                                <option value="a+">a+</option>
+                                <option value="a-">a-</option>
+                                <option value="b+">b+</option>
+                                <option value="b-">b-</option>
+                                <option value="o+">o+</option>
+                                <option value="o-">o-</option>
+                            </select>
+                        </td>
+                        </div>
+                    </tr>
+
+                        <tr>
+                        <!-- التاريخ الطبي -->
+                        <div class="form-group">
+                            <td> <label for="genetic_disease">الأمراض الوراثية:</label></td>
+                            <td>
+
+
+                                <input type="text" class="form-control" id="genetic_disease" name="genetic_disease" placeholder="الأمراض الوراثية">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="form-group">
+                            <td> <label for="chronic_diseases">الأمراض المزمنة:</label></td>
+                            <td>
+                            <input type="text" class="form-control" id="chronic_diseases" name="chronic_diseases" placeholder="الأمراض المزمنة">
+                            </td>
+                        </div>
+                    <tr>
+                    </tr>
+                        <div class="form-group">
+                            <td> <label for="previous_surgery">عمليات جراحية سابقة:</label></td>
+                                <td> <input type="text" class="form-control" id="previous_surgery" name="previous_surgery" placeholder="عمليات جراحية سابقة"></td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <!-- معلومات الاتصال -->
+                        <div class="form-group">
+                            <td>  <label for="number">الرقم الوطني:</label></td>
+                                <td>   <input type="text" class="form-control" id="number" name="number" ></td>
+                        </div>
+                    </tr>
+
+                        <tr>
+                        <div class="form-group">
+                            <td><label for="address">العنوان:</label></td>
+                                <td> <input type="text" class="form-control" id="address" name="address" value="Aleppo"></td>
+                        </div>
+                    </tr>
+
+                        <tr>
+
+                            <td> <div class="col-xs-12 col-sm-12 col-md-12 text-center"></td>
+                                <td>    <button type="submit" class="custom-btn btn-15">انشاء  </button></td>
+                        </div>
+                    </tr>
+                    </div>
+             </tbody>
+            </table>
+        </form>
 
         </div>
-
-</div>
 
 
     </x-app-layout>
+
+
+
+
+
+
+
+
+
+
 
 
 

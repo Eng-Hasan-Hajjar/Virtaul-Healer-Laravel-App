@@ -48,6 +48,11 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
+       // return redirect(RouteServiceProvider::HOME);
+
+
+        // تحديث هذا الجزء لتوجيه المستخدم إلى واجهة إدخال بيانات المريض بعد تسجيل الدخول
+        return redirect()->route('patient.input');
+
     }
 }
