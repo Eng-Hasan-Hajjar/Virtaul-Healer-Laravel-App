@@ -72,7 +72,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/questionsBack', [QuestionBackController::class, 'index2'])->name('questionsBack.index2');
     Route::post('/questions/submitBack', [QuestionBackController::class, 'submitBack'])->name('questions.submitBack');
 
-    Route::get('/questionsLung', [QuestionLungController::class, 'index2'])->name('questionsLung.index2');
+    Route::get('/questionsLung2', [QuestionLungController::class, 'index2'])->name('questionsLung.index2');
     Route::post('/questions/submitLung', [QuestionLungController::class, 'submitLung'])->name('questions.submitLung');
 
     Route::get('/questionsHeart', [QuestionHeartController::class, 'index2'])->name('questionsHeart.index2');

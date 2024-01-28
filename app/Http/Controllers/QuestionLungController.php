@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\Diagnosis;
 use App\Models\QuestionsLung;
 use Illuminate\Http\Request;
 
@@ -17,13 +19,16 @@ class QuestionLungController extends Controller
     public function submitLung(Request $request)
     {
           $description = "";
-
+             $questionsLung = QuestionsLung::all();
+             $questionsLungcount=QuestionsLung::all()->count();
             $answers = $request->all();
+
             $yesAnswersCount = 0;
             $noAnswersCount = 0;
+
                // تحديد عدد الإجابات "نعم"
             foreach ($answers as $answer) {
-                if ($answer == 'نعم') {
+                if ($answer == 'Yes') {
                     $yesAnswersCount++;
                 }
                 else {
@@ -45,10 +50,8 @@ class QuestionLungController extends Controller
     } else {
         $diagnosis = "لا يبدو أن هناك حالة خطيرة. يمكنك متابعة وضعك، ولكن إذا كانت هناك أية مشاكل، يجب عليك استشارة الطبيب.";
     }
-            // استرجاع الأسئلة من قاعدة البيانات
-            $questionsLung = QuestionsLung::all();
 
-            // تفاصيل الأسئلة
+
             foreach ($questionsLung as $question) {
                 $answer = $answers['answer_' . $question->id] ?? 'لم يتم الإجابة';
 
@@ -73,9 +76,23 @@ class QuestionLungController extends Controller
             }
 
 
+
             $description = $description1.$description2.$description3.$description4.$description5.$description6;
 
-            return view('outdescription', compact('description','diagnosis'));
+            $diagnosisdb = Diagnosis::find(1);
+            $yesAnswersCountpercent=$yesAnswersCount * 100 / $questionsLungcount ;
+            if ($diagnosisdb) {
+
+                $id = $diagnosisdb->id;
+                $descriptiondb = $diagnosisdb->description;
+
+
+              return view('outdescription', compact('description','diagnosis','descriptiondb','yesAnswersCount','yesAnswersCountpercent'));
+            } else {
+                return redirect()->route('home')->with('error', 'لم يتم العثور على وصفة');
+            }
+
+            return view('outdescription', compact('description','diagnosis','descriptiondb','yesAnswersCount','yesAnswersCountpercent'));
     }
 
 

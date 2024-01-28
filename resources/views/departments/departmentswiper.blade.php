@@ -57,11 +57,11 @@
                         <img src="{{ asset('images/الرئة.png') }}">
                             <div class="upper-box">
 
-                                <h3><a style="text-align:left" href="questionsLung">الرئة</a></h3>
+                                <h3><a style="text-align:left" href="questionsLung2">الرئة</a></h3>
                             </div>
                             <div class="text">أمراض الرئة هي مجموعة من الحالات التي تؤثر على الرئتين وقد تؤدي إلى صعوبة في التنفس وتقليل قدرة الرئتين على نقل الأكسجين إلى الجسم. </div>
                             <div class="read-outer">
-                                <a href="questionsLung" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+                                <a href="questionsLung2" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
                             </div>
                         </div>
                     </div>
