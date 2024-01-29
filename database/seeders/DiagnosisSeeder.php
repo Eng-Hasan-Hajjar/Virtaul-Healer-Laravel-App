@@ -12,30 +12,10 @@ class DiagnosisSeeder extends Seeder
      */
     public function run(): void
     {
+            ///////////////////////////////////////////////////////////////////////////---------lung 7
         \App\Models\Diagnosis::create([
             'description' => '
-            	التهاب الشعب الهوائية المزمن (COPD)
-            حالة تتضمن تضيق الشعب الهوائية وتلف الأنسجة الرئوية، وتشمل الأمراض مثل الانسداد الرئوي المزمن والتهاب القصبات.
-
-            ',
-
-         ]);
-         \App\Models\Diagnosis::create([
-            'description' => '
-            الربو: حالة مزمنة تؤثر على الشعب الهوائية وتسبب صعوبة في التنفس نتيجة لتقلص وتورم الشعب الهوائية.
-            ',
-
-         ]);
-
-         \App\Models\Diagnosis::create([
-            'description' => '
             التليف الكيسي: مرض وراثي يؤثر على الجهاز التنفسي ويتسبب في تكوين مخاط كثيف في الرئتين.
-            ',
-
-         ]);
-         \App\Models\Diagnosis::create([
-            'description' => '
-            التهاب الرئة: حالة تتمثل في التهاب الأنسجة الرئوية نتيجة للعدوى أو الالتهابات.
             ',
 
          ]);
@@ -49,17 +29,44 @@ class DiagnosisSeeder extends Seeder
 
          \App\Models\Diagnosis::create([
             'description' => '
+            الربو: حالة مزمنة تؤثر على الشعب الهوائية وتسبب صعوبة في التنفس نتيجة لتقلص وتورم الشعب الهوائية.
+            ',
+
+         ]);
+         \App\Models\Diagnosis::create([
+            'description' => '
             مراض الانسداد الرئوي الاحتقاني: تشمل الأمراض التي تسبب انسداداً في مجرى الهواء، مثل الانسداد الرئوي المزمن.
             ',
 
          ]);
+
+        \App\Models\Diagnosis::create([
+            'description' => '
+            	التهاب الشعب الهوائية المزمن
+            حالة تتضمن تضيق الشعب الهوائية وتلف الأنسجة الرئوية، وتشمل الأمراض مثل الانسداد الرئوي المزمن والتهاب القصبات.
+
+            ',
+
+         ]);
+
+
+
+         \App\Models\Diagnosis::create([
+            'description' => '
+            التهاب الرئة: حالة تتمثل في التهاب الأنسجة الرئوية نتيجة للعدوى أو الالتهابات.
+            ',
+
+         ]);
+
+
+
          \App\Models\Diagnosis::create([
             'description' => '
             سرطان الرئة: نمو غير طبيعي للخلايا الرئوية قد يؤدي إلى وجود كتلة أو ورم في الرئة.
             ',
 
          ]);
-         ///////////////////////////////////////////////////////////////////////////---------brain
+         ///////////////////////////////////////////////////////////////////////////---------brain 5
          \App\Models\Diagnosis::create([
             'description' => '
             السكتة الدماغية (Stroke):
@@ -127,14 +134,14 @@ class DiagnosisSeeder extends Seeder
          ]);
          \App\Models\Diagnosis::create([
             'description' => '
-            التهاب البلعوم الحاد (Acute Pharyngitis):
+            التهاب البلعوم الحاد
    حالة تهيج وتورم في البلعوم، يمكن أن يكون السبب عدوى أو تهيج بسبب العوامل البيئية.
 ',
 
          ]);
          \App\Models\Diagnosis::create([
             'description' => '
-            انسداد البلعوم (Pharyngeal Obstruction):
+            انسداد البلعوم
    انسداد في مجرى البلعوم يمكن أن يكون ناتجًا عن أسباب متنوعة، مما يسبب صعوبة في البلع والتنفس.
 ',
 
@@ -173,7 +180,7 @@ class DiagnosisSeeder extends Seeder
 
          \App\Models\Diagnosis::create([
             'description' => '
-            الوردية (Rosacea):
+            الوردية 
    حالة تسبب احمرارًا في الوجه وقد تظهر عروقًا دموية صغيرة.
 ',
 
@@ -182,14 +189,14 @@ class DiagnosisSeeder extends Seeder
          //////////////////////////////////////////////////-----------------------Ear * 5
          \App\Models\Diagnosis::create([
             'description' => '
-            التهاب الأذن الوسطى (Otitis Media):
+            التهاب الأذن الوسطى
    التهاب في الأذن الوسطى يسبب ألمًا وقد يصاحبه ارتفاع في درجة الحرارة.
 ',
 
          ]);
          \App\Models\Diagnosis::create([
             'description' => '
-            الدوار (Vertigo):
+            الدوار
    حالة تسبب إحساسًا بالدوران أو عدم الاستقرار، وقد يكون ناتجًا عن مشاكل في الأذن الداخلية.
 ',
 
@@ -197,21 +204,21 @@ class DiagnosisSeeder extends Seeder
 
          \App\Models\Diagnosis::create([
             'description' => '
-            تكون قيح الأذن (Otitis Externa):
+            تكون قيح الأذن
    حالة التهاب في القناة السمعية الخارجية، يمكن أن يسبب ألمًا واحمرارًا.
 ',
 
          ]);
          \App\Models\Diagnosis::create([
             'description' => '
-            انسداد الأذن (Ear Congestion):
+            انسداد الأذن
    انسداد أو ازدحام في الأذن يمكن أن يكون ناتجًا عن تراكم الشمع أو التهاب.
 ',
 
          ]);
          \App\Models\Diagnosis::create([
             'description' => '
-            فقدان السمع (Hearing Loss):
+            فقدان السمع
    خسارة تدريجية للقدرة على السمع، وقد تكون ناتجة عن عوامل متنوعة.
 ',
 
@@ -339,7 +346,7 @@ class DiagnosisSeeder extends Seeder
 ',
 
          ]);
-    
+
 
 
     }

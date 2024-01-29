@@ -36,5 +36,41 @@ class QLungSeeder extends Seeder
             'question' => 'هل السعال مصحوب بإفرازات (بلغم)؟',
               'answer_type' => 'YesNo',
          ]);
+         \App\Models\QuestionsLung::create([
+            'question' => ' هل تعاني من سعال مستمر؟',
+              'answer_type' => 'YesNo',
+         ]);
+         \App\Models\QuestionsLung::create([
+            'question' => 'هل يكون السعال أسوأ في الصباح الباكر؟',
+              'answer_type' => 'YesNo',
+         ]);
+         \App\Models\QuestionsLung::create([
+            'question' => 'هل يكون السعال أسوأ في الليل ؟',
+              'answer_type' => 'YesNo',
+         ]);
+         \App\Models\QuestionsLung::create([
+            'question' => 'هل يوجد إفرازات مخاطية أو قيحية مع السعال؟',
+              'answer_type' => 'YesNo',
+         ]);
+         \App\Models\QuestionsLung::create([
+            'question' => 'هل تشعر بضيق في التنفس أو صعوبة في التنفس؟',
+              'answer_type' => 'YesNo',
+         ]);
+         \App\Models\QuestionsLung::create([
+            'question' => ' هل كنت تعاني من مشاكل في الجهاز التنفسي في السابق؟',
+              'answer_type' => 'YesNo',
+         ]);  \App\Models\QuestionsLung::create([
+            'question' => 'هل تعاني من حساسية تجاه مواد معينة أو تعرضت لمهيجات قد تؤثر على الرئتين؟',
+              'answer_type' => 'YesNo',
+         ]);
+         \App\Models\QuestionsLung::create([
+            'question' => 'هل تعمل في بيئة قد تتسبب في التعرض لمواد مهيجة للرئتين؟',
+              'answer_type' => 'YesNo',
+         ]);
+         \App\Models\QuestionsLung::create([
+            'question' => 'هل تعيش في منطقة تشهد مستويات عالية من التلوث الهوائي؟',
+              'answer_type' => 'YesNo',
+         ]);
+
     }
 }

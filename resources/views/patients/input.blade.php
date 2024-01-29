@@ -44,7 +44,8 @@
                 {{ __('طبيبك الافتراضي') }}   ||  معرفة أكثر عنك
             </h2>
 
-            <a class="custom-btn btn-6 pull-right"style="text-align:center" href="{{ route('patients.index') }}"> رجوع</a>
+
+        
 
         </x-slot>
 

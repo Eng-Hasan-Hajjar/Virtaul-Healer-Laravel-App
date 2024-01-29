@@ -18,40 +18,19 @@ class QuestionLungController extends Controller
     }
     public function submitLung(Request $request)
     {
-          $description = "";
-             $questionsLung = QuestionsLung::all();
-             $questionsLungcount=QuestionsLung::all()->count();
+            $description = "";
+            $description1 = "";
+            $description2 = "";
+            $description3 = "";
+            $description4 = "";
+            $description5 = "";
+            $description6 = "";
+            $questionsLung = QuestionsLung::all();
+            $questionsLungcount=QuestionsLung::all()->count();
             $answers = $request->all();
 
             $yesAnswersCount = 0;
             $noAnswersCount = 0;
-
-               // تحديد عدد الإجابات "نعم"
-            foreach ($answers as $answer) {
-                if ($answer == 'Yes') {
-                    $yesAnswersCount++;
-                }
-                else {
-                    $noAnswersCount++;
-                }
-    }
-
-    // قاعدة بسيطة: إذا كانت هناك 3 إجابات "نعم" أو أكثر، فقد تكون هناك حالة معينة
-    if ($yesAnswersCount >= 2) {
-        if ($yesAnswersCount >= 3) {
-            if ($yesAnswersCount >= 4) {
-                $diagnosis = "ربما تعاني من حالة معينة شديدة. من الضروري الاتصال بالطبيب فوراً.";
-            } else {
-                $diagnosis = "قد تكون لديك مشكلة في الجهاز التنفسي. يُفضل استشارة الطبيب.";
-            }
-        }else{
-        $diagnosis = "قد تكون لديك حالة معينة. نوصي بالتحقق من طبيبك.";
-    }
-    } else {
-        $diagnosis = "لا يبدو أن هناك حالة خطيرة. يمكنك متابعة وضعك، ولكن إذا كانت هناك أية مشاكل، يجب عليك استشارة الطبيب.";
-    }
-
-
             foreach ($questionsLung as $question) {
                 $answer = $answers['answer_' . $question->id] ?? 'لم يتم الإجابة';
 
@@ -75,22 +54,61 @@ class QuestionLungController extends Controller
 
             }
 
-
-
             $description = $description1.$description2.$description3.$description4.$description5.$description6;
 
-            $diagnosisdb = Diagnosis::find(1);
-            $yesAnswersCountpercent=$yesAnswersCount * 100 / $questionsLungcount ;
-            if ($diagnosisdb) {
-
-                $id = $diagnosisdb->id;
-                $descriptiondb = $diagnosisdb->description;
-
-
-              return view('outdescription', compact('description','diagnosis','descriptiondb','yesAnswersCount','yesAnswersCountpercent'));
-            } else {
-                return redirect()->route('home')->with('error', 'لم يتم العثور على وصفة');
+            foreach ($answers as $answer) {
+                if ($answer == 'Yes') {
+                    $yesAnswersCount++;
+                }
+                else {
+                    $noAnswersCount++;
+                }
             }
+
+            if ($yesAnswersCount >= 2) {
+                if ($yesAnswersCount >= 3) {
+                    if ($yesAnswersCount >= 4) {
+                        $diagnosis = "انك تعاني من حالة شديدة. من الضروري الاتصال بالطبيب الخاص بك فوراً.";
+                    } else {
+                        $diagnosis = "   لديك مشكلة في الجهاز التنفسي. يُفضل استشارةالطبيب الخاص بك.";
+                    }
+                }else{
+                    $diagnosis = "   لديك مشكلة في الجهاز التنفسي. يُفضل استشارةالطبيب الخاص بك.";
+                }
+            } else {
+                $diagnosis = "لا يبدو أن هناك حالة خطيرة. يمكنك متابعة وضعك، ولكن إذا كانت هناك أية مشاكل، يجب عليك استشارة الطبيب.";
+            }
+
+            $yesAnswersCountpercent= $yesAnswersCount * 100 / $questionsLungcount ;
+
+            if ($yesAnswersCountpercent >= 20) {
+                if ($yesAnswersCountpercent >= 30) {
+                    if ($yesAnswersCountpercent >= 40) {
+                        if ($yesAnswersCountpercent >= 50) {
+                            if ($yesAnswersCountpercent >= 60) {
+                                if ($yesAnswersCountpercent >= 70) {
+                                    if ($yesAnswersCountpercent >= 80) {
+                                        if ($yesAnswersCountpercent >= 90) {
+                                                           $diagnosisdb = Diagnosis::find(7);
+                                        }
+                                             $diagnosisdb = Diagnosis::find(6);
+                                    }
+                                         $diagnosisdb = Diagnosis::find(5);
+                                }
+                                     $diagnosisdb = Diagnosis::find(4);
+                            }
+                                 $diagnosisdb = Diagnosis::find(4);
+                        }
+                             $diagnosisdb = Diagnosis::find(3);
+                    }
+                         $diagnosisdb = Diagnosis::find(2);
+                }
+                     $diagnosisdb = Diagnosis::find(1);
+            }
+
+            $id = $diagnosisdb->id;
+            $descriptiondb = $diagnosisdb->description;
+
 
             return view('outdescription', compact('description','diagnosis','descriptiondb','yesAnswersCount','yesAnswersCountpercent'));
     }

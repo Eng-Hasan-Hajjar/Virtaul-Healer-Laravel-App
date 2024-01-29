@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\QuestionsStomach;
+use App\Models\Diagnosis;
+
 use Illuminate\Http\Request;
 
 class QuestionStomachController extends Controller
@@ -19,6 +21,19 @@ class QuestionStomachController extends Controller
     public function submitStomach(Request $request)
     {
           $description = "";
+          $description1 = "";
+          $description2 = "";
+          $description3 = "";
+          $description4 = "";
+          $description5 = "";
+          $description6 = "";
+          $description7 = "";
+
+          $questionsLungcount=QuestionsStomach::all()->count();
+          $answers = $request->all();
+
+          $yesAnswersCount = 0;
+          $noAnswersCount = 0;
           // قم بتلقي البيانات من النموذج
             $answers = $request->all();
             // استرجاع الأسئلة من قاعدة البيانات
@@ -50,7 +65,63 @@ class QuestionStomachController extends Controller
 
 
             $description = $description1.$description2.$description3.$description4.$description5.$description6;
-            echo $description;
+            foreach ($answers as $answer) {
+                if ($answer == 'Yes') {
+                    $yesAnswersCount++;
+                }
+                else {
+                    $noAnswersCount++;
+                }
+            }
+
+            if ($yesAnswersCount >= 2) {
+                if ($yesAnswersCount >= 3) {
+                    if ($yesAnswersCount >= 4) {
+                        $diagnosis = "انك تعاني من حالة شديدة. من الضروري الاتصال بالطبيب الخاص بك فوراً.";
+                    } else {
+                        $diagnosis = "   لديك مشكلة   . يُفضل استشارةالطبيب الخاص بك.";
+                    }
+                }else{
+                    $diagnosis = "   لديك مشكلة في  التنفسي. ";
+                }
+            } else {
+                $diagnosis = "لا يبدو أن هناك حالة خطيرة. يمكنك متابعة وضعك، ولكن إذا كانت هناك أية مشاكل، يجب عليك استشارة الطبيب.";
+            }
+
+            $yesAnswersCountpercent= $yesAnswersCount * 100 / $questionsLungcount ;
+
+            if ($yesAnswersCountpercent >= 20) {
+                if ($yesAnswersCountpercent >= 30) {
+                    if ($yesAnswersCountpercent >= 40) {
+                        if ($yesAnswersCountpercent >= 50) {
+                            if ($yesAnswersCountpercent >= 60) {
+                                if ($yesAnswersCountpercent >= 70) {
+                                    if ($yesAnswersCountpercent >= 80) {
+                                        if ($yesAnswersCountpercent >= 90) {
+                                                           $diagnosisdb = Diagnosis::find(12);
+                                        }
+                                             $diagnosisdb = Diagnosis::find(11);
+                                    }
+                                         $diagnosisdb = Diagnosis::find(10);
+                                }
+                                     $diagnosisdb = Diagnosis::find(10);
+                            }
+                                 $diagnosisdb = Diagnosis::find(9);
+                        }
+                             $diagnosisdb = Diagnosis::find(9);
+                    }
+                         $diagnosisdb = Diagnosis::find(9);
+                }
+                     $diagnosisdb = Diagnosis::find(8);
+            }
+
+            $id = $diagnosisdb->id;
+            $descriptiondb = $diagnosisdb->description;
+
+
+            return view('outdescription', compact('description','diagnosis','descriptiondb','yesAnswersCount','yesAnswersCountpercent'));
+
+
     }
 
    /**

@@ -20,9 +20,9 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 10px;
-            background-color: #8978bd;
+            background-color: #013e33;
             border-radius: 16px;
-            box-shadow: 100 20000 20px rgba(178, 188, 207, 0.5);
+            box-shadow: 100 20000 20px rgba(32, 60, 112, 0.5);
         }
         /* أسلوب الرأس */
         header {
@@ -56,27 +56,41 @@
 <body>
     <div class="w3-display-container">
         <div class="w3-padding w3-display-topleft w3-animate-zoom container w3-container">
-            <img src="{{ asset('gifs/7.gif') }}">
+            <img src="{{ asset('gifs/4.gif') }}">
         </div>
         <div class="w3-padding w3-display-topright w3-animate-zoom container w3-container">
-            <img src="{{ asset('gifs/8.gif') }}">
+            <img src="{{ asset('gifs/1.gif') }}">
         </div>
-        <div class="container w3-container w3-center w3-animate-zoom">
+        <div class="w3-padding w3-display-left w3-animate-zoom container w3-container">
+            <img src="{{ asset('gifs/1.gif') }}">
+        </div>
+        <div class="w3-padding w3-display-right w3-animate-zoom container w3-container">
+            <img src="{{ asset('gifs/2.gif') }}">
+        </div>
+        <div class="w3-padding w3-display-bottomleft w3-animate-zoom container w3-container">
+            <img src="{{ asset('gifs/6.gif') }}">
+        </div>
+        <div class="w3-padding w3-display-bottomright w3-animate-zoom container w3-container">
+            <img src="{{ asset('gifs/1.gif') }}">
+        </div>
+        <div class="w3-padding w3-display-topcenter w3-animate-zoom container w3-container">
             <header>
                 <h1>الوصفة الطبية وفق حالتك</h1>
             </header>
+        </div>
+        <div class="container w3-container w3-display-center w3-center w3-animate-zoom">
             <section>
-                <p>{{$description}}</p>
-                <p>أتمنى لك صحة جيدة</p>
-                {{$diagnosis}}
+                <p> {{$description}} </p>
                 <br>
-                {{$descriptiondb}}
-                {{$yesAnswersCount}}
-                {{$yesAnswersCountpercent}}
+                <p>  {{$descriptiondb}} </p>
+                <br>
                 <!-- إضافة مكان لرسم الرسم البياني -->
-                <div  style="width:50%;hieght:5%; position: relative;">
-                  <canvas id="myChart" style="width:50%;hight:10%;max-width:600px" ></canvas>
+                <div class="container w3-container w3-center w3-animate-zoom" style="width:50%;hieght:5%;position: center;">
+                    <canvas id="myChart" style="width:50%;hight:10%;max-width:600px" ></canvas>
                 </div>
+                <br>
+                <p>أتمنى لك صحة جيدة</p>
+                <p> {{$diagnosis}} </p>
             </section>
         </div>
     </div>
