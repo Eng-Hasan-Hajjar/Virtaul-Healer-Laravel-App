@@ -100,7 +100,7 @@ class QuestionEarController extends Controller
                                         }
                                              $diagnosisdb = Diagnosis::find(26);
                                     }
-                                         $diagnosisdb = Diagnosis::find(26);
+                                         $diagnosisdb = Diagnosis::find(25);
                                 }
                                      $diagnosisdb = Diagnosis::find(25);
                             }
