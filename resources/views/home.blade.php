@@ -211,11 +211,11 @@
                     <img src="{{ asset('images/القلب.png') }}" >
 
 						<div class="upper-box">
-							<h3 style="text-align:left"><a href="questionsHeart">القلب</a></h3>
+							<h3 style="text-align:left"><a href="questionsHeart2">القلب</a></h3>
 						</div>
 						<div class="text">الأمراض القلبية تشير إلى مجموعة واسعة من الحالات التي تؤثر على القلب والأوعية الدموية.</div>
 						<div class="read-outer">
-							<a href="questionsHeart" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsHeart2" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -242,12 +242,12 @@
 
 						<div class="upper-box">
 
-							<h3><a href="questionsStomach">المعدة</a></h3>
+							<h3><a href="questionsStomach2">المعدة</a></h3>
 						</div>
 						<div class="text">
 الشعور بنخر أو مغص حاد أو ألم (عسر الهضم) أعلى البطن والذي ربما يتفاقم أو يتحسن بتناول الطعام الغثيان قيء شعور بامتلاء أعلى البطن بعد تناول الطعام </div>
 						<div class="read-outer">
-							<a href="questionsStomach" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsStomach2" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -259,11 +259,11 @@
 
 						<div class="upper-box">
 
-							<h3><a href="questionsIntestines">الأمعاء الدقيقة والغليظة</a></h3>
+							<h3><a href="questionsIntestines2">الأمعاء الدقيقة والغليظة</a></h3>
 						</div>
 						<div class="text">وجود دم في البراز أو براز يحتوي على صديد. إذا استمر الإسهال لمدة تزيد عن 2 إلى 3 أيام لدى شخص بالغ أو 24 ساعة عند الطفل. ارتفاع درجة الحرارة أعلى من 38 درجة مئوية. آلام في البطن شديدة أو مفاجئة </div>
 						<div class="read-outer">
-							<a href="questionsIntestines" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsIntestines2" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -275,12 +275,12 @@
 
 						<div class="upper-box">
 
-							<h3><a href="questionsKidney">الكلية</a></h3>
+							<h3><a href="questionsKidney2">الكلية</a></h3>
 						</div>
 						<div class="text">
 يوجد عدة اختبارات لتشخيص الفشل الكلوي منها: تحليل البول: للبحث عن وجود بروتينات أو سكر في البول مما يدل على ضعف أو عجز الكلى. قياس كمية البول: إذا كان هناك نقص في كمية البول، فإنه قد يدل على وجود انسداد في المجرى البولي. عينة دم: تساعد اختبارات الدم على ملاحظة كفاءة وظائف الكُلى عن طريق نسبة اليوريا والكرياتينين</div>
 						<div class="read-outer">
-							<a href="questionsKidney" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsKidney2" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -292,12 +292,12 @@
 
 						<div class="upper-box">
 
-							<h3><a href="questionsBrain">الدماغ</a></h3>
+							<h3><a href="questionsBrain2">الدماغ</a></h3>
 						</div>
 						<div class="text">
 تعد أورام الدماغ من الأمراض الخطيرة التي تسبب ضررًا كبيرًا وخاصة في حال التشخيص في المراحل المتقدمة، ويمكن لأورام الدماغ أن تكون حميدة أو خبيثة وتتعدد أنواعها بحسب مكان نمو الأورام وطبيعة الخلايا السرطانية. تشمل أبرز أعراض أورام الدماغ على الآتي: الصداع الشديد والذي غالبًا ما يشتد صباحًا. التشنجات العصبية </div>
 						<div class="read-outer">
-							<a href="questionsBrain" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsBrain2" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -309,11 +309,11 @@
 
 						<div class="upper-box">
 
-							<h3><a href="questionsEye">العين</a></h3>
+							<h3><a href="questionsEye2">العين</a></h3>
 						</div>
 						<div class="text">قصر النظر وهو ضعف الرؤية للأشياء البعيدة، على سبيل المثال يصعب على المريض رؤية لافتات الإعلانات البعيدة على الطريق. الاستجماتيزم وهو تشوه الرؤية في جميع المسافات “البعيدة والقريبة” وينشأ بسبب عدم انتظام شكل قرنية العين </div>
 						<div class="read-outer">
-							<a href="questionsEye" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsEye2" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -325,12 +325,12 @@
 
 						<div class="upper-box">
 
-							<h3><a href="questionsPharynx">البلعوم</a></h3>
+							<h3><a href="questionsPharynx2">البلعوم</a></h3>
 						</div>
 						<div class="text">
 احمرار في الحلق واللوزتين، وانتفاخهما، وظهور بقع بيضاء فيهما في حالات التهاب الحلق البكتيري. خشونة وبحة في الصوت. انتفاخ الغدد الليمفاوية في حالات الاحتقان البكتيري </div>
 						<div class="read-outer">
-							<a href="questionsPharynx" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsPharynx2" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -342,11 +342,27 @@
 
 						<div class="upper-box">
 
-							<h3><a href="questionsBack">الظهر</a></h3>
+							<h3><a href="questionsBack2">الظهر</a></h3>
 						</div>
 						<div class="text">تتعدد أسباب آلام الظهر، ومن أهمها التمزق والإجهاد العضلي، الذي ينتج عن تمزق صغير في عضلات أو أربطة الظهر، وخاصةً عضلات العمود الفقري القطني الموجودة في أسفل </div>
 						<div class="read-outer">
-							<a href="questionsBack" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsBack2" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+						</div>
+					</div>
+				</div>
+
+                <!-- Department Block -->
+				<div class="department-block">
+					<div class="inner-box">
+                    <img src="{{ asset('images/الجلد.png') }}">
+
+						<div class="upper-box">
+
+							<h3><a href="questionsSkin2">الجلد</a></h3>
+						</div>
+						<div class="text">     </div>
+						<div class="read-outer">
+							<a href="questionsSkin2" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -359,7 +375,7 @@
                     <img src="{{ asset('images/Ear.png') }}" >
 
 						<div class="upper-box">
-							<h3 style="text-align:left;  "><a href="questionsEar">أذنية</a></h3>
+							<h3 style="text-align:left;  "><a href="questionsEar2">أذنية</a></h3>
 						</div>
 						<div class="text">
                             من علامات وأعراض الإصابة بالعدوى الفطرية للأذن الخارجية ما يلي:
@@ -369,7 +385,7 @@
 كثرة صديد الأذن.
                             </div>
 						<div class="read-outer">
-							<a href="questionsEar" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
+							<a href="questionsEar2" class="read-more">المزيد <span class="icon fas fa-angle-double-right"></span></a>
 						</div>
 					</div>
 				</div>

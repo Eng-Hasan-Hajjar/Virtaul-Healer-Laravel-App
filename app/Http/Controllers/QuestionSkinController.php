@@ -14,7 +14,7 @@ class QuestionSkinController extends Controller
     public function index2()
     {
         $questionsSkin = QuestionsSkin::all();
-        return view('questions.skin.index', compact('questionsSkin'));
+    return view('questions.skin.index', compact('questionsSkin'));
 
     }
     public function submitSkin(Request $request)

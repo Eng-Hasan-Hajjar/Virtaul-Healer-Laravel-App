@@ -93,7 +93,7 @@
             @endforeach
         </table>
 
-        {!! $questionsStomachs->links() !!}
+        {!! $questionsSkins->links() !!}
     </div>
 
     </div>
