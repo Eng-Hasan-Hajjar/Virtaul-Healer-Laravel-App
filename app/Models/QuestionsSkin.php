@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class QuestionsSkin extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'question',
+        'answer_type',
+    ];
 }

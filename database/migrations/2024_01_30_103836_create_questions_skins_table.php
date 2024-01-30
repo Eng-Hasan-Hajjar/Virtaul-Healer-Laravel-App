@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('questions_skins', function (Blueprint $table) {
             $table->id();
+            $table->string('question');
+            $table->enum('answer_type', ['YesNo', 'Text']); // نوع الإجابة
+
             $table->timestamps();
         });
     }
