@@ -71,17 +71,17 @@
 
                 <th width="280px"> </th>
             </tr>
-            @foreach ($questionsStomachs as $questionsStomach)
+            @foreach ($questionsSkins as $questionsSkin)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $questionsStomach->question }}</td>
+                <td>{{ $questionsSkin->question }}</td>
 
                 <td>
-                    <form action="{{ route('questionsStomach.destroy',$questionsStomach->id) }}" method="POST">
+                    <form action="{{ route('questionsSkin.destroy',$questionsSkin->id) }}" method="POST">
 
-                        <a class="custom-btn btn-10"style="margin-left:16px"  href="{{ route('questionsStomach.show',$questionsStomach->id) }}">التفاصيل</a>
+                        <a class="custom-btn btn-10"style="margin-left:16px"  href="{{ route('questionsSkin.show',$questionsSkin->id) }}">التفاصيل</a>
 
-                        <a class="custom-btn btn-14" style="margin-left:16px;margin-top:5px" href="{{ route('questionsStomach.edit',$questionsStomach->id) }}">التعديل</a>
+                        <a class="custom-btn btn-14" style="margin-left:16px;margin-top:5px" href="{{ route('questionsSkin.edit',$questionsSkin->id) }}">التعديل</a>
 
                         @csrf
                         @method('DELETE')
