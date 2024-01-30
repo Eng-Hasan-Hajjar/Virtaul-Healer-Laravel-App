@@ -14,6 +14,7 @@ use App\Http\Controllers\QuestionPharynxController;
 use App\Http\Controllers\QuestionStomachController;
 use App\Http\Controllers\QuestionEyeController;
 use App\Http\Controllers\QuestionBrainController;
+use App\Http\Controllers\QuestionSkinController;
 
 use App\Http\Controllers\DepartmentController;
 
@@ -96,6 +97,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/questionsStomach', [QuestionStomachController::class, 'index2'])->name('questionsStomach.index2');
     Route::post('/questions/submitStomach', [QuestionStomachController::class, 'submitStomach'])->name('questions.submitStomach');
 
+    Route::get('/questionsSkin', [QuestionSkinController::class, 'index2'])->name('questionsSkin.index2');
+    Route::post('/questions/submitSkin', [QuestionSkinController::class, 'submitSkin'])->name('questions.submitSkin');
+
     Route::get('/questionsEar', [QuestionEarController::class, 'index2'])->name('questionsEar.index2');
     Route::post('/questions/submitEar', [QuestionEarController::class, 'submitEar'])->name('questions.submitEar');
 
@@ -120,6 +124,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('questionsPharynx', QuestionPharynxController::class);
 
     Route::resource('questionsStomach', QuestionStomachController::class);
+
+    Route::resource('questionsSkin', QuestionSkinController::class);
 
     Route::resource('questionsEar', QuestionEarController::class);
 

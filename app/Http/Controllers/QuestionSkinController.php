@@ -17,7 +17,7 @@ class QuestionSkinController extends Controller
         return view('questions.skin.index', compact('questionsSkin'));
 
     }
-    public function submitStomach(Request $request)
+    public function submitSkin(Request $request)
     {
           $description = "";
           $description1 = "";
