@@ -420,6 +420,123 @@ class DiagnosisSeeder extends Seeder
 
            ',
          ]);
+       /////////////////////////////////-------------------الظهر * 15
+
+       \App\Models\Diagnosis::create([
+        'description' => '
+        التواء العضلات (Muscle Strain):
+        حالة شائعة تحدث نتيجة للإجهاد الزائد على العضلات، غالبًا ما تكون أقل خطورة.
+       ',
+     ]);
+     \App\Models\Diagnosis::create([
+        'description' => '
+        التهاب المفاصل الظهري (Facet Joint Arthritis):
+   التهاب المفاصل في الظهر قد يسبب ألمًا وتصلبًا، لكنه عادة لا يكون خطيرًا.
+
+       ',
+     ]);
+     \App\Models\Diagnosis::create([
+        'description' => '
+        انزلاق الديسك (Herniated Disc):
+   انزلاق قرص بين الفقرات، قد يسبب ألمًا وتنميل، ولكن لا يكون دائمًا خطيرًا.
+
+       ',
+     ]);
+
+     \App\Models\Diagnosis::create([
+        'description' => '
+        التواء الرباط الوتدي (Ligament Sprain):
+   إصابة للرباط الذي يربط الفقرات، قد تكون مؤلمة ولكن غالبًا ما تكون خفيفة.
+
+       ',
+     ]);
+
+     \App\Models\Diagnosis::create([
+        'description' => '
+        التهاب الديسك (Discitis):
+   التهاب القرص الفقري، يمكن أن يكون خطيرًا في بعض الحالات، ولكن ليس دائمًا.
+
+       ',
+     ]);
+
+     \App\Models\Diagnosis::create([
+        'description' => '
+        فقر الدم الوحشي (Sickle Cell Disease):
+   حالة وراثية تؤثر على الدم، وقد تسبب ألمًا في الظهر.
+
+       ',
+     ]);
+     \App\Models\Diagnosis::create([
+        'description' => '
+        التهاب المفاصل التأموري (Ankylosing Spondylitis):
+        حالة مزمنة تؤثر على المفاصل الظهرية، يمكن أن تتسبب في تصلب وألم.
+
+       ',
+     ]);
+
+     \App\Models\Diagnosis::create([
+        'description' => '
+        التصلب المتعدد (Multiple Sclerosis):
+   حالة تؤثر على الجهاز العصبي، وتسبب أحيانًا ألمًا في الظهر.
+
+       ',
+     ]);
+
+     \App\Models\Diagnosis::create([
+        'description' => '
+        ورم العظم الليفي (Osteosarcoma):
+   نوع نادر من أورام العظام قد يؤثر على الفقرات.
+
+       ',
+     ]);
+
+     \App\Models\Diagnosis::create([
+        'description' => '
+        فقر الدم (Anemia):
+    انخفاض نسبة الهيموغلوبين في الدم، قد يسبب ضعفًا وألمًا في الظهر.
+
+       ',
+     ]);
+
+     \App\Models\Diagnosis::create([
+        'description' => '
+        فقر الدم الناتج عن نقص الحديد (Iron Deficiency Anemia):
+    نقص الحديد يمكن أن يسبب ألمًا في الظهر.
+
+       ',
+     ]);
+
+     \App\Models\Diagnosis::create([
+        'description' => '
+        سرطان العظم (Bone Cancer):
+    ورم خبيث يمكن أن يؤثر على العظام، قد يسبب ألمًا حادًا.
+
+       ',
+     ]);
+
+     \App\Models\Diagnosis::create([
+        'description' => '
+        فقر الدم الناتج عن نقص فيتامين B12 (Vitamin B12 Deficiency Anemia):
+        نقص فيتامين B12 يمكن أن يسبب ألمًا في الظهر.
+
+       ',
+     ]);
+
+     \App\Models\Diagnosis::create([
+        'description' => '
+        فقر الدم الناتج عن فقدان الدم (Hemorrhagic Anemia):
+    فقدان كمية كبيرة من الدم يمكن أن يسبب ألمًا في الظهر.
+
+       ',
+     ]);
+
+     \App\Models\Diagnosis::create([
+        'description' => '
+        ورم العظم الليفي القصبي (Ewing Sarcoma):
+    ورم شبابي شديد الخطورة قد يؤثر على العظام.
+
+       ',
+     ]);
 
     }
 }

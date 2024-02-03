@@ -37,28 +37,7 @@ class QuestionKidneyController extends Controller
             // استرجاع الأسئلة من قاعدة البيانات
             $questionsKidney = QuestionsKidney::all();
 
-            // تفاصيل الأسئلة
-            foreach ($questionsKidney as $question) {
-                $answer = $answers['answer_' . $question->id] ?? 'لم يتم الإجابة';
 
-                if($question->id == 1 && $answer == 'No' ){   $description1=  " " . "<br><br>"; }
-                else  if($question->id == 1 && $answer == 'Yes' ){$description1= "". "<br><br>";}
-
-                if($question->id == 2 && $answer == 'No' ){  $description2=  "<br><br>"; }
-                else if($question->id == 2 && $answer == 'Yes' ) {$description2=  "<br><br>";}
-
-                if($question->id == 3 && $answer == 'No' ){  $description3=  "<br><br>"; }
-                else  if($question->id == 3 && $answer == 'Yes' ){$description3=  "<br><br>";}
-
-                if($question->id == 4 && $answer == 'No' ){   $description4=  "<br><br>"; }
-                else  if($question->id == 4 && $answer == 'Yes' ){$description4=  "<br><br>";}
-
-                if($question->id == 5 && $answer == 'No' ){  $description5= "<br><br>"; }
-                else  if($question->id == 5 && $answer == 'Yes' ){$description5=   "<br><br>";}
-
-                if($question->id == 6 && $answer == 'No' ){    $description6=  "<br><br>"; }
-                else  if($question->id == 6 && $answer == 'Yes' ){$description6=   "<br><br>";}
-            }
 
 
             $description = $description1.$description2.$description3.$description4.$description5.$description6;
@@ -95,21 +74,21 @@ class QuestionKidneyController extends Controller
                                 if ($yesAnswersCountpercent >= 70) {
                                     if ($yesAnswersCountpercent >= 80) {
                                         if ($yesAnswersCountpercent >= 90) {
-                                                           $diagnosisdb = Diagnosis::find(12);
+                                                           $diagnosisdb = Diagnosis::find(54);
                                         }
-                                             $diagnosisdb = Diagnosis::find(11);
+                                             $diagnosisdb = Diagnosis::find(50);
                                     }
-                                         $diagnosisdb = Diagnosis::find(10);
+                                         $diagnosisdb = Diagnosis::find(50);
                                 }
-                                     $diagnosisdb = Diagnosis::find(10);
+                                     $diagnosisdb = Diagnosis::find(48);
                             }
-                                 $diagnosisdb = Diagnosis::find(9);
+                                 $diagnosisdb = Diagnosis::find(49);
                         }
-                             $diagnosisdb = Diagnosis::find(9);
+                             $diagnosisdb = Diagnosis::find(51);
                     }
-                         $diagnosisdb = Diagnosis::find(9);
+                         $diagnosisdb = Diagnosis::find(52);
                 }
-                     $diagnosisdb = Diagnosis::find(8);
+                     $diagnosisdb = Diagnosis::find(52);
             }
 
             $id = $diagnosisdb->id;

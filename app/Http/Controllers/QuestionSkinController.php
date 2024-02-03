@@ -42,23 +42,23 @@ class QuestionSkinController extends Controller
             foreach ($questionsSkin as $question) {
                 $answer = $answers['answer_' . $question->id] ?? 'لم يتم الإجابة';
 
-                if($question->id == 1 && $answer == 'No' ){   $description1=  " " . "<br><br>"; }
-                else  if($question->id == 1 && $answer == 'Yes' ){$description1= "". "<br><br>";}
+                if($question->id == 1 && $answer == 'No' ){   $description1=  " " . ""; }
+                else  if($question->id == 1 && $answer == 'Yes' ){$description1= "". "";}
 
-                if($question->id == 2 && $answer == 'No' ){  $description2=  "<br><br>"; }
-                else if($question->id == 2 && $answer == 'Yes' ) {$description2=  "<br><br>";}
+                if($question->id == 2 && $answer == 'No' ){  $description2=  ""; }
+                else if($question->id == 2 && $answer == 'Yes' ) {$description2=  "";}
 
-                if($question->id == 3 && $answer == 'No' ){  $description3=  "<br><br>"; }
-                else  if($question->id == 3 && $answer == 'Yes' ){$description3=  "<br><br>";}
+                if($question->id == 3 && $answer == 'No' ){  $description3=  ""; }
+                else  if($question->id == 3 && $answer == 'Yes' ){$description3=  "";}
 
-                if($question->id == 4 && $answer == 'No' ){   $description4=  "<br><br>"; }
-                else  if($question->id == 4 && $answer == 'Yes' ){$description4=  "<br><br>";}
+                if($question->id == 4 && $answer == 'No' ){   $description4=  ""; }
+                else  if($question->id == 4 && $answer == 'Yes' ){$description4=  "";}
 
-                if($question->id == 5 && $answer == 'No' ){  $description5= "<br><br>"; }
-                else  if($question->id == 5 && $answer == 'Yes' ){$description5=   "<br><br>";}
+                if($question->id == 5 && $answer == 'No' ){  $description5= ""; }
+                else  if($question->id == 5 && $answer == 'Yes' ){$description5=   "";}
 
-                if($question->id == 6 && $answer == 'No' ){    $description6=  "<br><br>"; }
-                else  if($question->id == 6 && $answer == 'Yes' ){$description6=   "<br><br>";}
+                if($question->id == 6 && $answer == 'No' ){    $description6=  ""; }
+                else  if($question->id == 6 && $answer == 'Yes' ){$description6=   "";}
 
             }
 
@@ -97,21 +97,21 @@ class QuestionSkinController extends Controller
                                 if ($yesAnswersCountpercent >= 70) {
                                     if ($yesAnswersCountpercent >= 80) {
                                         if ($yesAnswersCountpercent >= 90) {
-                                                           $diagnosisdb = Diagnosis::find(12);
+                                                           $diagnosisdb = Diagnosis::find(18);
                                         }
-                                             $diagnosisdb = Diagnosis::find(11);
+                                             $diagnosisdb = Diagnosis::find(22);
                                     }
-                                         $diagnosisdb = Diagnosis::find(10);
+                                         $diagnosisdb = Diagnosis::find(21);
                                 }
-                                     $diagnosisdb = Diagnosis::find(10);
+                                     $diagnosisdb = Diagnosis::find(21);
                             }
-                                 $diagnosisdb = Diagnosis::find(9);
+                                 $diagnosisdb = Diagnosis::find(20);
                         }
-                             $diagnosisdb = Diagnosis::find(9);
+                             $diagnosisdb = Diagnosis::find(20);
                     }
-                         $diagnosisdb = Diagnosis::find(9);
+                         $diagnosisdb = Diagnosis::find(19);
                 }
-                     $diagnosisdb = Diagnosis::find(8);
+                     $diagnosisdb = Diagnosis::find(19);
             }
 
             $id = $diagnosisdb->id;
