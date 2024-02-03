@@ -1,9 +1,11 @@
 
 <x-app-layout>
     <x-slot name="header">
-        <img src="{asset('/gifs/1.gif')}">
+        <img src="{{ asset('gifs/15.gif') }}" style="margin:20px" >
+
         <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :32px ;color:aqua;text-align:right">
-            {{ __('طبيبك الافتراضي') }}
+            {{ __(' ') }}
+
         </h1>
 
     </x-slot>

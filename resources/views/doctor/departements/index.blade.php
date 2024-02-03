@@ -53,9 +53,13 @@ tr:hover {background-color: rgb(179, 79, 43);}
                 <div class="pull-left">
                     <h2> </h2>
                 </div>
-                <div class="pull-right">
-                    <a class="custom-btn btn-3" href="{{ route('departements.create') }}"> إنشاء قسم </a>
+                <div class="pull-right"style="padding:10px">
+
+                    <a class="custom-btn btn-3" href="{{ route('departements.create') }}"style="margin-top:10px" > إنشاء قسم </a>
+                    <img src="{{ asset('gifs/17.gif') }}" style="margin:20px" >
+
                 </div>
+
             </div>
         </div>
         <div class="row">
@@ -80,9 +84,9 @@ tr:hover {background-color: rgb(179, 79, 43);}
                 <td>
                     <form action="{{ route('departements.destroy',$departement->id) }}" method="POST">
 
-                        <a class="custom-btn btn-10"  href="{{ route('departements.show',$departement->id) }}">Show</a>
+                        <a class="custom-btn btn-10"  href="{{ route('departements.show',$departement->id) }}" style="margin:10px">Show</a>
 
-                        <a class="custom-btn btn-14" href="{{ route('departements.edit',$departement->id) }}">Edit</a>
+                        <a class="custom-btn btn-14" href="{{ route('departements.edit',$departement->id) }}" style="margin:10px">Edit</a>
 
                         @csrf
                         @method('DELETE')
@@ -97,7 +101,15 @@ tr:hover {background-color: rgb(179, 79, 43);}
         {!! $departements->links() !!}
     </div>
 
+
+
+
+
+
+
     </div>
+
+
 
     </x-app-layout>
 

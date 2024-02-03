@@ -1,5 +1,5 @@
 
 
 
-<img src="{{ asset('images/logodash250-70.png') }}" alt="Logo">
+<img src="{{ asset('images/logo-small2.png') }}" alt="Logo">
 

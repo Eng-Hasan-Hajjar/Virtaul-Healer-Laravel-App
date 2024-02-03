@@ -53,7 +53,14 @@
                     <h2> </h2>
                 </div>
                 <div class="pull-right" style="margin:15px">
-                    <a class="custom-btn btn-3" href="{{ route('questionsStomach.create') }}"> إضافة سؤال طبي </a>
+                    <a class="custom-btn btn-3" href="{{ route('questionsStomach.create') }}"style="margin-top:10px" > إضافة سؤال طبي </a>
+                    <img src="{{ asset('gifs/18.gif') }}" style="margin:20px" >
+                    <img src="{{ asset('gifs/17.gif') }}" style="margin:20px" >
+                    <img src="{{ asset('gifs/16.gif') }}" style="margin:20px" >
+                    <img src="{{ asset('gifs/15.gif') }}" style="margin:20px" >
+                    <img src="{{ asset('gifs/14.gif') }}" style="margin:20px" >
+                    <img src="{{ asset('gifs/13.gif') }}" style="margin:20px" >
+
                 </div>
             </div>
         </div>

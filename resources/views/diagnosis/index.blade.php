@@ -54,7 +54,14 @@ tr:hover {background-color: rgb(179, 79, 43);}
                     <h2> </h2>
                 </div>
                 <div class="pull-right">
-                    <a class="custom-btn btn-3" href="{{ route('diagnosis.create') }}"> إنشاء تشخيص </a>
+                    <a class="custom-btn btn-3" href="{{ route('diagnosis.create') }}"style="margin:20px"> إنشاء تشخيص </a>
+                    <img src="{{ asset('gifs/18.gif') }}" style="margin:20px" >
+                    <img src="{{ asset('gifs/17.gif') }}" style="margin:20px" >
+                    <img src="{{ asset('gifs/16.gif') }}" style="margin:20px" >
+                    <img src="{{ asset('gifs/15.gif') }}" style="margin:20px" >
+                    <img src="{{ asset('gifs/14.gif') }}" style="margin:20px" >
+                    <img src="{{ asset('gifs/13.gif') }}" style="margin:20px" >
+
                 </div>
             </div>
         </div>
@@ -80,9 +87,9 @@ tr:hover {background-color: rgb(179, 79, 43);}
                 <td>
                     <form action="{{ route('diagnosis.destroy',$diagnosis->id) }}" method="POST">
 
-                        <a class="custom-btn btn-10"  href="{{ route('diagnosis.show',$diagnosis->id) }}">Show</a>
+                        <a class="custom-btn btn-10"  href="{{ route('diagnosis.show',$diagnosis->id) }}" style="margin:20px" >Show</a>
 
-                        <a class="custom-btn btn-14" href="{{ route('diagnosis.edit',$diagnosis->id) }}">Edit</a>
+                        <a class="custom-btn btn-14" href="{{ route('diagnosis.edit',$diagnosis->id) }}" style="margin:20px">Edit</a>
 
                         @csrf
                         @method('DELETE')

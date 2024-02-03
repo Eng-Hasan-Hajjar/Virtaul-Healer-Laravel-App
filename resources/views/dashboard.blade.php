@@ -1,5 +1,5 @@
 
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 
@@ -18,18 +18,40 @@
                     سيتم طرح العديد من الأسئلة عليك حتى يتم معرفة ما يحث معك وتقييم وضعك الصحي
                 </div>
                 <div class="p-6 text-gray-900 dark:text-gray-100" style="font-size :16px ;color:aqua;text-align:right">
-                    <button class="custom-btn btn-12" ><span> <a href="departments">انقر</a></span><span>حدد القسم</span></button>
+                    <button class="custom-btn btn-12" ><span> <a href="departments">انقر</a></span><span>اختر القسم</span></button>
 
                     اذهب الى صفحة اختيار القسم الذي تعاني منه
                 </div>
             </div>
         </div>
     </div>
+    <div class=" w3-display-container ">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 ">
+            <div class="  overflow-hidden shadow-sm sm:rounded-lg ">
+
+                <img src="{{ asset('gifs/15.gif') }}" class="w3-padding w3-display-topright w3-animate-zoom container w3-container" >
+                <img src="{{ asset('gifs/13.gif') }}" class="w3-padding w3-display-topcenter  w3-animate-zoom container w3-container">
+
+            </div>
+        </div>
+    </div>
+
 
 
 </x-app-layout>
 
+<style>
 
+
+    .bottomright {
+      position: absolute;
+      bottom: 8px;
+      right: 16px;
+      font-size: 18px;
+    }
+
+
+    </style>
 
 
 <style>
