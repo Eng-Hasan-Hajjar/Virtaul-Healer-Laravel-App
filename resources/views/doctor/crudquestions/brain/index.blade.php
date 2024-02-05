@@ -54,12 +54,13 @@
                 </div>
                 <div class="pull-right" style="margin:15px">
                     <a class="custom-btn btn-3" href="{{ route('questionsBrain.create') }}"style="margin-top:10px" > إضافة سؤال طبي </a>
+                    <a class="custom-btn btn-6" href="{{ route('allquestions') }}" style="margin-top:10px" > رجوع</a>
+
                     <img src="{{ asset('gifs/18.gif') }}" style="margin:20px" >
                     <img src="{{ asset('gifs/17.gif') }}" style="margin:20px" >
                     <img src="{{ asset('gifs/16.gif') }}" style="margin:20px" >
                     <img src="{{ asset('gifs/15.gif') }}" style="margin:20px" >
                     <img src="{{ asset('gifs/14.gif') }}" style="margin:20px" >
-                    <img src="{{ asset('gifs/13.gif') }}" style="margin:20px" >
                 </div>
             </div>
         </div>
@@ -85,9 +86,9 @@
                 <td>
                     <form action="{{ route('questionsBrain.destroy',$questionsBrain->id) }}" method="POST">
 
-                        <a class="custom-btn btn-10"style="margin-left:17px"  href="{{ route('questionsBrain.show',$questionsBrain->id) }}">التفاصيل</a>
+                        <a class="custom-btn btn-10"style="margin-left:17px"  href="{{ route('questionsBrain.show',$questionsBrain->id) }}"style="margin:20px">التفاصيل</a>
 
-                        <a class="custom-btn btn-14" style="margin-left:17px;margin-top:5px" href="{{ route('questionsBrain.edit',$questionsBrain->id) }}">التعديل</a>
+                        <a class="custom-btn btn-14" style="margin-left:17px;margin-top:5px" href="{{ route('questionsBrain.edit',$questionsBrain->id) }}"style="margin:20px">التعديل</a>
 
                         @csrf
                         @method('DELETE')

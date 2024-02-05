@@ -30,7 +30,7 @@
             }
         table {
                position: relative;
-                width: 100%;
+                width: 50%;
             }
         th {
               height: 70px;
@@ -47,6 +47,25 @@
         </h2>
 
     </x-slot>
+
+    <div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div class="pull-left">
+                <h2> </h2>
+            </div>
+            <div class="pull-right" style="margin:15px">
+                <a class="custom-btn btn-3" href="{{ route('questionsStomach.create') }}"style="margin-top:10px" >تعديل معلوماتي</a>
+                <a class="custom-btn btn-6" href="{{ route('allquestions') }}" style="margin-top:10px" > رجوع</a>
+
+                <img src="{{ asset('gifs/18.gif') }}" style="margin:20px" >
+
+                <img src="{{ asset('gifs/16.gif') }}" style="margin:20px" >
+
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
     <div class="row font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size: 18px; color: aqua; text-align: center">
         <div class="container">
 
@@ -93,6 +112,7 @@
             </table>
         </div>
     </div>
+</div>
 
 
 

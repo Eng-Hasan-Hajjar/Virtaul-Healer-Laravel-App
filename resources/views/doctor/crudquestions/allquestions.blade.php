@@ -23,6 +23,7 @@
             <a href="questionsLung"> أسئلةالرئة</a>
             <a href="questionsPharynx"> أسئلة البلعوم</a>
             <a href="questionsStomach"> أسئلة المعدة</a>
+            <a href="questionsSkin"> أسئلة الجلد</a>
         </div>
     </div>
 </body>

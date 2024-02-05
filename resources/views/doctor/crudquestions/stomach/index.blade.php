@@ -54,12 +54,14 @@
                 </div>
                 <div class="pull-right" style="margin:15px">
                     <a class="custom-btn btn-3" href="{{ route('questionsStomach.create') }}"style="margin-top:10px" > إضافة سؤال طبي </a>
+                    <a class="custom-btn btn-6" href="{{ route('allquestions') }}" style="margin-top:10px" > رجوع</a>
+
                     <img src="{{ asset('gifs/18.gif') }}" style="margin:20px" >
                     <img src="{{ asset('gifs/17.gif') }}" style="margin:20px" >
                     <img src="{{ asset('gifs/16.gif') }}" style="margin:20px" >
                     <img src="{{ asset('gifs/15.gif') }}" style="margin:20px" >
                     <img src="{{ asset('gifs/14.gif') }}" style="margin:20px" >
-                    <img src="{{ asset('gifs/13.gif') }}" style="margin:20px" >
+
                 </div>
             </div>
         </div>
@@ -85,9 +87,9 @@
                 <td>
                     <form action="{{ route('questionsStomach.destroy',$questionsStomach->id) }}" method="POST">
 
-                        <a class="custom-btn btn-10"style="margin-left:16px"  href="{{ route('questionsStomach.show',$questionsStomach->id) }}">التفاصيل</a>
+                        <a class="custom-btn btn-10"style="margin-left:16px"  href="{{ route('questionsStomach.show',$questionsStomach->id) }}"style="margin:10px">التفاصيل</a>
 
-                        <a class="custom-btn btn-14" style="margin-left:16px;margin-top:5px" href="{{ route('questionsStomach.edit',$questionsStomach->id) }}">التعديل</a>
+                        <a class="custom-btn btn-14" style="margin-left:16px;margin-top:5px" href="{{ route('questionsStomach.edit',$questionsStomach->id) }}"style="margin:10px">التعديل</a>
 
                         @csrf
                         @method('DELETE')
