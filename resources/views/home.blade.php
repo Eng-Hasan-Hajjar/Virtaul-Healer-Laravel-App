@@ -38,7 +38,7 @@
                 <div class="auto-container clearfix">
                     <!--Info-->
                     <div class="logo-outer">
-                        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                        <div class="logo"><a href="index.html"><img src="images/logo-blue.png" alt="" title=""></a></div>
                     </div>
 
                     <!--Nav Box-->
@@ -57,21 +57,18 @@
                                     <li class="current dropdown"><a href="#">الرئيسية</a>
 
                                     </li>
-									<li class="dropdown"><a href="#">حول التطبيق</a>
+									<li ><a href="/about">حول التطبيق</a>
 
                                     </li>
 
-									<li class="dropdown"><a href="#">الأطباء</a>
+									<li class=""><a href="#">الأطباء</a>
                                         <ul>
                                             <li><a href="doctors.html">Doctors</a></li>
                                             <li><a href="doctors-detail.html">Doctors Detail</a></li>
                                         </ul>
                                     </li>
-									<li class="dropdown"><a href="#">الأقسام</a>
-                                        <ul>
-                                            <li><a href="department.html">Department</a></li>
-                                            <li><a href="department-detail.html">Department Detail</a></li>
-                                        </ul>
+									<li class=""><a href="departements">الأقسام</a>
+
                                     </li>
 
                                 </ul>
@@ -102,7 +99,7 @@
         	<div class="auto-container clearfix">
             	<!--Logo-->
             	<div class="logo pull-left">
-                	<a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+                	<a href="index.html" class="img-responsive"><img src="images/logo-small-blue.png" alt="" title=""></a>
                 </div>
 
 				<!--Right Col-->
@@ -145,11 +142,11 @@
 					<div class="auto-container">
 						<div class="content clearfix">
 							<div class="title"></div>
-							<h2>اعتني بصحتك</h2>
+							<h2 >اعتني بصحتك مع طبيبي</h2>
 							<div class="text"></div>
 							<div class="btn-box clearfix">
-								<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">خدمتي</span></a>
-								<a href="contact.html" class="theme-btn phone-btn"><span class="icon flaticon-call"></span>133</a>
+								<a href="login" class="theme-btn btn-style-two"><span class="txt">خدمتي</span></a>
+								<a href="login" class="theme-btn phone-btn"><span class="icon flaticon-call"></span>133</a>
 							</div>
 						</div>
 					</div>
@@ -616,197 +613,6 @@
 	<!-- End Counter Section -->
 
 
-	<!-- Testimonial Section -->
-    <section class="testimonial-section">
-    	<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<h2>What Patients Saying</h2>
-				<div class="separator"></div>
-			</div>
-        	<div class="testimonial-outer" style="background-image: url(images/background/pattern-4.png)">
-
-            	<!--Client Testimonial Carousel-->
-                <div class="client-testimonial-carousel owl-carousel owl-theme">
-
-                    <!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-							<div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I came in for a check up and did not wait more than 5 minutes before I was seen. I can only imagine the type of service you get for more serious issues. Thanks!</div>
-                        </div>
-                    </div>
-
-                    <!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-							<div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I came in for a check up and did not wait more than 5 minutes before I was seen. I can only imagine the type of service you get for more serious issues. Thanks!</div>
-                        </div>
-                    </div>
-
-					<!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-							<div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I came in for a check up and did not wait more than 5 minutes before I was seen. I can only imagine the type of service you get for more serious issues. Thanks!</div>
-                        </div>
-                    </div>
-
-                    <!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-							<div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I came in for a check up and did not wait more than 5 minutes before I was seen. I can only imagine the type of service you get for more serious issues. Thanks!</div>
-                        </div>
-                    </div>
-
-					<!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-							<div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I came in for a check up and did not wait more than 5 minutes before I was seen. I can only imagine the type of service you get for more serious issues. Thanks!</div>
-                        </div>
-                    </div>
-
-					<!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-							<div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I came in for a check up and did not wait more than 5 minutes before I was seen. I can only imagine the type of service you get for more serious issues. Thanks!</div>
-                        </div>
-                    </div>
-
-                </div>
-
-				<!--Product Thumbs Carousel-->
-                <div class="client-thumb-outer">
-                    <div class="client-thumbs-carousel owl-carousel owl-theme">
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-1.jpg" alt=""></figure>
-							<div class="author-info">
-								<div class="author-name">Max Winchester</div>
-								<div class="designation">Kidny Patient</div>
-							</div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-2.jpg" alt=""></figure>
-							<div class="author-info">
-								<div class="author-name">Max Winchester</div>
-								<div class="designation">Kidny Patient</div>
-							</div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-3.jpg" alt=""></figure>
-							<div class="author-info">
-								<div class="author-name">Max Winchester</div>
-								<div class="designation">Kidny Patient</div>
-							</div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-1.jpg" alt=""></figure>
-							<div class="author-info">
-								<div class="author-name">Max Winchester</div>
-								<div class="designation">Kidny Patient</div>
-							</div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-2.jpg" alt=""></figure>
-							<div class="author-info">
-								<div class="author-name">Max Winchester</div>
-								<div class="designation">Kidny Patient</div>
-							</div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-3.jpg" alt=""></figure>
-							<div class="author-info">
-								<div class="author-name">Max Winchester</div>
-								<div class="designation">Kidny Patient</div>
-							</div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    <!-- End Testimonial Section Two -->
-
-	<!-- News Section -->
-    <section class="news-section">
-    	<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<h2>Latest News & Articals</h2>
-				<div class="separator style-three"></div>
-			</div>
-			<div class="row clearfix">
-
-				<!-- News Block -->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<div class="category">Artical</div>
-							<a href="blog-detail.html"><img src="images/resource/news-1.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<ul class="post-meta">
-								<li><a href="#">03 Comments</a></li>
-								<li><a href="#">June 21, 2018 at 8:12pm</a></li>
-								<li><a href="#">12 Liks</a></li>
-							</ul>
-							<h3><a href="blog-detail.html">Diagnostic Services for Efficient Results Picking Right </a></h3>
-							<div class="text">There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the ...</div>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- News Block -->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-						<div class="image">
-							<div class="category">Artical</div>
-							<a href="blog-detail.html"><img src="images/resource/news-2.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<ul class="post-meta">
-								<li><a href="#">03 Comments</a></li>
-								<li><a href="#">June 21, 2018 at 8:12pm</a></li>
-								<li><a href="#">12 Liks</a></li>
-							</ul>
-							<h3><a href="blog-detail.html">Reasons to Visit for Heart Specialist Us</a></h3>
-							<div class="text">There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the ...</div>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- News Block -->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-						<div class="image">
-							<div class="category">Artical</div>
-							<a href="blog-detail.html"><img src="images/resource/news-3.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<ul class="post-meta">
-								<li><a href="#">03 Comments</a></li>
-								<li><a href="#">June 21, 2018 at 8:12pm</a></li>
-								<li><a href="#">12 Liks</a></li>
-							</ul>
-							<h3><a href="blog-detail.html">Preparing for an ECG Tips From Our Diagnosticians</a></h3>
-							<div class="text">There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the ...</div>
-							<a href="blog-detail.html" class="read-more">Read More</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-	<!-- End News Section -->
 
 
 
@@ -825,7 +631,7 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-                                    	<a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+                                    	<a href="index.html"><img src="images/footer-logo-blue.png" alt="" /></a>
                                     </div>
                                     <div class="text">
                                         My Doctor عبارة عن مكتبة للقوالب الصحية والطبية تحتوي على عناصر ويب محددة مسبقًا والتي تساعدك على إنشاء أفضل موقع للقوالب الطبية الخاصة بك وتوفير رعاية شاملة عالية الجودة حول الرعاية الطبية
