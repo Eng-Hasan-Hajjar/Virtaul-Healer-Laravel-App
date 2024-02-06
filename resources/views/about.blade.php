@@ -4,7 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>توفير الرعاية الصحية الشخصية باستخدام تكنولوجيا الويب</title>
+    <title></title>
+    <!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!--Color Switcher Mockup-->
+<link href="css/color-switcher-design.css" rel="stylesheet">
+<!--Color Themes-->
+<link id="theme-color-file" href="css/color-themes/default-theme.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -66,6 +84,82 @@
 </head>
 
 <body>
+
+     <header class="main-header">
+         <!-- Header Upper -->
+         <div class="header-upper">
+             <div class="inner-container">
+                 <div class="auto-container clearfix">
+                     <!--Info-->
+                     <!--Nav Box-->
+                     <div class="nav-outer clearfix">
+                         <!--Mobile Navigation Toggler For Mobile--><div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+                         <nav class="main-menu navbar-expand-md navbar-light">
+                             <div class="navbar-header">
+                                 <!-- Togg le Button -->
+                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                     <span class="icon flaticon-menu"></span>
+                                 </button>
+                             </div>
+
+                             <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                                 <ul class="navigation clearfix">
+                                     <li class=""><a href="/">الرئيسية</a>
+
+                                     </li>
+                                 </ul>
+                             </div>
+                         </nav>
+                         <!-- Main Menu End-->
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!--End Header Upper-->
+
+         <!--Sticky Header-->
+         <div class="sticky-header">
+             <div class="auto-container clearfix">
+                 <!--Logo-->
+                 <div class="logo pull-left">
+                     <a href="index.html" class="img-responsive"><img src="images/logo-small-blue.png" alt="" title=""></a>
+                 </div>
+
+                 <!--Right Col-->
+                 <div class="right-col pull-right">
+                     <!-- Main Menu -->
+                     <nav class="main-menu navbar-expand-md">
+                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
+                             <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
+                         </div>
+                     </nav><!-- Main Menu End-->
+                 </div>
+
+             </div>
+         </div>
+         <!--End Sticky Header-->
+
+         <!-- Mobile Menu  -->
+         <div class="mobile-menu">
+             <div class="menu-backdrop"></div>
+             <div class="close-btn"><span class="icon far fa-window-close"></span></div>
+
+             <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+             <nav class="menu-box">
+                 <div class="nav-logo"><a href="index.html"><img src="images/nav-logo.png" alt="" title=""></a></div>
+
+                 <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
+             </nav>
+         </div><!-- End Mobile Menu -->
+
+     </header>
+     <!-- End Main Header -->
+
+
+
+
+
+
     <h2>توفير الرعاية الصحية الشخصية باستخدام تكنولوجيا الويب</h2>
 
     <p><span class="number"></span> مع التقدم السريع في مجال التكنولوجيا، تمثلت فرصة فريدة لتحسين تجربة المرضى من خلال توظيف تطبيق ويب متقدم. يُعتبر تطبيقنا الحديث، الذي تم تطويره باستخدام إطار العمل Laravel، وسيلة فعّالة لتوفير الرعاية الصحية الشخصية والتشخيص السريع للمرضى. دعونا نلقي نظرة على كيفية استخدام هذا التطبيق بطريقة بسيطة وفعّالة.</p>
@@ -105,9 +199,13 @@
         <p>
             بناءً على الخوارزمية، يُظهر للمريض تشخيصًا طبيًّا لحالته بشكل فوري. تعرض واجهة جميلة واحترافية تفاصيل التقييم والتشخيص بطريقة سهلة الفهم.
         </p>
-      
+
     <h2>الختام:</h2>
     <p><span class="number"></span> تعتبر هذه التقنية المتطورة والتطبيق الويب الديناميكي بمثابة أداة فعّالة للتفاعل بين المرضى ونظام الرعاية الصحية. تحققت الراحة والدقة في التشخيص بفضل تكامل تكنولوجيا الويب والخوارزميات الطبية. نتمنى الشفاء العاجل للجميع والاستفادة القصوى من تطورات التكنولوجيا في مجال الرعاية الصحية.</p>
+
+
+
+
 </body>
 
 </html>

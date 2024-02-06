@@ -61,12 +61,7 @@
 
                                     </li>
 
-									<li class=""><a href="#">الأطباء</a>
-                                        <ul>
-                                            <li><a href="doctors.html">Doctors</a></li>
-                                            <li><a href="doctors-detail.html">Doctors Detail</a></li>
-                                        </ul>
-                                    </li>
+								
 									<li class=""><a href="departements">الأقسام</a>
 
                                     </li>

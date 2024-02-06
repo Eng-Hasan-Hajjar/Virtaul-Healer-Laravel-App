@@ -37,7 +37,7 @@ use App\Http\Controllers\PatientController;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 Route::get('/about', function () {
     return view('about');
 })->name('about');
