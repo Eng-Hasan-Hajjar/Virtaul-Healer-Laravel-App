@@ -55,42 +55,32 @@
 </head>
 <body>
     <div class="w3-display-container">
-        <div class="w3-padding w3-display-topleft w3-animate-zoom container w3-container">
-            <img src="{{ asset('gifs/4.gif') }}">
-        </div>
-        <div class="w3-padding w3-display-topright w3-animate-zoom container w3-container">
-            <img src="{{ asset('gifs/1.gif') }}">
-        </div>
-        <div class="w3-padding w3-display-left w3-animate-zoom container w3-container">
-            <img src="{{ asset('gifs/1.gif') }}">
-        </div>
-        <div class="w3-padding w3-display-right w3-animate-zoom container w3-container">
-            <img src="{{ asset('gifs/2.gif') }}">
-        </div>
-        <div class="w3-padding w3-display-bottomleft w3-animate-zoom container w3-container">
-            <img src="{{ asset('gifs/6.gif') }}">
-        </div>
-        <div class="w3-padding w3-display-bottomright w3-animate-zoom container w3-container">
-            <img src="{{ asset('gifs/1.gif') }}">
-        </div>
+
         <div class="w3-padding w3-display-topcenter w3-animate-zoom container w3-container">
             <header>
-                <h1>الوصفة الطبية وفق حالتك</h1>
+
+     <h1>الوصفة الطبية وفق حالتك</h1>
+
             </header>
         </div>
         <div class="container w3-container w3-display-center w3-center w3-animate-zoom">
             <section>
-                <p> {{$description}} </p>
+                <p> "ملاحظة : التشخيص التالي هو عبارة عن استنتاجات من خلال اجابتك عن الأسئلة السابقة "</p>
                 <br>
                 <p>  {{$descriptiondb}} </p>
+                <p>{{ $diagnosis}}</p>
+                <li ><a href="/departements">الأقسام</a></li>
                 <br>
                 <!-- إضافة مكان لرسم الرسم البياني -->
                 <div class="container w3-container w3-center w3-animate-zoom" style="width:50%;hieght:5%;position: center;">
                     <canvas id="myChart" style="width:50%;hight:10%;max-width:600px" ></canvas>
                 </div>
+
+
+
                 <br>
                 <p>أتمنى لك صحة جيدة</p>
-                <p> {{$diagnosis}} </p>
+
             </section>
         </div>
     </div>
@@ -104,6 +94,7 @@
             type: 'doughnut', // يمكنك تغييره إلى 'bar' أو  pie 'line' وفقًا لاحتياجاتك
             data: {
                 labels: ['نسبة سلامة المرض ', 'نسبة خطورة المرض '],
+                labelscolor : ['#fffff'] ,
                 datasets: [{
                     data: [ 100 - yesAnswersCountpercent,  yesAnswersCountpercent],
                     backgroundColor: ["#1e7145" , "#b91d47"], // قد ترغب في تغيير الألوان

@@ -42,7 +42,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:aqua;text-align:right">
-            {{ __('طبيبك الافتراضي') }}   ||     معلوماتك
+            {{ __('طبيبي ') }}   ||     معلوماتك
 
         </h2>
 
@@ -54,12 +54,11 @@
                 <h2> </h2>
             </div>
             <div class="pull-right" style="margin:15px">
-                <a class="custom-btn btn-3" href="{{ route('questionsStomach.create') }}"style="margin-top:10px" >تعديل معلوماتي</a>
-                <a class="custom-btn btn-6" href="{{ route('allquestions') }}" style="margin-top:10px" > رجوع</a>
+                <a class="custom-btn btn-6" href="{{ route('dashboard') }}" style="margin-top:10px;text-align:center" > رجوع</a>
 
                 <img src="{{ asset('gifs/18.gif') }}" style="margin:20px" >
 
-                <img src="{{ asset('gifs/16.gif') }}" style="margin:20px" >
+
 
 
             </div>

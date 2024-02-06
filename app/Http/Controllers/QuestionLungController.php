@@ -67,7 +67,7 @@ class QuestionLungController extends Controller
 
             if ($yesAnswersCount >= 2) {
                 if ($yesAnswersCount >= 3) {
-                    if ($yesAnswersCount >= 4) {
+                    if ($yesAnswersCount >= 6) {
                         $diagnosis = "انك تعاني من حالة شديدة. من الضروري الاتصال بالطبيب الخاص بك فوراً.";
                     } else {
                         $diagnosis = "   لديك مشكلة في الجهاز التنفسي. يُفضل استشارةالطبيب الخاص بك.";
@@ -80,6 +80,8 @@ class QuestionLungController extends Controller
             }
 
             $yesAnswersCountpercent= $yesAnswersCount * 100 / $questionsLungcount ;
+
+            $diagnosisdb = "حالتك شبه سليمة انت بحاجة الى نقاهة";
 
             if ($yesAnswersCountpercent >= 20) {
                 if ($yesAnswersCountpercent >= 30) {
@@ -106,11 +108,19 @@ class QuestionLungController extends Controller
                      $diagnosisdb = Diagnosis::find(1);
             }
 
+            if ($yesAnswersCountpercent >= 20) {
             $id = $diagnosisdb->id;
+
             $descriptiondb = $diagnosisdb->description;
-
-
             return view('outdescription', compact('description','diagnosis','descriptiondb','yesAnswersCount','yesAnswersCountpercent'));
+
+        }
+        else {
+            $descriptiondb=" حالتك شبه سليمة انت بحاجة الى نقاهة"."ننصحك بتناول المشروبات الساخنة والراحة ";
+            return view('outdescription', compact('description','diagnosis','descriptiondb','yesAnswersCount','yesAnswersCountpercent'));
+
+        }
+
     }
 
 

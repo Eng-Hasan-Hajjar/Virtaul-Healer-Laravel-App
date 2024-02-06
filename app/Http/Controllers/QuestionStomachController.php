@@ -77,12 +77,12 @@ class QuestionStomachController extends Controller
             if ($yesAnswersCount >= 2) {
                 if ($yesAnswersCount >= 3) {
                     if ($yesAnswersCount >= 4) {
-                        $diagnosis = "انك تعاني من حالة شديدة. من الضروري الاتصال بالطبيب الخاص بك فوراً.";
+                        $diagnosis = "من الضروري زيارة الطبيب المختص بالأمراض الهضمية أو الباطنية للتأكد من حالتك الصحية وأخذ إجراءاتك الصحيحة";
                     } else {
                         $diagnosis = "   لديك مشكلة   . يُفضل استشارةالطبيب الخاص بك.";
                     }
                 }else{
-                    $diagnosis = "   لديك مشكلة في  التنفسي. ";
+                    $diagnosis = "   لديك مشكلة   . ";
                 }
             } else {
                 $diagnosis = "لا يبدو أن هناك حالة خطيرة. يمكنك متابعة وضعك، ولكن إذا كانت هناك أية مشاكل، يجب عليك استشارة الطبيب.";

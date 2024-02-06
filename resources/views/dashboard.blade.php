@@ -6,7 +6,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :32px ;color:aqua;text-align:right">
-            {{ __('طبيبك الافتراضي') }}
+            {{ __(' طبيبي') }}
         </h1>
 
     </x-slot>
@@ -29,8 +29,6 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 ">
             <div class="  overflow-hidden shadow-sm sm:rounded-lg ">
 
-                <img src="{{ asset('gifs/15.gif') }}" class="w3-padding w3-display-topright w3-animate-zoom container w3-container" >
-                <img src="{{ asset('gifs/13.gif') }}" class="w3-padding w3-display-topcenter  w3-animate-zoom container w3-container">
 
             </div>
         </div>
