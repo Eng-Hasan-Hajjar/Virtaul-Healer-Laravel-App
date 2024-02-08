@@ -68,15 +68,57 @@ require __DIR__.'/auth.php';
 
 
 
-Route::middleware('auth')->group(function () {
-    Route::resource('departements', DepartementController::class);
-    Route::resource('diagnosis', DiagnosisController::class);
-});
+/////////////////////////////////////---doctors
+Route::middleware(['auth', 'checkRole:doctor'])->group(function () {
 
-Route::middleware('auth')->group(function () {
     Route::get('/allquestions', [QuestionBackController::class,function(){
         return view('doctor.crudquestions.allquestions');
     }])->name('allquestions');
+
+    Route::resource('departements', DepartementController::class);
+
+    Route::resource('diagnosis', DiagnosisController::class);
+});
+
+Route::middleware(['auth', 'checkRole:doctor'])->group(function () {
+
+    Route::resource('questionsBack', QuestionBackController::class);
+
+    Route::resource('questionsLung', QuestionLungController::class);
+
+    Route::resource('questionsHeart', QuestionHeartController::class);
+
+    Route::resource('questionsBrain', QuestionBrainController::class);
+
+    Route::resource('questionsEye', QuestionEyeController::class);
+
+    Route::resource('questionsIntestine', QuestionIntestinesController::class);
+
+    Route::resource('questionsKidney', QuestionKidneyController::class);
+
+    Route::resource('questionsPharynx', QuestionPharynxController::class);
+
+    Route::resource('questionsStomach', QuestionStomachController::class);
+
+    Route::resource('questionsSkin', QuestionSkinController::class);
+
+    Route::resource('questionsEar', QuestionEarController::class);
+
+});
+
+/////////////////////////////////////---patients
+
+Route::middleware(['auth', 'checkRole:patient'])->group(function () {
+
+    Route::resource('patients', PatientController::class);
+    // رابط الواجهة الخاصة بإدخال بيانات المريض
+    Route::get('/patient/input', [PatientController::class, 'input'])->name('patient.input');
+});
+
+
+
+Route::middleware('auth')->group(function () {
+
     Route::get('/departments', [DepartmentController::class, 'departmentswiper'])->name('departments.departmentswiper');
 
     Route::get('/questionsBack2', [QuestionBackController::class, 'index2'])->name('questionsBack.index2');
@@ -119,39 +161,4 @@ Route::middleware('auth')->group(function () {
 
 
 });
-/////////////////////////////////////---doctors
-Route::middleware(['auth', 'checkRole:doctor'])->group(function () {
-
-    Route::resource('questionsBack', QuestionBackController::class);
-
-    Route::resource('questionsLung', QuestionLungController::class);
-
-    Route::resource('questionsHeart', QuestionHeartController::class);
-
-    Route::resource('questionsBrain', QuestionBrainController::class);
-
-    Route::resource('questionsEye', QuestionEyeController::class);
-
-    Route::resource('questionsIntestine', QuestionIntestinesController::class);
-
-    Route::resource('questionsKidney', QuestionKidneyController::class);
-
-    Route::resource('questionsPharynx', QuestionPharynxController::class);
-
-    Route::resource('questionsStomach', QuestionStomachController::class);
-
-    Route::resource('questionsSkin', QuestionSkinController::class);
-
-    Route::resource('questionsEar', QuestionEarController::class);
-
-});
-
-/////////////////////////////////////---patients
-
-Route::middleware(['auth', 'checkRole:patient'])->group(function () {
-    Route::resource('patients', PatientController::class);
-    // رابط الواجهة الخاصة بإدخال بيانات المريض
-    Route::get('/patient/input', [PatientController::class, 'input'])->name('patient.input');
-});
-
 
