@@ -50,6 +50,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -110,6 +113,12 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/questions/submit', [QuestionController::class, 'submit'])->name('questions.submit');
 
+
+
+});
+/////////////////////////////////////---doctors
+Route::middleware(['auth', 'checkRole:doctor'])->group(function () {
+
     Route::resource('questionsBack', QuestionBackController::class);
 
     Route::resource('questionsLung', QuestionLungController::class);
@@ -134,13 +143,12 @@ Route::middleware('auth')->group(function () {
 
 });
 
-
-
 /////////////////////////////////////---patients
 
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth', 'checkRole:patient'])->group(function () {
     Route::resource('patients', PatientController::class);
     // رابط الواجهة الخاصة بإدخال بيانات المريض
     Route::get('/patient/input', [PatientController::class, 'input'])->name('patient.input');
 });
+
 

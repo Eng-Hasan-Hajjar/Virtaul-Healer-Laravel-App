@@ -127,7 +127,6 @@ class QuestionEarController extends Controller
     public function index()
     {
         $questionsEars = QuestionsEar::latest()->paginate(5);
-
         return view('doctor.crudquestions.ear.index',compact('questionsEars'))
                     ->with('i', (request()->input('page', 1) - 1) * 2);
     }
