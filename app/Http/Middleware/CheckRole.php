@@ -16,8 +16,8 @@ class CheckRole
     public function handle(Request $request, Closure $next ,string $role): Response
     {
         if (!auth()->check() || auth()->user()->role !== $role) {
-           // return redirect('home');
-           abort(403, 'غير مسموح لك بالدخول بصفتك مريض.');
+            return redirect('error');
+        //   abort(403, 'غير مسموح لك بالدخول بصفتك مريض.');
         }
         return $next($request);
     }
