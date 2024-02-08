@@ -22,7 +22,7 @@
     <x-app-layout>
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:aqua;text-align:right">
-                {{ __('طبيبك الافتراضي') }}   ||  حدد قسم الألم الرئيسي
+                {{ __('طبيبي') }}   ||  حدد قسم الألم الرئيسي
             </h2>
 
         </x-slot>

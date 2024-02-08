@@ -41,11 +41,11 @@
     <x-app-layout>
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:rgb(45, 197, 197);text-align:right">
-                {{ __('طبيبك الافتراضي') }}   ||  معرفة أكثر عنك
+                {{ __('طبيبي') }}   ||  معرفة أكثر عنك
             </h2>
 
 
-        
+
 
         </x-slot>
 
