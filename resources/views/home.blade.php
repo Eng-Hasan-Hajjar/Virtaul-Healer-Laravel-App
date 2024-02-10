@@ -54,15 +54,15 @@
 
                             <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="#">الرئيسية</a>
+                                    <li class="current dropdown"><a style="font-size: 24px" href="#">الرئيسية</a>
 
                                     </li>
-									<li ><a href="/about">حول التطبيق</a>
+									<li ><a style="font-size: 24px" href="/about">حول التطبيق</a>
 
                                     </li>
 
 
-									<li class=""><a href="departements">الأقسام</a>
+									<li class=""><a style="font-size: 24px" href="departements">الأقسام</a>
 
                                     </li>
 
@@ -86,7 +86,7 @@
                             @auth
                                       <!-- Settings Dropdown -->
                                     <div class="hidden sm:flex sm:items-center sm:ms-6">
-                                        <x-dropdown align="right" width="48">
+                                        <x-dropdown align="left" width="48">
                                             <x-slot name="trigger">
                                                 <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
                                                     <div>{{ Auth::user()->name }}</div>
@@ -575,16 +575,19 @@
                             <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                                 <div class="footer-widget links-widget">
 									<div class="footer-title  clearfix">
-										<h2>Departments</h2>
+										<h2>الأقسام المتوفرة بالتطبيق</h2>
 										<div class="separator"></div>
 									</div>
 									<ul class="footer-list">
-										<li><a href="#">Surgery & Radiology</a></li>
-										<li><a href="#">Family Medicine</a></li>
-										<li><a href="#">Women’s Health</a></li>
-										<li><a href="#">Optician</a></li>
-										<li><a href="#">Pediatrics</a></li>
-										<li><a href="#">Dermatology</a></li>
+										<li><a href="#"> الرئة</a></li>
+                                        <li><a href="#"> الظهر</a></li>
+                                        <li><a href="#">القلبية </a></li>
+
+                                        <li><a href="#">المعدة </a></li>
+
+                                        <li><a href="#">الدماغ </a></li>
+
+
 									</ul>
 								</div>
 							</div>
@@ -600,31 +603,24 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget news-widget">
 									<div class="footer-title  clearfix">
-										<h2>News Update</h2>
-										<div class="separator"></div>
 									</div>
 
 									<!--News Widget Block-->
                                     <div class="news-widget-block">
-                                        <div class="widget-inner">
-                                            <div class="image">
-                                                <img src="images/resource/news-image-1.jpg" alt="" />
-                                            </div>
-                                            <h3><a href="blog-detail.html">Integrative Medicine And Cancer Treatment</a></h3>
-                                            <div class="post-date">July 11, 2017</div>
+                                        <div class="separator">
                                         </div>
                                     </div>
 
-									<!--News Widget Block-->
-                                    <div class="news-widget-block">
-                                        <div class="widget-inner">
-                                            <div class="image">
-                                                <img src="images/resource/news-image-2.jpg" alt="" />
-                                            </div>
-                                            <h3><a href="blog-detail.html">Achieving Better Health Care One Patient  Time</a></h3>
-                                            <div class="post-date">July 11, 2018</div>
-                                        </div>
-                                    </div>
+                                    <ul class="footer-list">
+
+                                            <li><a href="#"> البلعوم </a></li>
+
+                                            <li><a href="#"> الأذن</a></li>
+
+                                            <li><a href="#"> الجلد</a></li>
+
+                                            <li><a href="#"> العين</a></li>
+                                    </ul>
 
 								</div>
 							</div>
@@ -633,14 +629,12 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget contact-widget">
 									<div class="footer-title  clearfix">
-										<h2>Contact Us</h2>
-										<div class="separator"></div>
+
 									</div>
 
-									<ul class="contact-list">
-										<li><span class="icon flaticon-placeholder"></span>2130 Fulton Street San Diego <br> CA 94117-1080 USA</li>
-										<li><span class="icon flaticon-call"></span>Mon to Fri : 08:30 - 18:00 <br> <a href="tel:+898-68679-575-09">+898 68679 575 09</a></li>
-										<li><span class="icon flaticon-message"></span>Do you have a Question? <a href="mailto:info@gmail.com">info@gmail.com</a></li>
+									<ul class="separator">
+
+
 									</ul>
 
 								</div>

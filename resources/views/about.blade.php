@@ -104,7 +104,7 @@
 
                              <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                  <ul class="navigation clearfix">
-                                     <li class=""><a href="/">الرئيسية</a>
+                                     <li class="" style="font-size: 44px"><a style="font-size: 44px" href="/">رجوع الى الخلف </a>
 
                                      </li>
                                  </ul>

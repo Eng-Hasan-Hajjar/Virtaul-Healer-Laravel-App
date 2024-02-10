@@ -50,9 +50,10 @@ class RegisteredUserController extends Controller
 
        // return redirect(RouteServiceProvider::HOME);
 
-
+     if( $user->role== 'doctor')return redirect(RouteServiceProvider::HOME);
+     else return redirect()->route('patient.input');
         // تحديث هذا الجزء لتوجيه المستخدم إلى واجهة إدخال بيانات المريض بعد تسجيل الدخول
-        return redirect()->route('patient.input');
+
 
     }
 }

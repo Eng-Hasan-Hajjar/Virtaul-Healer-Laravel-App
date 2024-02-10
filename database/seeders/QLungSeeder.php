@@ -13,23 +13,23 @@ class QLungSeeder extends Seeder
     public function run(): void
     {
         \App\Models\QuestionsLung::create([
-            'question' => '؟هل يوجد سعلة ',
+            'question' => 'هل يوجد سعال ؟',
               'answer_type' => 'YesNo',
          ]);
          \App\Models\QuestionsLung::create([
-            'question' => '؟هل تدخن',
+            'question' => 'هل تدخن ؟',
               'answer_type' => 'YesNo',
          ]);
          \App\Models\QuestionsLung::create([
-            'question' => ' ؟هل السعال مصحوب بألم في الحلق',
+            'question' => ' هل السعال مصحوب بألم في الحلق ؟',
               'answer_type' => 'YesNo',
          ]);
          \App\Models\QuestionsLung::create([
-            'question' => '؟هل السعال مصحوب بألم في الصدر',
+            'question' => 'هل السعال مصحوب بألم في الصدر؟',
               'answer_type' => 'YesNo',
          ]);
          \App\Models\QuestionsLung::create([
-            'question' => '?هل السعال جاف',
+            'question' => 'هل السعال جاف ؟',
               'answer_type' => 'YesNo',
          ]);
          \App\Models\QuestionsLung::create([
