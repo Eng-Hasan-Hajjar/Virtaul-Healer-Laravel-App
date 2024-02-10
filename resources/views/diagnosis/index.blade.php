@@ -55,12 +55,9 @@ tr:hover {background-color: rgb(179, 79, 43);}
                 </div>
                 <div class="pull-right">
                     <a class="custom-btn btn-3" href="{{ route('diagnosis.create') }}"style="margin:20px"> إنشاء تشخيص </a>
-                    <img src="{{ asset('gifs/18.gif') }}" style="margin:20px" >
+
                     <img src="{{ asset('gifs/17.gif') }}" style="margin:20px" >
-                    <img src="{{ asset('gifs/16.gif') }}" style="margin:20px" >
-                    <img src="{{ asset('gifs/15.gif') }}" style="margin:20px" >
-                    <img src="{{ asset('gifs/14.gif') }}" style="margin:20px" >
-                    <img src="{{ asset('gifs/13.gif') }}" style="margin:20px" >
+
 
                 </div>
             </div>
@@ -72,29 +69,29 @@ tr:hover {background-color: rgb(179, 79, 43);}
             </div>
         @endif
 
-        <table class="table table-bordered">
+        <table class="table table-bordered"style="text-align: center">
             <tr>
                 <th>الرقم</th>
-                <th>الوصف </th>
+                <th style="text-align: center">الوصف </th>
 
-                <th width="280px"></th>
+                <th width="280px"style="padding-left:60px"></th>
             </tr>
             @foreach ($diagnosises as $diagnosis)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $diagnosis->description }}</td>
+                <td style="text-align: center">{{ $diagnosis->description }}</td>
 
                 <td>
                     <form action="{{ route('diagnosis.destroy',$diagnosis->id) }}" method="POST">
 
-                        <a class="custom-btn btn-10"  href="{{ route('diagnosis.show',$diagnosis->id) }}" style="margin:20px" >Show</a>
+                        <a class="custom-btn btn-10"  href="{{ route('diagnosis.show',$diagnosis->id) }}" style="margin:20px;text-align: center" >اظهار</a>
 
-                        <a class="custom-btn btn-14" href="{{ route('diagnosis.edit',$diagnosis->id) }}" style="margin:20px">Edit</a>
+                        <a class="custom-btn btn-14" href="{{ route('diagnosis.edit',$diagnosis->id) }}" style="margin:20px;text-align: center">التعديل</a>
 
                         @csrf
                         @method('DELETE')
 
-                        <button type="submit" class="custom-btn btn-5">Delete</button>
+                        <button type="submit" class="custom-btn btn-5"style="margin:20px;text-align:center">حذف</button>
                     </form>
                 </td>
             </tr>

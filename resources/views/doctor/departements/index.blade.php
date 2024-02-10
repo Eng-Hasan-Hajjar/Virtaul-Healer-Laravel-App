@@ -71,10 +71,10 @@ tr:hover {background-color: rgb(179, 79, 43);}
 
         <table class="table table-bordered">
             <tr>
-                <th>No</th>
-                <th>Name</th>
+                <th>الرقم</th>
+                <th>الاسم</th>
 
-                <th width="280px">Action</th>
+                <th width="280px" style="padding-left:60px">التحكم</th>
             </tr>
             @foreach ($departements as $departement)
             <tr>
@@ -84,14 +84,14 @@ tr:hover {background-color: rgb(179, 79, 43);}
                 <td>
                     <form action="{{ route('departements.destroy',$departement->id) }}" method="POST">
 
-                        <a class="custom-btn btn-10"  href="{{ route('departements.show',$departement->id) }}" style="margin:10px">Show</a>
+                        <a class="custom-btn btn-10"  href="{{ route('departements.show',$departement->id) }}" style="margin:10px;text-align:center">إظهار</a>
 
-                        <a class="custom-btn btn-14" href="{{ route('departements.edit',$departement->id) }}" style="margin:10px">Edit</a>
+                        <a class="custom-btn btn-14" href="{{ route('departements.edit',$departement->id) }}" style="margin:10px;text-align:center">التعديل</a>
 
                         @csrf
                         @method('DELETE')
 
-                        <button type="submit" class="custom-btn btn-5">Delete</button>
+                        <button type="submit" class="custom-btn btn-5"style="margin:10px;text-align:center">حذف</button>
                     </form>
                 </td>
             </tr>

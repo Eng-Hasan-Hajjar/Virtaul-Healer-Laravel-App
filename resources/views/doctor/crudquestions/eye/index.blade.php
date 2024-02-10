@@ -56,11 +56,7 @@
                     <a class="custom-btn btn-3" href="{{ route('questionsEye.create') }}"style="margin-top:10px" > إضافة سؤال طبي </a>
                     <a class="custom-btn btn-6" href="{{ route('allquestions') }}" style="margin-top:10px" > رجوع</a>
 
-                    <img src="{{ asset('gifs/18.gif') }}" style="margin:20px" >
                     <img src="{{ asset('gifs/17.gif') }}" style="margin:20px" >
-                    <img src="{{ asset('gifs/16.gif') }}" style="margin:20px" >
-                    <img src="{{ asset('gifs/15.gif') }}" style="margin:20px" >
-                    <img src="{{ asset('gifs/14.gif') }}" style="margin:20px" >
                 </div>
             </div>
         </div>

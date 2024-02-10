@@ -41,30 +41,34 @@ class DiagnosisController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Diagnosis $diagnosis)
+    public function show(Diagnosis $diagnosi)
     {
-        return view('diagnosis.show',compact('diagnosis'));
+
+        return view('diagnosis.show',compact('diagnosi'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Diagnosis $diagnosis)
+    public function edit(Diagnosis $diagnosi)
     {
 
-        return view('diagnosis.edit',compact('diagnosis'));
+        return view('diagnosis.edit',compact('diagnosi'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Diagnosis $diagnosis)
+   
+    public function update(Request $request, Diagnosis $diagnosi)
     {
-        dd($diagnosis);
         $request->validate([
             'description' => 'required',
+
         ]);
-        $diagnosis->update($request->all());
+
+        $diagnosi->update($request->all());
+
         return redirect()->route('diagnosis.index')
                         ->with('success','diagnosis updated successfully');
     }
@@ -72,9 +76,9 @@ class DiagnosisController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Diagnosis $diagnosis)
+    public function destroy(Diagnosis $diagnosi)
     {
-        $diagnosis->delete();
+        $diagnosi->delete();
         return redirect()->route('diagnosis.index')
                         ->with('success','diagnosis deleted successfully');
     }
