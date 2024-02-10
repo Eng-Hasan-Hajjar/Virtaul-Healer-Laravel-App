@@ -22,7 +22,7 @@
     <x-app-layout>
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:aqua;text-align:right">
-                {{ __('طبيبي') }}   ||  حدد قسم الألم الرئيسي
+                {{ __('طبيبي') }}  
             </h2>
 
         </x-slot>
@@ -30,13 +30,13 @@
 
 
 
-        <div class="row" style="font-size :18px ;color:aqua;text-align:center;margin:100px">
+        <div class="row" style="font-size :18px ;color:aqua;text-align:center;margin:0px">
             <div class="col-lg-12 margin-tb">
-                <div class="pull-left" style="margin:50px">
+                <div class="pull-left" >
                     <h2>إضافة جديد </h2>
                 </div>
                 <div class="pull-right">
-                    <a class="custom-btn btn-6" href="{{ route('questionsBack.index') }}"> رجوع</a>
+
                 </div>
             </div>
         </div>
@@ -58,13 +58,13 @@
              <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-
-                        <input type="text" name="question" class="form-control" placeholder="اكتب وصف السؤال">
+                        <input type="text"style="color:black;width:100%;text-align:right" name="question" class="form-control" placeholder="اكتب وصف السؤال">
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <button type="submit" class="custom-btn btn-2">ارسال</button>
+                        <button type="submit" class="custom-btn btn-2">اضافة</button>
+                        <a class="custom-btn btn-6" href="{{ route('questionsBack.index') }}"> رجوع</a>
                 </div>
             </div>
 

@@ -39,7 +39,7 @@
     <x-app-layout>
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:aqua;text-align:right">
-                {{ __('طبيبي') }}   ||  حدد قسم الألم الرئيسي
+                {{ __('طبيبي') }} 
             </h2>
 
         </x-slot>
@@ -69,26 +69,26 @@
         <table class="table table-bordered">
             <tr>
                 <th>الرقم</th>
-                <th>السؤال  </th>
+                <th style="text-align: center">السؤال  </th>
 
                 <th width="280px"> </th>
             </tr>
             @foreach ($questionsHearts as $questionsHeart)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $questionsHeart->question }}</td>
+                <td style="text-align: center">{{ $questionsHeart->question }}</td>
 
                 <td>
                     <form action="{{ route('questionsHeart.destroy',$questionsHeart->id) }}" method="POST">
 
-                        <a class="custom-btn btn-10"style="margin-left:16px"  href="{{ route('questionsHeart.show',$questionsHeart->id) }}"style="margin:20px">التفاصيل</a>
+                        <a class="custom-btn btn-10"style="margin-left:20px;text-align: center"  href="{{ route('questionsHeart.show',$questionsHeart->id) }}"style="margin:20px;text-align: center">التفاصيل</a>
 
-                        <a class="custom-btn btn-14" style="margin-left:16px;margin-top:5px" href="{{ route('questionsHeart.edit',$questionsHeart->id) }}"style="margin:20px">التعديل</a>
+                        <a class="custom-btn btn-14" style="margin-left:20px;margin-top:5px;text-align: center" href="{{ route('questionsHeart.edit',$questionsHeart->id) }}"style="margin:20px;text-align: center">التعديل</a>
 
                         @csrf
                         @method('DELETE')
 
-                        <button type="submit" class="custom-btn btn-5">حذف</button>
+                        <button type="submit" class="custom-btn btn-5"style="margin:20px;text-align: center">حذف</button>
                     </form>
                 </td>
             </tr>

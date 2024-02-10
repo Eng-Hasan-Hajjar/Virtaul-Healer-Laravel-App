@@ -22,7 +22,7 @@
     <x-app-layout>
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:aqua;text-align:right">
-                {{ __('طبيبي') }}   ||  حدد قسم الألم الرئيسي
+                {{ __('طبيبي') }}
             </h2>
 
         </x-slot>
@@ -32,10 +32,10 @@
         <div class="row">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left">
-                    <h2>Edit departement</h2>
+                    <h2>تعديل القسم  </h2>
                 </div>
                 <div class="pull-right">
-                    <a class="btn btn-primary" href="{{ route('departements.index') }}"> Back</a>
+                    <a class="btn btn-primary" href="{{ route('departements.index') }}"> رجوع</a>
                 </div>
             </div>
         </div>
@@ -58,13 +58,13 @@
              <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Name:</strong>
+                        <strong>الاسم:</strong>
                         <input type="text" name="name" value="{{ $departement->name }}" class="form-control" placeholder="Name">
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary">تعديل</button>
                 </div>
             </div>
 

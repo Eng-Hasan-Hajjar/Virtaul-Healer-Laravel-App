@@ -40,7 +40,7 @@ tr:hover {background-color: rgb(179, 79, 43);}
     <x-app-layout>
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:aqua;text-align:right">
-                {{ __('طبيبي') }}   ||  حدد قسم الألم الرئيسي
+                {{ __('طبيبي') }}   
             </h2>
 
         </x-slot>
@@ -72,14 +72,14 @@ tr:hover {background-color: rgb(179, 79, 43);}
         <table class="table table-bordered">
             <tr>
                 <th>الرقم</th>
-                <th>الاسم</th>
+                <th style="text-align: center">الاسم</th>
 
                 <th width="280px" style="padding-left:60px">التحكم</th>
             </tr>
             @foreach ($departements as $departement)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $departement->name }}</td>
+                <td style="text-align: center">{{ $departement->name }}</td>
 
                 <td>
                     <form action="{{ route('departements.destroy',$departement->id) }}" method="POST">
