@@ -27,7 +27,7 @@
                     </x-nav-link>
                 </div>
 
-
+                @can('isDoctor')
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('allquestions')" :active="request()->routeIs('allquestions')">
                         {{ __('التحكم بالأسئلة الطبية') }}
@@ -43,12 +43,16 @@
                         {{ __('التحكم بالأقسام') }}
                     </x-nav-link>
                 </div>
-                
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('patients.index')" :active="request()->routeIs('patients.index')">
-                        {{ __(' معلوماتي ') }}
-                    </x-nav-link>
-                </div>
+                @endcan
+
+                @can('isPatient')
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                        <x-nav-link :href="route('patients.index')" :active="request()->routeIs('patients.index')">
+                            {{ __(' معلوماتي ') }}
+                        </x-nav-link>
+                    </div>
+                @endcan
+
 
 
             </div>

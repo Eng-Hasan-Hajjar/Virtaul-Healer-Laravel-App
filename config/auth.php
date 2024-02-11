@@ -40,6 +40,16 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+           // Add your roles here
+           'patient' => [
+            'driver' => 'session',
+            'provider' => 'patients',
+        ],
+
+        'doctor' => [
+            'driver' => 'session',
+            'provider' => 'doctors',
+        ],
     ],
 
     /*
@@ -69,6 +79,18 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+
+          // Define providers for your roles here
+    'patients' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\Patient::class,
+    ],
+
+    'doctors' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\Doctor::class,
+    ],
+    
     ],
 
     /*
@@ -111,5 +133,7 @@ return [
     */
 
     'password_timeout' => 10800,
+
+
 
 ];
