@@ -23,7 +23,7 @@
     <x-app-layout>
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:aqua;text-align:right">
-                {{ __('طبيبي') }}  
+                {{ __('طبيبي') }}
             </h2>
 
         </x-slot>
@@ -35,24 +35,28 @@
         <div class="row ">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left" >
-                    <h2> اظهار القسم</h2>
+                    <br>
+                    <h2> اسم القسم</h2>
                 </div>
-                <div class="pull-right">
-                    <a class="btn btn-primary" href="{{ route('departements.index') }}"> Back</a>
-                </div>
+                <br>
             </div>
         </div>
 
         <div class="row ">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>الاسم:</strong>
+                    <br>
+                    <br><br>
                     {{ $departement->name }}
+                    <br>
                 </div>
             </div>
 
         </div>
-
+        <br>
+        <div class="pull-right">
+            <a class="custom-btn btn-6" href="{{ route('departements.index') }}"> رجوع</a>
+        </div>
 </div>
 
 

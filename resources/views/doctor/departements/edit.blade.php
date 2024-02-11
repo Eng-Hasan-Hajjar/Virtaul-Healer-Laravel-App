@@ -29,49 +29,53 @@
         <div class="row font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"style="font-size :18px ;color:aqua;text-align:center">
 
 
-        <div class="row">
-            <div class="col-lg-12 margin-tb">
-                <div class="pull-left">
-                    <h2>تعديل القسم  </h2>
-                </div>
-                <div class="pull-right">
-                    <a class="btn btn-primary" href="{{ route('departements.index') }}"> رجوع</a>
+            <div class="row">
+                <div class="col-lg-12 margin-tb">
+                    <div class="pull-left"style="margin:50px" >
+                        <h2>  تعديل القسم    </h2>
+                    </div>
+                    <div class="pull-right">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
 
-        <form action="{{ route('departements.update',$departement->id) }}" method="POST">
-            @csrf
-            @method('PUT')
+            <form action="{{ route('departements.update', $departement->id) }}" method="POST"style="color:#000;">
+                @csrf
+                @method('PUT')
 
-             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>الاسم:</strong>
-                        <input type="text" name="name" value="{{ $departement->name }}" class="form-control" placeholder="Name">
+                 <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group" style="margin:50px">
+
+                            <input type="text" style="width:60%;text-align:center" name="name" value="{{ $departement->name }}" class="form-control" placeholder="التشخيص">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+
+                      <button type="submit" class="custom-btn btn-2">تعديل</button>
+                      <a class="custom-btn btn-6" href="{{ route('departements.index') }}"> رجوع</a>
+
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                  <button type="submit" class="btn btn-primary">تعديل</button>
-                </div>
+            </form>
+
+
             </div>
 
-        </form>
 
-
-        </div>
 
 
     </x-app-layout>
