@@ -98,19 +98,19 @@ class QuestionEarController extends Controller
                                         if ($yesAnswersCountpercent >= 90) {
                                                            $diagnosisdb = Diagnosis::find(27);
                                         }
-                                             $diagnosisdb = Diagnosis::find(26);
+                                        else         $diagnosisdb = Diagnosis::find(26);
                                     }
-                                         $diagnosisdb = Diagnosis::find(25);
+                                    else       $diagnosisdb = Diagnosis::find(25);
                                 }
-                                     $diagnosisdb = Diagnosis::find(25);
+                                else      $diagnosisdb = Diagnosis::find(25);
                             }
-                                 $diagnosisdb = Diagnosis::find(24);
+                            else      $diagnosisdb = Diagnosis::find(24);
                         }
-                             $diagnosisdb = Diagnosis::find(24);
+                        else       $diagnosisdb = Diagnosis::find(24);
                     }
-                         $diagnosisdb = Diagnosis::find(23);
+                    else       $diagnosisdb = Diagnosis::find(23);
                 }
-                     $diagnosisdb = Diagnosis::find(23);
+                else        $diagnosisdb = Diagnosis::find(23);
             }
 
             $id = $diagnosisdb->id;

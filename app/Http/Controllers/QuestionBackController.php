@@ -99,19 +99,19 @@ class QuestionBackController extends Controller
                                         if ($yesAnswersCountpercent >= 90) {
                                                            $diagnosisdb = Diagnosis::find(62);
                                         }
-                                             $diagnosisdb = Diagnosis::find(61);
+                                        else         $diagnosisdb = Diagnosis::find(61);
                                     }
-                                         $diagnosisdb = Diagnosis::find(60);
+                                    else      $diagnosisdb = Diagnosis::find(60);
                                 }
-                                     $diagnosisdb = Diagnosis::find(59);
+                                else     $diagnosisdb = Diagnosis::find(59);
                             }
-                                 $diagnosisdb = Diagnosis::find(58);
+                            else       $diagnosisdb = Diagnosis::find(58);
                         }
-                             $diagnosisdb = Diagnosis::find(57);
+                        else      $diagnosisdb = Diagnosis::find(57);
                     }
-                         $diagnosisdb = Diagnosis::find(56);
+                    else      $diagnosisdb = Diagnosis::find(56);
                 }
-                     $diagnosisdb = Diagnosis::find(55);
+                else     $diagnosisdb = Diagnosis::find(55);
             }
 
             $id = $diagnosisdb->id;

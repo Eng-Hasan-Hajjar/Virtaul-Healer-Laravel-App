@@ -100,19 +100,19 @@ class QuestionStomachController extends Controller
                                         if ($yesAnswersCountpercent >= 90) {
                                                            $diagnosisdb = Diagnosis::find(47);
                                         }
-                                             $diagnosisdb = Diagnosis::find(47);
+                                        else    $diagnosisdb = Diagnosis::find(47);
                                     }
-                                         $diagnosisdb = Diagnosis::find(46);
+                                    else         $diagnosisdb = Diagnosis::find(46);
                                 }
-                                     $diagnosisdb = Diagnosis::find(46);
+                                else      $diagnosisdb = Diagnosis::find(46);
                             }
-                                 $diagnosisdb = Diagnosis::find(46);
+                            else      $diagnosisdb = Diagnosis::find(46);
                         }
-                             $diagnosisdb = Diagnosis::find(45);
+                        else       $diagnosisdb = Diagnosis::find(45);
                     }
-                         $diagnosisdb = Diagnosis::find(45);
+                    else        $diagnosisdb = Diagnosis::find(45);
                 }
-                     $diagnosisdb = Diagnosis::find(45);
+                else        $diagnosisdb = Diagnosis::find(45);
             }
 
             $id = $diagnosisdb->id;

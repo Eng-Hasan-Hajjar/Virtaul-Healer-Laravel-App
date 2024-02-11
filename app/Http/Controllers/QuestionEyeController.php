@@ -99,19 +99,19 @@ class QuestionEyeController extends Controller
                                         if ($yesAnswersCountpercent >= 90) {
                                                            $diagnosisdb = Diagnosis::find(32);
                                         }
-                                             $diagnosisdb = Diagnosis::find(31);
+                                        else         $diagnosisdb = Diagnosis::find(31);
                                     }
-                                         $diagnosisdb = Diagnosis::find(30);
+                                    else       $diagnosisdb = Diagnosis::find(30);
                                 }
-                                     $diagnosisdb = Diagnosis::find(30);
+                                else      $diagnosisdb = Diagnosis::find(30);
                             }
-                                 $diagnosisdb = Diagnosis::find(29);
+                            else       $diagnosisdb = Diagnosis::find(29);
                         }
-                             $diagnosisdb = Diagnosis::find(29);
+                        else      $diagnosisdb = Diagnosis::find(29);
                     }
-                         $diagnosisdb = Diagnosis::find(28);
+                    else       $diagnosisdb = Diagnosis::find(28);
                 }
-                     $diagnosisdb = Diagnosis::find(28);
+                else       $diagnosisdb = Diagnosis::find(28);
             }
 
             $id = $diagnosisdb->id;

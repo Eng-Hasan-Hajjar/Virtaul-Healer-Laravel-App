@@ -96,19 +96,19 @@ class QuestionHeartController extends Controller
                                         if ($yesAnswersCountpercent >= 90) {
                                                            $diagnosisdb = Diagnosis::find(36);
                                         }
-                                             $diagnosisdb = Diagnosis::find(37);
+                                        else       $diagnosisdb = Diagnosis::find(37);
                                     }
-                                         $diagnosisdb = Diagnosis::find(37);
+                                    else           $diagnosisdb = Diagnosis::find(37);
                                 }
-                                     $diagnosisdb = Diagnosis::find(35);
+                                else        $diagnosisdb = Diagnosis::find(35);
                             }
-                                 $diagnosisdb = Diagnosis::find(34);
+                            else       $diagnosisdb = Diagnosis::find(34);
                         }
-                             $diagnosisdb = Diagnosis::find(34);
+                        else      $diagnosisdb = Diagnosis::find(34);
                     }
-                         $diagnosisdb = Diagnosis::find(33);
+                    else    $diagnosisdb = Diagnosis::find(33);
                 }
-                     $diagnosisdb = Diagnosis::find(33);
+                else      $diagnosisdb = Diagnosis::find(33);
             }
 
             $id = $diagnosisdb->id;

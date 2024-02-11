@@ -93,18 +93,19 @@ class QuestionLungController extends Controller
                                         if ($yesAnswersCountpercent >= 90) {
                                                            $diagnosisdb = Diagnosis::find(7);
                                         }
-                                             $diagnosisdb = Diagnosis::find(6);
+                                        else       $diagnosisdb = Diagnosis::find(6);
                                     }
-                                         $diagnosisdb = Diagnosis::find(5);
+                                    else      $diagnosisdb = Diagnosis::find(5);
                                 }
-                                     $diagnosisdb = Diagnosis::find(4);
+                                else     $diagnosisdb = Diagnosis::find(4);
                             }
-                                 $diagnosisdb = Diagnosis::find(4);
+                            else      $diagnosisdb = Diagnosis::find(4);
                         }
-                             $diagnosisdb = Diagnosis::find(3);
+                        else    $diagnosisdb = Diagnosis::find(3);
                     }
-                         $diagnosisdb = Diagnosis::find(2);
+                    else     $diagnosisdb = Diagnosis::find(2);
                 }
+                else
                      $diagnosisdb = Diagnosis::find(1);
             }
 

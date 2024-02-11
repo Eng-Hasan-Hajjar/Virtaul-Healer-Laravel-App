@@ -97,19 +97,19 @@ class QuestionBrainController extends Controller
                                         if ($yesAnswersCountpercent >= 90) {
                                                            $diagnosisdb = Diagnosis::find(12);
                                         }
-                                             $diagnosisdb = Diagnosis::find(11);
+                                        else        $diagnosisdb = Diagnosis::find(11);
                                     }
-                                         $diagnosisdb = Diagnosis::find(10);
+                                    else        $diagnosisdb = Diagnosis::find(10);
                                 }
-                                     $diagnosisdb = Diagnosis::find(10);
+                                else       $diagnosisdb = Diagnosis::find(10);
                             }
-                                 $diagnosisdb = Diagnosis::find(9);
+                            else      $diagnosisdb = Diagnosis::find(9);
                         }
-                             $diagnosisdb = Diagnosis::find(9);
+                        else      $diagnosisdb = Diagnosis::find(9);
                     }
-                         $diagnosisdb = Diagnosis::find(9);
+                    else        $diagnosisdb = Diagnosis::find(9);
                 }
-                     $diagnosisdb = Diagnosis::find(8);
+                else      $diagnosisdb = Diagnosis::find(8);
             }
 
             $id = $diagnosisdb->id;

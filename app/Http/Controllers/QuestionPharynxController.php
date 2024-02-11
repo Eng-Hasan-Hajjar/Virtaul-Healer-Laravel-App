@@ -98,19 +98,19 @@ class QuestionPharynxController extends Controller
                                         if ($yesAnswersCountpercent >= 90) {
                                                            $diagnosisdb = Diagnosis::find(17);
                                         }
-                                             $diagnosisdb = Diagnosis::find(16);
+                                        else       $diagnosisdb = Diagnosis::find(16);
                                     }
-                                         $diagnosisdb = Diagnosis::find(15);
+                                    else          $diagnosisdb = Diagnosis::find(15);
                                 }
-                                     $diagnosisdb = Diagnosis::find(15);
+                                else           $diagnosisdb = Diagnosis::find(15);
                             }
-                                 $diagnosisdb = Diagnosis::find(14);
+                            else        $diagnosisdb = Diagnosis::find(14);
                         }
-                             $diagnosisdb = Diagnosis::find(14);
+                        else       $diagnosisdb = Diagnosis::find(14);
                     }
-                         $diagnosisdb = Diagnosis::find(13);
+                    else       $diagnosisdb = Diagnosis::find(13);
                 }
-                     $diagnosisdb = Diagnosis::find(13);
+                else        $diagnosisdb = Diagnosis::find(13);
             }
 
             $id = $diagnosisdb->id;

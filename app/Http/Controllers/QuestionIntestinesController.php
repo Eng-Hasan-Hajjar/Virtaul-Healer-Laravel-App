@@ -97,19 +97,19 @@ class QuestionIntestinesController extends Controller
                                         if ($yesAnswersCountpercent >= 90) {
                                                            $diagnosisdb = Diagnosis::find(44);
                                         }
-                                             $diagnosisdb = Diagnosis::find(43);
+                                        else        $diagnosisdb = Diagnosis::find(43);
                                     }
-                                         $diagnosisdb = Diagnosis::find(43);
+                                    else        $diagnosisdb = Diagnosis::find(43);
                                 }
-                                     $diagnosisdb = Diagnosis::find(42);
+                                else       $diagnosisdb = Diagnosis::find(42);
                             }
-                                 $diagnosisdb = Diagnosis::find(41);
+                            else       $diagnosisdb = Diagnosis::find(41);
                         }
-                             $diagnosisdb = Diagnosis::find(40);
+                        else      $diagnosisdb = Diagnosis::find(40);
                     }
-                         $diagnosisdb = Diagnosis::find(39);
+                    else       $diagnosisdb = Diagnosis::find(39);
                 }
-                     $diagnosisdb = Diagnosis::find(38);
+                else      $diagnosisdb = Diagnosis::find(38);
             }
 
             $id = $diagnosisdb->id;

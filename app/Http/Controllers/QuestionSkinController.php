@@ -99,19 +99,19 @@ class QuestionSkinController extends Controller
                                         if ($yesAnswersCountpercent >= 90) {
                                                            $diagnosisdb = Diagnosis::find(18);
                                         }
-                                             $diagnosisdb = Diagnosis::find(22);
+                                        else         $diagnosisdb = Diagnosis::find(22);
                                     }
-                                         $diagnosisdb = Diagnosis::find(21);
+                                    else       $diagnosisdb = Diagnosis::find(21);
                                 }
-                                     $diagnosisdb = Diagnosis::find(21);
+                                else      $diagnosisdb = Diagnosis::find(21);
                             }
-                                 $diagnosisdb = Diagnosis::find(20);
+                            else       $diagnosisdb = Diagnosis::find(20);
                         }
-                             $diagnosisdb = Diagnosis::find(20);
+                        else      $diagnosisdb = Diagnosis::find(20);
                     }
-                         $diagnosisdb = Diagnosis::find(19);
+                    else      $diagnosisdb = Diagnosis::find(19);
                 }
-                     $diagnosisdb = Diagnosis::find(19);
+                else       $diagnosisdb = Diagnosis::find(19);
             }
 
             $id = $diagnosisdb->id;

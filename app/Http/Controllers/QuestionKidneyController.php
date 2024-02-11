@@ -76,19 +76,19 @@ class QuestionKidneyController extends Controller
                                         if ($yesAnswersCountpercent >= 90) {
                                                            $diagnosisdb = Diagnosis::find(54);
                                         }
-                                             $diagnosisdb = Diagnosis::find(50);
+                                        else        $diagnosisdb = Diagnosis::find(50);
                                     }
-                                         $diagnosisdb = Diagnosis::find(50);
+                                    else         $diagnosisdb = Diagnosis::find(50);
                                 }
-                                     $diagnosisdb = Diagnosis::find(48);
+                                else       $diagnosisdb = Diagnosis::find(48);
                             }
-                                 $diagnosisdb = Diagnosis::find(49);
+                            else      $diagnosisdb = Diagnosis::find(49);
                         }
-                             $diagnosisdb = Diagnosis::find(51);
+                        else      $diagnosisdb = Diagnosis::find(51);
                     }
-                         $diagnosisdb = Diagnosis::find(52);
+                    else        $diagnosisdb = Diagnosis::find(52);
                 }
-                     $diagnosisdb = Diagnosis::find(52);
+                else       $diagnosisdb = Diagnosis::find(52);
             }
 
             $id = $diagnosisdb->id;
