@@ -34,13 +34,13 @@ th {
   height: 70px;
 }
 
-tr:hover {background-color: rgb(179, 79, 43);}
+tr:hover {background-color: rgb(1, 72, 92);}
         </style>
 
     <x-app-layout>
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:aqua;text-align:right">
-                {{ __('طبيبي') }}   
+                {{ __('طبيبي') }}
             </h2>
 
         </x-slot>
