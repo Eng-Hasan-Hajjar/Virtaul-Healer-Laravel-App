@@ -35,7 +35,6 @@
                     <h2>التعديل </h2>
                 </div>
                 <div class="pull-right">
-                    <a class="custom-btn btn-6" href="{{ route('questionsEye.index') }}"> رجوع</a>
                 </div>
             </div>
         </div>
@@ -59,12 +58,14 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group" style="margin:50px">
 
-                        <input type="text" name="question" value="{{ $questionsEye->question }}" class="form-control" placeholder="السؤال">
+                        <input type="text"style="width:60%;text-align:center" name="question" value="{{ $questionsEye->question }}" class="form-control" placeholder="السؤال">
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                  <button type="submit" class="custom-btn btn-2">ارسال</button>
+                  <button type="submit" class="custom-btn btn-2">تعديل</button>
+                  <a class="custom-btn btn-6" href="{{ route('questionsEye.index') }}"> رجوع</a>
+
                 </div>
             </div>
 

@@ -57,7 +57,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group" style="margin:50px">
 
-                        <input type="text" name="question" value="{{ $questionsStomach->question }}" class="form-control" placeholder="السؤال">
+                        <input type="text" style="width:60%;text-align:center" name="question" value="{{ $questionsStomach->question }}" class="form-control" placeholder="السؤال">
                     </div>
                 </div>
 
