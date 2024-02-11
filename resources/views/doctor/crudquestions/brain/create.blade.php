@@ -22,7 +22,7 @@
     <x-app-layout>
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:aqua;text-align:right">
-                {{ __('طبيبي') }}   
+                {{ __('طبيبي') }}
             </h2>
 
         </x-slot>
@@ -60,7 +60,7 @@
                  <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <input type="text"style="color:black;width:100%;text-align:right" name="question" class="form-control" placeholder="اكتب وصف السؤال">
+                            <input type="text"style="color:black;width:100%;text-align:center" name="question" class="form-control" placeholder="اكتب وصف السؤال">
                         </div>
                     </div>
 

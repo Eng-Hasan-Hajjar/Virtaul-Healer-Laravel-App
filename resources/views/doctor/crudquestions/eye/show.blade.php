@@ -38,7 +38,6 @@
                         <h2> التفاصيل </h2>
                     </div>
                     <div class="pull-right">
-                        <a class="custom-btn btn-6" href="{{ route('questionsEye.index') }}"> رجوع</a>
                     </div>
                 </div>
             </div>
@@ -52,7 +51,7 @@
                 </div>
             </div>
             <div class="pull-right">
-                <a class="custom-btn btn-6" href="{{ route('questionsEar.index') }}"> رجوع</a>
+                <a class="custom-btn btn-6" href="{{ route('questionsEye.index') }}"> رجوع</a>
             </div>
         </div>
 

@@ -59,7 +59,7 @@
                  <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <input type="text"style="color:black;width:100%;text-align:right" name="question" class="form-control" placeholder="اكتب وصف السؤال">
+                            <input type="text"style="color:black;width:100%;text-align:center" name="question" class="form-control" placeholder="اكتب وصف السؤال">
                         </div>
                     </div>
 
