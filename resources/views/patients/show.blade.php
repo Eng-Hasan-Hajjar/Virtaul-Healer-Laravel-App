@@ -31,6 +31,7 @@
         table {
                position: relative;
                 width: 50%;
+                margin-left: 20%;
             }
         th {
               height: 70px;
@@ -50,17 +51,11 @@
 
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2> </h2>
-            </div>
-            <div class="pull-right" style="margin:15px">
-                <a class="custom-btn btn-6" href="{{ route('dashboard') }}" style="margin-top:10px;text-align:center" > رجوع</a>
 
-                <img src="{{ asset('gifs/18.gif') }}" style="margin:20px" >
+            <div class="pull-right"  style="margin:20px;text-align:center">
+                <a class="custom-btn btn-5" href="{{ route('patients.edit',$patient->id) }}"  > تعديل معلوماتي</a>
 
-
-
-
+                <a class="custom-btn btn-6" href="{{ route('dashboard') }}" > رجوع</a>
             </div>
         </div>
     </div>
@@ -70,7 +65,7 @@
 
             <table class="table table-bordered">
                 <tbody>
-                    <tr>
+                    <tr  style="background:#676767;">
                         <th scope="row">الاسم</th>
                         <td>{{ $patient->user->name }}</td>
                     </tr>

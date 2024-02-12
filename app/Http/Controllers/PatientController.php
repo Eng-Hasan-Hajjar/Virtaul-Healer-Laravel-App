@@ -121,6 +121,7 @@ class PatientController extends Controller
      */
     public function edit(Patient $patient)
     {
+       // dd($patient);
         return view('patients.edit',compact('patient'));
 
     }

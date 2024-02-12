@@ -22,41 +22,121 @@
     <x-app-layout>
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight" style="font-size :18px ;color:aqua;text-align:right">
-                {{ __('طبيبي') }}   
+                {{ __('طبيبي') }}
             </h2>
 
         </x-slot>
 
 
 
-        <div class="row font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"style="font-size :18px ;color:aqua;text-align:center">
+        <div class="row font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"style="margin-left: 30%;font-size :18px ;color:aqua;text-align:center">
 
-                    <div class="row">
-                        <div class="col-lg-12 margin-tb">
-                            <div class="pull-left">
-                                <h2>تحديث معلومات المريض</h2>
-                            </div>
 
-                            <div class="pull-right"style="margin:20px">
-                                <a class="custom-btn btn-6" href="{{ route('patients.index') }}"> رجوع</a>
-                            </div>
-                        </div>
-                    </div>
 
 
 
                 <div class="container">
-                    <h2>تحديث معلومات المريض</h2>
-                    <form method="POST" action="{{ route('patients.update', $patient->id) }}">
+                    <h2>تعديل معلوماتي </h2>
+                    <form method="POST" action="{{ route('patients.update',$patient->id) }}">
                         @csrf
                         @method('PUT')
 
 
+                        <table>
+                            <tbody>
+                                  <div class="row">
+                                                      <!-- معلومات الشخصية -->
+                                      <tr>
+                                          <div class="form-group">
+
+                                              <td>  <label for="age">العمر:</label></td>
+                                                  <td>   <input type="number" class="form-control" id="age" name="age" value="{{$patient->age}}" >
+                                                  </td>
+                                               </div>
+                                     </tr>
+                                     <tr>
+                                        <div class="form-group">
+                                            <td> <label for="gender">الجنس:</label></td>
+                                            <td>
+                                                <select class="form-control" id="gender" name="gender">
+                                                    <option value="male" {{ $patient->gender == 'male' ? 'selected' : '' }}>ذكر</option>
+                                                    <option value="female" {{ $patient->gender == 'female' ? 'selected' : '' }}>أنثى</option>
+                                                </select>
+                                            </td>
+                                        </div>
+                                  </tr>
+                                      <tr>
+                                        <div class="form-group" >
+                                            <td> <label for="blood_type">زمرة الدم:</label></td>
+                                            <td>
+                                                <select class="form-control" id="blood_type" name="blood_type">
+                                                    <option value="a+" {{ $patient->blood_type == 'a+' ? 'selected' : '' }}>a+</option>
+                                                    <option value="a-" {{ $patient->blood_type == 'a-' ? 'selected' : '' }}>a-</option>
+                                                    <option value="b+" {{ $patient->blood_type == 'b+' ? 'selected' : '' }}>b+</option>
+                                                    <option value="b-" {{ $patient->blood_type == 'b-' ? 'selected' : '' }}>b-</option>
+                                                    <option value="o+" {{ $patient->blood_type == 'o+' ? 'selected' : '' }}>o+</option>
+                                                    <option value="o-" {{ $patient->blood_type == 'o-' ? 'selected' : '' }}>o-</option>
+                                                    <option value="AB+" {{ $patient->blood_type == 'AB+' ? 'selected' : '' }}>AB+</option>
+                                                    <option value="AB-" {{ $patient->blood_type == 'AB-' ? 'selected' : '' }}>AB-</option>
+                                                </select>
+                                            </td>
+                                        </div>
+
+                                  </tr>
+
+                                      <tr>
+                                      <!-- التاريخ الطبي -->
+                                      <div class="form-group">
+                                          <td> <label for="genetic_disease">الأمراض الوراثية:</label></td>
+                                          <td>
 
 
+                                              <input type="text" value="{{$patient->genetic_disease}}" class="form-control" id="genetic_disease" name="genetic_disease" placeholder="الأمراض الوراثية">
+                                          </td>
+                                      </div>
+                                  </tr>
+                                  <tr>
+                                      <div class="form-group">
+                                          <td> <label for="chronic_diseases">الأمراض المزمنة:</label></td>
+                                          <td>
+                                          <input type="text" value="{{$patient->chronic_diseases}}" class="form-control" id="chronic_diseases" name="chronic_diseases" placeholder="الأمراض المزمنة">
+                                          </td>
+                                      </div>
+                                  <tr>
+                                  </tr>
+                                      <div class="form-group">
+                                          <td> <label for="previous_surgery">عمليات جراحية سابقة:</label></td>
+                                              <td> <input type="text" value="{{$patient->previous_surgery}}" class="form-control" id="previous_surgery" name="previous_surgery" placeholder="عمليات جراحية سابقة"></td>
+                                      </div>
+                                  </tr>
+                                  <tr>
+                                      <!-- معلومات الاتصال -->
+                                      <div class="form-group">
+                                          <td>  <label for="number">الرقم :</label></td>
+                                              <td>   <input type="text"value="{{$patient->number}}" class="form-control" id="number" name="number" ></td>
+                                      </div>
+                                  </tr>
 
+                                      <tr>
+                                      <div class="form-group">
+                                          <td><label for="address">العنوان:</label></td>
+                                              <td> <input type="text" value="{{$patient->address}}"class="form-control" id="address" name="address" value="Aleppo"></td>
+                                      </div>
+                                  </tr>
 
-                        <button type="submit" class="btn btn-primary">تحديث</button>
+                                      <tr>
+
+                                          <td> <div class="col-xs-12 col-sm-12 col-md-12 text-center"></td>
+                                              <td>    <button type="submit" class="custom-btn btn-15">تعديل   </button>
+                                                <a class="custom-btn btn-6" style="margin:20px;text-align:center" href="{{ route('patients.index') }}"> رجوع</a></td>
+                                      </div>
+                                      <div class="pull-right"style="margin:20px">
+
+                                    </div>
+                                  </tr>
+                                  </div>
+                           </tbody>
+                          </table>
                     </form>
                 </div>
 
@@ -80,6 +160,14 @@
 
 
 <style>
+    label{
+        position: relative;
+      text-align: right;
+      color: #52acd0;
+      font-size: 22px;
+      font-family: "Cormorant Garamond", serif;
+
+    }
     body {
       background: #e0e5ec;
     }

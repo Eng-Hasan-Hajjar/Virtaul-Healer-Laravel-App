@@ -109,6 +109,9 @@
                                 <option value="b-">b-</option>
                                 <option value="o+">o+</option>
                                 <option value="o-">o-</option>
+                                <option value="AB+" >AB+</option>
+                                <option value="AB-" >AB-</option>
+
                             </select>
                         </td>
                         </div>
