@@ -1,19 +1,12 @@
-
-
-
     <!-- Stylesheets -->
-
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-
     <!--Color Switcher Mockup-->
     <link href="css/color-switcher-design.css" rel="stylesheet">
     <!--Color Themes-->
     <link id="theme-color-file" href="css/color-themes/default-theme.css" rel="stylesheet">
-
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
-
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -22,10 +15,8 @@
     <style>
         table, th, td {
             border: 0px solid;
-
             padding: 15px;
             text-align: center;
-
             color: aqua;
             }
         table {
@@ -36,7 +27,6 @@
         th {
               height: 70px;
         }
-
         tr:hover {background-color: rgb(179, 79, 43);}
     </style>
 
