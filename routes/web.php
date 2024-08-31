@@ -6,6 +6,9 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\QuestionBackController;
 use App\Http\Controllers\QuestionLungController;
 use App\Http\Controllers\QuestionHeartController;
+
+
+
 use App\Http\Controllers\QuestionEarController;
 
 use App\Http\Controllers\QuestionIntestinesController;
