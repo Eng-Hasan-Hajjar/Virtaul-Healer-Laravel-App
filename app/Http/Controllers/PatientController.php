@@ -23,7 +23,7 @@ class PatientController extends Controller
     public function index()
     {
    // الحصول على المستخدم المسجل حاليا
-   $user = auth()->user();
+     $user = auth()->user();
 
    // التحقق من وجود المستخدم
    if ($user) {
@@ -32,7 +32,7 @@ class PatientController extends Controller
 
        // عرض معلومات المريض
        return view('patients.show', compact('patient'));
-   }
+   }    
 
 
 /*
@@ -90,7 +90,7 @@ class PatientController extends Controller
                 'previous_surgery' => $request->input('previous_surgery'),
                 'number' => $request->input('number'),
                 'address' => $request->input('address'),
-                'user_id'=>$request->input($id),
+                '~
             ]);
 */
             /*
