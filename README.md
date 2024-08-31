@@ -8,10 +8,159 @@
 
 <p align="center">
 
+main interface:
 
-<img src="" alt="Build Status"></a>
+<img src="interfaces/main interface.PNG" alt="Build Status"></a>
 
 </p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+
+<img src="interfaces" alt="Build Status"></a>
+
+</p>
+
 
 ## About Laravel
 
