@@ -8,7 +8,7 @@
 
 <p align="center">
 
-main interface:
+Main interface:
 
 <img src="interfaces/main interface.PNG" alt="Build Status"></a>
 
@@ -40,7 +40,7 @@ Details of Patient:
 
 <p align="center">
 
-complete info of patient:
+Complete info of patient:
 
 <img src="interfaces/complete info of patient.PNG" alt="Build Status"></a>
 
