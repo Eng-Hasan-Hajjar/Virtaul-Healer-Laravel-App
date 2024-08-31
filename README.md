@@ -16,148 +16,63 @@ main interface:
 
 <p align="center">
 
+Register:
 
-<img src="interfaces" alt="Build Status"></a>
+<img src="interfaces/Register.PNG" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+Home page in Dashboard:
+
+<img src="interfaces/Home page in Dashboard.PNG" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+Details of Patient:
+
+<img src="interfaces/Details of Patient.PNG" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+complete info of patient:
+
+<img src="interfaces/complete info of patient.PNG" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+Edit info of Patients:
+
+<img src="interfaces/Edit info of Patients.PNG" alt="Build Status"></a>
+
+</p>
+
+<p align="center">
+
+Selection the departement:
+
+<img src="interfaces/Selection the departement.PNG" alt="Build Status"></a>
 
 </p>
 
 <p align="center">
 
 
-<img src="interfaces" alt="Build Status"></a>
+<img src="interfaces/Answer on some Questions of one of departements.PNG" alt="Build Status"></a>
 
 </p>
 
 <p align="center">
 
 
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
-
-</p>
-
-<p align="center">
-
-
-<img src="interfaces" alt="Build Status"></a>
+<img src="interfaces/Diagnois.PNG" alt="Build Status"></a>
 
 </p>
 
