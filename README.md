@@ -64,6 +64,7 @@ Selection the departement:
 
 <p align="center">
 
+Answer on some Questions of one of departements:
 
 <img src="interfaces/Answer on some Questions of one of departements.PNG" alt="Build Status"></a>
 
@@ -71,6 +72,7 @@ Selection the departement:
 
 <p align="center">
 
+Diagnois:
 
 <img src="interfaces/Diagnois.PNG" alt="Build Status"></a>
 
